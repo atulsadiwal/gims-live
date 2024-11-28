@@ -11,7 +11,7 @@ export default function VideoShowcase() {
             <div className="relative rounded-lg mb-16">
                 <div className="cursor-pointer" onClick={openModal}>
                     <img
-                        src="https://cucet.cuchd.in/new-assets/img/student-video-thumb-1.jpg"
+                        src="/image/maxresdefault.webp"
                         alt="Video Thumbnail"
                         className="w-full aspect-[2/1] object-cover rounded-3xl"
                     />
@@ -68,7 +68,7 @@ export default function VideoShowcase() {
                             <iframe
                                 width="990"
                                 height="600"
-                                src="https://www.youtube.com/embed/R3spn6b0GQk" // Replace VIDEO_ID with the actual YouTube video ID
+                                src="https://www.youtube.com/embed/R3spn6b0GQk"
                                 title="YouTube video player"
                                 frameBorder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

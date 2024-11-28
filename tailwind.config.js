@@ -18,6 +18,8 @@ export default {
       backgroundImage: { 
         'btn-gradient': 'linear-gradient(to right, #1163fb, #9c3aed)',
         'BG1': "url('/public/image/three-students.jpg')",
+        'BG2': "url('/public/image/incredible-bg-new.jpg')",
+        'BG3': "url('/public/image/one-exam-bg-new.webp')",
         'kalpana': "url('https://cucet.cuchd.in/new-assets/img/kalpana-bg.webp')",
       },
       colors: {

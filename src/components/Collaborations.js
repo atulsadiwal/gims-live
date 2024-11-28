@@ -17,8 +17,8 @@ const Collaborations = () => {
                 </div>
 
                 <div className="grid grid-cols-8 grid-rows-4 gap-4">
-                    <div className="col-span-2 row-span-2 bg-BG3">
-                        <div className="h-[40vh] shadow-[rgba(13,_38,_76,_0.19)_0px_0px_10px] rounded-lg overflow-hidden bg-[#e8e8e8]">
+                    <div className="col-span-2 row-span-2">
+                        <div className="h-[50vh] shadow-[rgba(13,_38,_76,_0.19)_0px_0px_10px] rounded-lg overflow-hidden bg-BG2 bg-no-repeat bg-cover bg-bottom">
                             <div className="py-6 px-2 flex gap-2">
                                 <img
                                     src="/image/logos/quality-assured.png"
@@ -36,7 +36,7 @@ const Collaborations = () => {
                         </div>
                     </div>
                     <div className="col-span-2 row-span-2 col-start-1 row-start-3">
-                        <div className="h-[40vh] shadow-[rgba(13,_38,_76,_0.19)_0px_0px_10px] rounded-lg overflow-hidden bg-[#e8e8e8]">
+                        <div className="h-[50vh] shadow-[rgba(13,_38,_76,_0.19)_0px_0px_10px] rounded-lg overflow-hidden bg-BG2 bg-no-repeat bg-cover bg-bottom">
                             <div className="py-6 px-2 flex gap-2">
                                 <img
                                     src="/image/logos/aicte.png"

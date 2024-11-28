@@ -8,7 +8,7 @@ const Top = () => {
                 <div className="w-5/12">
                     <h2 className="text-[#4B3B8E] text-sm font-novaReg tracking-widest mb-4">WHY CHOOSE US</h2>
 
-                    <h3 className="text-4xl md:text-5xl font-FONT2 mb-6">Why GIMS University</h3>
+                    <h3 className="text-4xl md:text-5xl font-FONT2 mb-6">Why GIMS</h3>
 
                     <p className="text-gray-600 max-w-2xl mb-12 font-FONT1">
                         GIMS University, Greater Noida, is a premier AICTE-approved institute accredited by HLACT, UK, and partnered with IIM Bangalore for certification courses. With global collaborations, industry-driven curriculum, and experiential learning, it fosters entrepreneurial intent and holistic growth. Join GNIOT University for world-class education and a transformative learning experience.

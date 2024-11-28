@@ -14,13 +14,18 @@ import CorporateReviews from './components/CorporateReviews'
 import VideoShowcase from './components/VideoShowcase'
 import PlacementHighlights from './components/PlacementHighlights'
 import InternationalRelations from './components/InternationalRelations'
+import Collaborations from './components/Collaborations'
+import AdmissionProcess from './components/AdmissionProcess'
+import GimsiansSpeak from './components/GimsiansSpeak'
+import VideoClips from './components/VideoClips'
+import CorporateMentor from './components/CorporateMentor'
 
 const App = () => {
   return (
     <>
       <HomePage />
       <Top />
-      <LogoSlider title={<><Building className='w-8 h-8' />Collaborations & MoUs</>} logos={collaborationsLogo} speed={3000} />
+      <LogoSlider title={<><Building className='w-8 h-8' />Placements - Our Key Recruiters</>} logos={collaborationsLogo} speed={3000} />
       <CardsContainer />
       <LogoSlider title={<><Boxes className='w-8 h-8' />Institutional Clubs</>} logos={clubsLogo} speed={4000} />
       <Gallery />
@@ -31,6 +36,11 @@ const App = () => {
       <VideoShowcase />
       <CorporateReviews />
       <UniversityDetails />
+      <Collaborations />
+      <AdmissionProcess />
+      <GimsiansSpeak />
+      <VideoClips />
+      <CorporateMentor />
       <Footer />
     </>
   )

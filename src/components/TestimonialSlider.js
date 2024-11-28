@@ -156,9 +156,9 @@ const TestimonialSlider = () => {
                     onClick={openModal}
                 >
                     <img
-                        src="https://cucet.cuchd.in/new-assets/img/student-video-thumb-1.jpg" // Add your thumbnail image path
+                        src="/image/maxresdefault.jpg" // Add your thumbnail image path
                         alt="Video Thumbnail"
-                        className="w-full rounded-3xl"
+                        className="w-full rounded-3xl h-[400px] object-cover"
                     />
                     <div className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-40 rounded-3xl">
                         <img src="/image/play.gif" alt="play" className='rounded-full w-14' />
@@ -186,7 +186,7 @@ const TestimonialSlider = () => {
                                 <iframe
                                     width="990"
                                     height="600"
-                                    src="https://www.youtube.com/embed/R3spn6b0GQk" // Replace VIDEO_ID with the actual YouTube video ID
+                                    src="https://www.youtube.com/embed/FlHxgIwPRXs" // Replace VIDEO_ID with the actual YouTube video ID
                                     title="YouTube video player"
                                     frameBorder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
