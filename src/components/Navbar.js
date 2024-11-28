@@ -4,7 +4,7 @@ const Navbar = () => {
     return (
         <nav className='flex justify-between pt-10 px-20'>
             <div>
-                <img src="https://www.gims.net.in/admission/resources/images/logos/logo.png" alt="logo" />
+                <img src="/image/gims-logo.png" alt="logo" className=''/>
             </div>
             <div className='flex justify-center gap-5'>
                 <span className='flex items-center gap-2 font-FONT1 text-white'>

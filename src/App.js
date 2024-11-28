@@ -19,11 +19,13 @@ import AdmissionProcess from './components/AdmissionProcess'
 import GimsiansSpeak from './components/GimsiansSpeak'
 import VideoClips from './components/VideoClips'
 import CorporateMentor from './components/CorporateMentor'
+import FormSection from './components/FormSection'
 
 const App = () => {
   return (
     <>
       <HomePage />
+      <FormSection />
       <Top />
       <LogoSlider title={<><Building className='w-8 h-8' />Placements - Our Key Recruiters</>} logos={collaborationsLogo} speed={3000} />
       <CardsContainer />
