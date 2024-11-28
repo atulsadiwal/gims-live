@@ -54,7 +54,7 @@ const UniversityDetails = () => {
 
         <div className="box absolute bottom-0 left-0 bg-yellow-300 text-black p-6 lg:p-8 w-full lg:w-[50%] flex flex-col">
           <h4 className="text-xl lg:text-2xl font-FONT2">We Are Open For Opportunities!</h4>
-          <p className="mt-4 text-sm lg:text-base leading-relaxed">
+          <p className="mt-4 text-sm lg:text-base font-novaReg leading-relaxed">
           Explore limitless possibilities with us! Partner for growth, innovation, and success as we embrace new opportunities and collaborations. Let’s create a brighter future together!
           </p>
           <a
@@ -72,7 +72,7 @@ const UniversityDetails = () => {
           <h6 className="uppercase text-sm font-FONT1 tracking-widest">
             GNIOT
           </h6>
-          <h2 className="text-4xl lg:text-5xl font-FONT2 mt-4">
+          <h2 className="text-4xl lg:text-5xl font-FONT2 mt-2">
             Top Average Placement <br /> Excerpts @GIMS
           </h2>
           <p className="text-lg mt-4 font-novaReg text-green-100 leading-relaxed">
@@ -88,7 +88,7 @@ const UniversityDetails = () => {
             { label: "₹ 6.34 LPA", value: 50 },
           ].map((item, index) => (
             <div key={index}>
-              <p className="flex justify-between text-sm"
+              <p className="flex justify-between font-FONT1 text-sm"
                 data-aos="fade-right">
                 {item.label} <span>{Math.round(progress[index])}%</span>
               </p>

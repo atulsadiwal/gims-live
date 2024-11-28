@@ -24,23 +24,9 @@ const HomePage = () => {
   }, [isOpen]);
 
   useGSAP(() => {
-    gsap.from(".heading", {
-      x: -1000,
-      duration: 0.7,
-      ease: easeIn
-    })
-
-    gsap.from(".navbar", {
-      y: -100,
-      duration: 0.7,
-      ease: easeIn,
-    })
-
-    gsap.from(".bottom-section", {
-      y: 120,
-      duration: 0.7,
-      ease: easeIn,
-    })
+    gsap.from(".heading", { x: -1000, duration: 0.7, ease: easeIn })
+    gsap.from(".navbar", { y: -100, duration: 0.7, ease: easeIn })
+    gsap.from(".bottom-section", { y: 120, duration: 0.7, ease: easeIn })
   })
 
   return (
@@ -55,7 +41,7 @@ const HomePage = () => {
             <Navbar />
           </div>
           <div className='max-w-[1400px] mx-auto w-full'>
-            <div className='heading'>
+            <div className='heading max-2xl:px-10'>
               <p className='uppercase pl-1 font-novaReg text-gray-300 mb-1 tracking-widest'>Best Institute in this town</p>
               <h1 className="max-w-4xl font-novaReg leading-[60px] max-sm:text-3xl tracking-tight text-white max-xl:text-5xl text-6xl max-lg:text-center max-md:pt-20 max-[350px]:text-2xl">
                 GNIOT Institute Of <br />
@@ -65,14 +51,17 @@ const HomePage = () => {
                 </span>
               </h1>
               <p className='mt-8 max-w-3xl font-novaReg text-gray-200 text-xl'>GNIOT Institute of Management Studies (GIMS) is a leading business school in Greater Noida, Uttar Pradesh, offering industry-focused management programs.</p>
-              <div className='h-1'>
-                <button onClick={openPopup} className='py-3 px-10 mt-5 text-[15px] rounded-xl font-novaBold uppercase bg-yellow-500 text-white w-max hover:border hover:border-gray-300  hover:bg-transparent hover:border-b-4 hover:transform transition duration-200 ease-linear scale-y-105 tracking-widest'>Apply Now</button>
-                <PopupForm isOpen={isOpen} closePopup={closePopup} />
+              <div className="h-1">
+                <button
+                  onClick={openPopup}
+                  className="py-3 px-10 mt-5 text-[15px] rounded-xl font-novaBold uppercase bg-yellow-500 text-white w-max hover:border hover:border-gray-300 hover:bg-transparent hover:border-b-4 hover:transform transition duration-200 ease-linear scale-y-105 tracking-widest">
+                  Apply Now
+                </button>
               </div>
             </div>
           </div>
           <div className='bg-indigo-900 w-full bg-opacity-90'>
-            <div className='bottom-section max-w-7xl mx-auto grid grid-cols-4 py-14'>
+            <div className='bottom-section max-w-7xl mx-auto grid grid-cols-4 py-10'>
               <div className='text-white text-center'>
                 <span className='text-4xl font-FONT2'>17000+</span>
                 <p className='font-FONT1'>Proud Alumni</p>
@@ -93,6 +82,14 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+      {isOpen && (
+        <>
+          {/* Full-Screen Backdrop */}
+          <div className="fixed inset-0 bg-black bg-opacity-40 backdrop-blur-sm z-20"></div>
+          {/* Popup */}
+          <PopupForm isOpen={isOpen} closePopup={closePopup} />
+        </>
+      )}
     </section>
   )
 }

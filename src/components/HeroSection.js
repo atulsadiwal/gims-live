@@ -68,16 +68,16 @@ export default function HeroSection() {
     useEffect(() => {
         const interval = setInterval(() => {
             setStartIndex((prevIndex) => {
-                const nextIndex = (prevIndex + 4) % users.length; // Move to the next set of 4 users
+                const nextIndex = (prevIndex + 4) % users.length;
                 const newVisibleUsers = Array(4)
                     .fill(0)
-                    .map((_, i) => users[(nextIndex + i) % users.length]); // Cycle through the array
+                    .map((_, i) => users[(nextIndex + i) % users.length]);
                 setVisibleUsers(newVisibleUsers);
                 return nextIndex;
             });
         }, delayBetweenChanges);
 
-        return () => clearInterval(interval); // Cleanup on unmount
+        return () => clearInterval(interval);
     }, [users, delayBetweenChanges]);
 
     return (
@@ -96,23 +96,20 @@ export default function HeroSection() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.2, duration: 0.8 }}
-                        className="mb-6 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl"
-                    >
+                        className="mb-6 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
                         THINK PGDM THINK GIMS
                     </motion.h1>
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.4, duration: 0.8 }}
-                        className="mb-8 text-lg text-muted-foreground sm:text-xl"
-                    >
+                        className="mb-8 text-lg text-muted-foreground sm:text-xl">
                         The Payoneer multi-currency account has everything your business needs to get paid and grow globally.
                     </motion.p>
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.6, duration: 0.8 }}
-                    >
+                        transition={{ delay: 0.6, duration: 0.8 }}>
                         <button size="lg" className="bg-[#6C5CE7] px-4 py-2 rounded-lg text-white hover:bg-[#5A4ED1]">
                             Apply Now
                         </button>

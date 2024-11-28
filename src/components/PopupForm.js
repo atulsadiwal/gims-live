@@ -6,8 +6,6 @@ function PopupForm({ isOpen, closePopup }) {
 
       {isOpen && (
         <>
-          <div onClick={closePopup} className="fixed inset-0 bg-black opacity-50 z-10"></div>
-
           <div className="fixed inset-0 flex items-center justify-center z-20">
             <div className="relative bg-white p-8 rounded-lg shadow-lg max-w-lg w-full">
               <div onClick={closePopup} className="absolute top-4 right-4 cursor-pointer">

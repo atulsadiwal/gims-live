@@ -43,17 +43,12 @@ const Highlights = () => {
     return (
         <div className="w-full px-4 py-8">
             <div className="relative flex justify-center items-center overflow-hidden max-w-7xl mx-auto">
-                <div
-                    className="flex gap-4 transition-transform duration-1000 ease-in-out"
+                <div className="flex gap-4 transition-transform duration-1000 ease-in-out"
                     style={{
                         transform: `translateX(-${(100 / 100) * currentIndex}%)`,
-                    }}
-                >
+                    }}>
                     {wrappedCourses.map((course, index) => (
-                        <div
-                            key={index}
-                            className="flex items-center gap-2 px-4 py-2 rounded-full border border-gray-200 hover:border-gray-300 transition-colors cursor-pointer bg-white"
-                        >
+                        <div key={index} className="flex items-center gap-2 px-4 py-2 rounded-full border border-gray-200 hover:border-gray-300 transition-colors cursor-pointer bg-white">
                             {React.createElement(course.icon, {
                                 className: `w-10 h-10 ${course.color}`,
                             })}

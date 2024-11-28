@@ -45,3 +45,20 @@
   font-family: "montserrat";
   src: url("/public/fonts/montserrat.ttf") format("truetype");
 }
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient 3s ease infinite;
+}
+
+.list-star {
+  list-style-type: none;
+  position: relative;
+}
+
+.list-star::before {
+  content: '★'; /* Star character */
+  position: absolute;
+  left: -1.5em; /* Adjust the position of the star */
+  color: gold; /* Color of the star */
+}

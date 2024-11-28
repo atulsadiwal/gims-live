@@ -6,6 +6,7 @@ export default {
   theme: {
     extend: {
       animation: {
+        spin: 'spin 2s linear infinite',
         marquee: 'marquee 25s linear infinite',
       },
       keyframes: {
@@ -14,10 +15,10 @@ export default {
           '100%': { transform: 'translateX(-100%)' },
         },
       },
-      content: {
-        backgroundImage: {
-
-        }
+      backgroundImage: { 
+        'btn-gradient': 'linear-gradient(to right, #1163fb, #9c3aed)',
+        'BG1': "url('/public/image/three-students.jpg')",
+        'kalpana': "url('https://cucet.cuchd.in/new-assets/img/kalpana-bg.webp')",
       },
       colors: {
         'home': '#3E0066',
@@ -29,16 +30,16 @@ export default {
           to: "#ff4081",
         },
       },
-    },
-    fontFamily: {
-      FONT1: ['Font1', 'sans-serif'],
-      FONT2: ['Font2', 'sans-serif'],
-      novaReg: ['nova-regular', 'proximanova-regular'],
-      novaSemi: ['nova-semibold', 'proximanova-semibold'],
-      novaBold: ['nova-bold', 'proximanova-bold'],
-      novaLight: ['nova-light', 'proximanova-light'],
-      novaThin: ['nova-thin', 'proximanova-thin'],
-      montserrat: ['montserrat', 'montserrat'],
+      fontFamily: {
+        FONT1: ['Font1', 'sans-serif'],
+        FONT2: ['Font2', 'sans-serif'],
+        novaReg: ['nova-regular', 'proximanova-regular'],
+        novaSemi: ['nova-semibold', 'proximanova-semibold'],
+        novaBold: ['nova-bold', 'proximanova-bold'],
+        novaLight: ['nova-light', 'proximanova-light'],
+        novaThin: ['nova-thin', 'proximanova-thin'],
+        montserrat: ['montserrat', 'montserrat'],
+      },
     },
   },
   plugins: [],
