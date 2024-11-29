@@ -20,6 +20,8 @@ export default {
         'BG1': "url('/public/image/three-students.jpg')",
         'BG2': "url('/public/image/incredible-bg-new.jpg')",
         'BG3': "url('/public/image/one-exam-bg-new.webp')",
+        'BG4': "url('/public/image/building-gims.webp')",
+        'BG5': "url('/public/image/awards.png')",
         'kalpana': "url('https://cucet.cuchd.in/new-assets/img/kalpana-bg.webp')",
       },
       colors: {

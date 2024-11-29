@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
@@ -33,6 +33,7 @@ const videos = [
     }
 ];
 
+// Extract YouTube video ID from URL
 const extractVideoId = (url) => {
     const regex = /(?:https?:\/\/(?:www\.)?youtube\.com\/(?:[^\/\n\s]+\/\S+\/|(?:v|e(?:mbed)?)\/|\S*?[?&]v=)|https?:\/\/(?:www\.)?youtu\.be\/)([a-zA-Z0-9_-]{11})/;
     const match = url.match(regex);
@@ -40,53 +41,65 @@ const extractVideoId = (url) => {
 };
 
 const GimsiansSpeak = () => {
+    const [activeVideo, setActiveVideo] = useState(null);
+
     return (
-        <>
-            <div className="max-w-[1400px] mx-auto px-2 py-8">
-                <h1 className="text-4xl font-FONT2 text-center text-gray-900 mb-8 uppercase">
-                    Gimsians Speak
-                </h1>
+        <div className="max-w-[1400px] mx-auto px-2 py-8">
+            <h1 className="text-4xl font-FONT2 text-center text-gray-900 mb-8 uppercase">
+                Gimsians Speak
+            </h1>
 
-                <Swiper
-                    spaceBetween={20}
-                    slidesPerView={3}
-                    loop={true}
-                    pagination={{ clickable: true }}
-                    breakpoints={{
-                        640: {
-                            slidesPerView: 1,
-                        },
-                        768: {
-                            slidesPerView: 2,
-                        },
-                        1024: {
-                            slidesPerView: 3,
-                        },
-                    }}
-                    className="mySwiper"
-                >
-                    {videos.map((video) => {
-                        const videoId = extractVideoId(video.videoUrl);
-                        if (!videoId) return null;
+            <Swiper
+                spaceBetween={20}
+                slidesPerView={3}
+                loop={true}
+                pagination={{ clickable: true }}
+                breakpoints={{
+                    640: {
+                        slidesPerView: 1,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                    },
+                }}
+                className="mySwiper"
+            >
+                {videos.map((video) => {
+                    const videoId = extractVideoId(video.videoUrl);
+                    if (!videoId) return null;
 
-                        return (
-                            <SwiperSlide key={video.id}>
-                                <div className="bg-white shadow-lg rounded-md overflow-hidden">
-                                    <a href={video.videoUrl} target="_blank" rel="noopener noreferrer">
-                                        <img
-                                            src={`https://img.youtube.com/vi/${videoId}/0.jpg`}
-                                            alt={`Video thumbnail`}
-                                            className="w-full h-auto rounded-md"
-                                        />
-                                    </a>
-                                </div>
-                            </SwiperSlide>
-                        );
-                    })}
-                </Swiper>
-            </div>
-        </>
+                    return (
+                        <SwiperSlide key={video.id}>
+                            <div
+                                className="bg-white shadow-lg rounded-md overflow-hidden transform transition duration-300 hover:scale-105 hover:rounded-md cursor-pointer"
+                                onClick={() => setActiveVideo(videoId)} // Set the clicked video as active
+                            >
+                                {activeVideo === videoId ? (
+                                    <iframe
+                                        className="w-full h-64 md:h-80"
+                                        src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
+                                        title={`Video ${video.id}`}
+                                        frameBorder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowFullScreen
+                                    ></iframe>
+                                ) : (
+                                    <img
+                                        src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
+                                        alt={`Video thumbnail`}
+                                        className="w-full h-auto rounded-md"
+                                    />
+                                )}
+                            </div>
+                        </SwiperSlide>
+                    );
+                })}
+            </Swiper>
+        </div>
     );
-}
+};
 
 export default GimsiansSpeak;

@@ -1,7 +1,32 @@
-/* eslint-disable jsx-a11y/img-redundant-alt */
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const InternationalRelations = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const content = [
+    {
+      title: "Global Summer & Winter Opportunities",
+      text: "Experience the world through condensed summer and winter programs, designed to blend academics with global cultural exploration.",
+      imageSrc: "/image/logos/logo13.png",
+      alt: "International Summer/Winter Programs Icon",
+    },
+    {
+      title: "Alternative Summer & Winter Programs",
+      text: "Explore new adventures with alternative summer and winter programs that focus on expanding your global perspective.",
+      imageSrc: "/image/logos/logo14.png",
+      alt: "Alternative Summer/Winter Icon",
+    },
+  ];
+
+  const handleContentSwitch = () => {
+    setActiveIndex((prevIndex) => (prevIndex + 1) % content.length);
+  };
+
+  useEffect(() => {
+    const interval = setInterval(handleContentSwitch, 7000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="py-10 bg-gray-100">
       <h2 className="text-3xl font-FONT2 text-center mb-6">
@@ -11,78 +36,49 @@ const InternationalRelations = () => {
         offers exclusive opportunities to explore the world
       </p>
       <div className="max-w-[1400px] mx-auto grid grid-cols-3 place-items-center gap-5">
-        <div className="bg-[#15345d] text-white rounded-md shadow-md flex flex-col h-[30vh] p-10 relative">
-          <h3 className="font-FONT2 text-xl text-left mb-3">
-            Global Summer & Winter Opportunities
-          </h3>
-          <p className="text-base font-novaReg text-left leading-relaxed mb-4">
-            Experience the world through condensed summer and winter programs, designed to blend academics with global cultural exploration.
-          </p>
-          <img
-            src="/image/icons/globe-icon.webp"
-            alt="International Summer/Winter Programs Icon"
-            className="w-12 h-12 absolute bottom-5 left-10"
-          />
+        <div className="bg-[#15345d] text-white rounded-md shadow-md flex flex-col items-center justify-center p-10 relative">
+          <div className="flex items-center justify-center mb-4">
+            <div className="w-24 h-24 relative">
+              {content.map((item, index) => (
+                <img
+                  key={index}
+                  src={item.imageSrc}
+                  alt={item.alt}
+                  className={`w-full h-full absolute transition-opacity duration-700 ${activeIndex === index ? "opacity-100" : "opacity-0"}`}
+                />
+              ))}
+            </div>
+          </div>
+          <div className="text-center">
+            <h3 className="font-FONT2 text-xl mb-3">
+              {content[activeIndex].title}
+            </h3>
+            <p className="text-base font-novaReg leading-relaxed mb-4">
+              {content[activeIndex].text}
+            </p>
+          </div>
         </div>
-        <div className="h-[30vh] w-full rounded-md shadow-md">
-          <img
-            src="/image/students.jpg"
-            alt="International Programs Image"
-            className="w-full h-full object-cover object-top rounded-md"
-          />
+        <div className="bg-[#b31a1a] text-white rounded-md shadow-md flex flex-col items-center justify-center p-10 relative">
+          <div className="flex items-center justify-center mb-4">
+            <div className="w-24 h-24 relative">
+              <img
+                src="/image/icons/refresh-icon.webp"
+                alt="Semester Abroad/Exchange Programs Icon"
+                className="w-full h-full absolute bottom-5 left-10"
+              />
+            </div>
+          </div>
+          <div className="text-center">
+            <h3 className="font-FONT2 text-xl mb-3">
+              International Academic Exchange
+            </h3>
+            <p className="text-base font-novaReg leading-relaxed mb-4">
+              Pursue your degree abroad for a semester to gain unique academic insights and international connections that will benefit your career.
+            </p>
+          </div>
+
         </div>
-        <div className="bg-[#b31a1a] text-white rounded-md shadow-md flex flex-col h-[30vh] p-10 relative">
-          <h3 className="font-FONT2 text-xl text-left mb-3">
-            International Academic Exchange
-          </h3>
-          <p className="text-base font-novaReg text-left leading-relaxed mb-4">
-            Pursue your degree abroad for a semester to gain unique academic insights and international connections that will benefit your career.
-          </p>
-          <img
-            src="/image/icons/refresh-icon.webp"
-            alt="Semester Abroad/Exchange Programs Icon"
-            className="w-12 h-12 absolute bottom-5 left-10"
-          />
-        </div>
-        <div className="bg-[#403c3d] text-white rounded-md shadow-md flex flex-col h-[30vh] p-10 relative">
-          <h3 className="font-FONT2 text-xl text-left mb-3">
-            Global Higher Education Pathways
-          </h3>
-          <p className="text-base font-novaReg text-left leading-relaxed mb-4">
-            Broaden your academic horizons by studying at world-class institutions abroad, where you can earn a diploma or a master’s degree in your area of interest.
-          </p>
-          <img
-            src="/image/icons/edu-icon.webp"
-            alt="Higher Education Programs Icon"
-            className="w-12 h-12 absolute bottom-5 left-10"
-          />
-        </div>
-        <div className="bg-[#441bb3] text-white rounded-md shadow-md flex flex-col h-[30vh] p-10 relative">
-          <h3 className="font-FONT2 text-xl text-left mb-3">
-            International Work Experience
-          </h3>
-          <p className="text-base font-novaReg text-left leading-relaxed mb-4">
-            Gain invaluable work experience by being professionally attached to global companies, expanding your skillset in an international context.
-          </p>
-          <img
-            src="/image/icons/global-icon.webp"
-            alt="Global Immersion Programs Icon"
-            className="w-12 h-12 absolute bottom-5 left-10"
-          />
-        </div>
-        <div className="bg-[#15345d] text-white rounded-md shadow-md flex flex-col h-[30vh] p-10 relative">
-          <h3 className="font-FONT2 text-xl text-left mb-3">
-            World-Class International Job Placements
-          </h3>
-          <p className="text-base font-novaReg text-left leading-relaxed mb-4">
-            Benefit from international career opportunities, as Fortune 500 companies regularly scout talent for their global offices and campuses.
-          </p>
-          <img
-            src="/image/icons/location-icon.webp"
-            alt="International Placements Icon"
-            className="w-12 h-12 absolute bottom-5 left-10"
-          />
-        </div>
+
       </div>
     </div>
   );

@@ -212,7 +212,7 @@ const Collaborations = () => {
                         <div className="shadow-[rgba(13,_38,_76,_0.19)_0px_0px_10px] rounded-lg overflow-hidden h-full bg-[#e8e8e8]">
                             <div className="py-6 px-2 flex gap-4 h-full">
                                 <img
-                                    src="/image/logos/xlri.png"
+                                    src="/image/logos/xlri.jpg"
                                     alt="The Week"
                                     width={200}
                                     height={60}

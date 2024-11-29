@@ -20,6 +20,8 @@ import GimsiansSpeak from './components/GimsiansSpeak'
 import VideoClips from './components/VideoClips'
 import CorporateMentor from './components/CorporateMentor'
 import FormSection from './components/FormSection'
+import AwardsAndRecognition from './components/AwardsAndRecognition'
+import Affiliated from './components/Affiliated'
 
 const App = () => {
   return (
@@ -34,18 +36,20 @@ const App = () => {
       <TestimonialSlider />
       <PlacementHighlights />
       <CilebHighlights />
-      <InternationalRelations />
+      {/* <InternationalRelations /> */}
       <VideoShowcase />
       <CorporateReviews />
       <UniversityDetails />
       <Collaborations />
       <AdmissionProcess />
+      <Affiliated />
       <GimsiansSpeak />
       <VideoClips />
       <CorporateMentor />
+      <AwardsAndRecognition />
       <Footer />
     </>
   )
 }
 
-export default App
+export default App;
