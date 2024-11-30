@@ -5,7 +5,7 @@ const Top = () => {
     return (
         <>
             <section className="bg-BG6 bg-cover bg-center">
-                <div className="max-w-[1400px] mx-auto px-2 py-10 w-full max-md:py-6 max-sm:py-4">
+                <div className="max-w-[1400px] mx-auto px-2 py-10 w-full max-md:py-6 max-sm:py-4 max-sm:px-3">
                     <h2 className="text-[#4B3B8E] text-sm font-novaReg tracking-widest mb-4 max-md:mb-3 max-sm:mb-2">WHY CHOOSE US</h2>
 
                     <h3 className="text-5xl font-FONT2 mb-6 max-lg:text-4xl max-md:text-3xl max-sm:text-2xl max-md:mb-4 max-sm:mb-3">Why GIMS</h3>

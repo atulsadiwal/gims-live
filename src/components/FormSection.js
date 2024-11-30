@@ -5,7 +5,7 @@ const FormSection = () => {
     <section className="bg-gray-100 py-8 max-sm:py-4">
       <div className="max-w-screen-xl mx-auto px-6 max-sm:px-3">
         <div className="flex flex-row justify-between items-center max-md:flex-col max-sm:flex-col">
-          <div className="w-6/12 max-sm:w-full p-6 max-md:w-full max-sm:p-3">
+          <div className="w-6/12 max-sm:w-full p-6 max-md:w-full max-sm:p-0">
             <div className="flex flex-col justify-center h-full">
               <h1 className="text-4xl font-FONT2 mb-4 text-red-600 max-sm:text-xl max-sm:mb-2">GIMS</h1>
               <h2 className="text-3xl font-novaSemi mb-4 max-sm:text-lg max-sm:mb-2">India's Premier Scholarship</h2>

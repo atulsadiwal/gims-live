@@ -1,6 +1,6 @@
-import { ChevronLeft, ChevronRight } from 'lucide-react'
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { ChevronLeft, ChevronRight, Play } from 'lucide-react';
 
 const studentReviews = [
     {
@@ -80,6 +80,7 @@ const studentReviews = [
 const TestimonialSlider = () => {
     const [currentTopSlide, setCurrentTopSlide] = useState(0);
     const [isOpen, setIsOpen] = useState(false);
+
     const openModal = () => setIsOpen(true);
     const closeModal = () => setIsOpen(false);
 
@@ -92,18 +93,14 @@ const TestimonialSlider = () => {
     };
 
     useEffect(() => {
-        const slideInterval = setInterval(() => {
-            nextTopSlide();
-        }, 3000);
-
+        const slideInterval = setInterval(nextTopSlide, 3000);
         return () => clearInterval(slideInterval);
     }, [currentTopSlide]);
 
-
     return (
-        <section className='max-w-[1400px] mx-auto grid grid-cols-5 gap-5 place-items-center py-10'>
-            <div className="relative col-span-3 w-full h-full overflow-hidden rounded-3xl">
-                {studentReviews ?
+        <section className="max-w-[1400px] mx-auto py-6 px-4 sm:py-10 sm:px-6">
+            <div className="grid grid-cols-1 lg:grid-cols-5 gap-6">
+                <div className="relative col-span-1 lg:col-span-3 w-full h-[400px] overflow-hidden rounded-2xl">
                     <AnimatePresence initial={false}>
                         {studentReviews[currentTopSlide] && (
                             <motion.div
@@ -114,91 +111,83 @@ const TestimonialSlider = () => {
                                 transition={{ duration: 0.5 }}
                                 className="absolute inset-0"
                             >
-                                <div className="relative w-full h-full grid grid-cols-5 bg-[#E8E8E8]">
-                                    <div className='col-span-2'>
+                                <div className="relative w-full h-full flex flex-col sm:flex-row bg-[#E8E8E8]">
+                                    <div className="w-full sm:w-2/5 h-1/3 sm:h-full">
                                         <img
                                             src={studentReviews[currentTopSlide].image}
-                                            alt="Slide"
-                                            className="w-full h-full object-cover max-md:w-full max-md:h-full"
+                                            alt="Student"
+                                            className="w-full h-full object-cover max-sm:object-contain"
                                         />
                                     </div>
-                                    <div className='col-span-3 h-full flex flex-col items-start justify-center px-16'>
-                                        <span className='text-2xl italic font-novaLight'>{studentReviews[currentTopSlide].heading}</span>
-                                        <p className='py-4 font-FONT1 italic'>{studentReviews[currentTopSlide].description}</p>
-                                        <h4 className='font-FONT2 text-xl text-red-500'>{studentReviews[currentTopSlide].studentName}</h4>
-                                        <span className='text-sm font-FONT1'>{studentReviews[currentTopSlide].company}</span>
+                                    <div className="w-full sm:w-3/5 h-2/3 sm:h-full flex flex-col items-start justify-center p-6 max-sm:p-2">
+                                        <span className="text-lg sm:text-2xl italic font-light">{studentReviews[currentTopSlide].heading}</span>
+                                        <p className="py-2 sm:py-4 text-sm sm:text-base italic">{studentReviews[currentTopSlide].description}</p>
+                                        <h4 className="text-lg sm:text-xl text-red-500 font-semibold">{studentReviews[currentTopSlide].studentName}</h4>
+                                        <span className="text-xs sm:text-sm">{studentReviews[currentTopSlide].company}</span>
                                     </div>
                                 </div>
                             </motion.div>
                         )}
                     </AnimatePresence>
-                    : null}
-                <button
-                    variant="outline"
-                    size="icon"
-                    className="flex items-center justify-center absolute left-4 top-1/2 transform -translate-y-1/2 bg-white opacity-50 rounded-full hover:bg-opacity-75 w-4 h-4 lg:w-12 lg:h-12 max-md:w-6 max-md:h-6 "
-                    onClick={prevTopSlide}
-                >
-                    <ChevronLeft className="w-6 h-6" />
-                </button>
-                <button
-                    variant="outline"
-                    size="icon"
-                    className="flex items-center justify-center absolute right-4 top-1/2 transform -translate-y-1/2 bg-white opacity-50 rounded-full hover:bg-opacity-75  w-4 h-4 lg:w-12 lg:h-12 max-md:w-6 max-md:h-6"
-                    onClick={nextTopSlide}
-                >
-                    <ChevronRight className="w-6 h-6" />
-                </button>
-            </div>
-            <div className="relative col-span-2">
-                <div
-                    className="cursor-pointer"
-                    onClick={openModal}
-                >
-                    <img
-                        src="/image/maxresdefault.jpg" // Add your thumbnail image path
-                        alt="Video Thumbnail"
-                        className="w-full rounded-3xl h-[400px] object-cover"
-                    />
-                    <div className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-40 rounded-3xl">
-                        <img src="/image/play.gif" alt="play" className='rounded-full w-14' />
-                    </div>
-                </div>
-
-                {/* Modal for YouTube video */}
-                {isOpen && (
-                    <div
-                        className="fixed inset-0 z-50 bg-black bg-opacity-80 flex justify-center items-center "
-                        onClick={closeModal}
+                    <button
+                        className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 rounded-full hover:bg-opacity-75 w-8 h-8 sm:w-12 sm:h-12 flex items-center justify-center"
+                        onClick={prevTopSlide}
                     >
-                        <div
-                            className="relative p-4 rounded-lg max-w-5xl w-full"
-                            onClick={(e) => e.stopPropagation()}
-                        >
-                            <button
-                                onClick={closeModal}
-                                className="absolute -top-5 -right-5 text-black bg-white rounded-full w-10 h-10 flex justify-center items-center"
-                                aria-label="Close"
-                            >
-                                ✕
-                            </button>
-                            <div>
-                                <iframe
-                                    width="990"
-                                    height="600"
-                                    src="https://www.youtube.com/embed/FlHxgIwPRXs" // Replace VIDEO_ID with the actual YouTube video ID
-                                    title="YouTube video player"
-                                    frameBorder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowFullScreen
-                                ></iframe>
-                            </div>
+                        <ChevronLeft className="w-4 h-4 sm:w-6 sm:h-6" />
+                    </button>
+                    <button
+                        className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 rounded-full hover:bg-opacity-75 w-8 h-8 sm:w-12 sm:h-12 flex items-center justify-center"
+                        onClick={nextTopSlide}
+                    >
+                        <ChevronRight className="w-4 h-4 sm:w-6 sm:h-6" />
+                    </button>
+                </div>
+                <div className="relative col-span-1 lg:col-span-2 h-[200px] sm:h-[300px] lg:h-[400px]">
+                    <div
+                        className="cursor-pointer w-full h-full"
+                        onClick={openModal}
+                    >
+                        <img
+                            src="/image/maxresdefault.jpg"
+                            alt="Video Thumbnail"
+                            className="w-full h-[400px] rounded-2xl object-cover"
+                        />
+                        <div className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-40 rounded-2xl">
+                            <Play className="w-12 h-12 text-white" />
                         </div>
                     </div>
-                )}
+                </div>
             </div>
-        </section>
-    )
-}
 
-export default TestimonialSlider
+            {isOpen && (
+                <div
+                    className="fixed inset-0 z-50 bg-black bg-opacity-80 flex justify-center items-center p-4"
+                    onClick={closeModal}
+                >
+                    <div
+                        className="relative w-full max-w-5xl aspect-video"
+                        onClick={(e) => e.stopPropagation()}
+                    >
+                        <button
+                            onClick={closeModal}
+                            className="absolute -top-10 right-0 text-white bg-red-500 rounded-full w-8 h-8 flex justify-center items-center"
+                            aria-label="Close"
+                        >
+                            ✕
+                        </button>
+                        <iframe
+                            className="w-full h-full"
+                            src="https://www.youtube.com/embed/FlHxgIwPRXs"
+                            title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                        ></iframe>
+                    </div>
+                </div>
+            )}
+        </section>
+    );
+};
+
+export default TestimonialSlider;
+
