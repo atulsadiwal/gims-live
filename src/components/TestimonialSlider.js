@@ -98,8 +98,8 @@ const TestimonialSlider = () => {
     }, [currentTopSlide]);
 
     return (
-        <section className="max-w-[1400px] mx-auto py-6 px-4 sm:py-10 sm:px-6">
-            <div className="grid grid-cols-1 lg:grid-cols-5 gap-6">
+        <section className="max-w-[1400px] mx-auto py-6 px-4 max-md:py-4 max-sm:px-3 max-sm:py-3">
+            <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 max-lg:gap-5 max-md:gap-4 max-sm:gap-3">
                 <div className="relative col-span-1 lg:col-span-3 w-full h-[400px] overflow-hidden rounded-2xl">
                     <AnimatePresence initial={false}>
                         {studentReviews[currentTopSlide] && (
@@ -130,13 +130,13 @@ const TestimonialSlider = () => {
                         )}
                     </AnimatePresence>
                     <button
-                        className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 rounded-full hover:bg-opacity-75 w-8 h-8 sm:w-12 sm:h-12 flex items-center justify-center"
+                        className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 rounded-full hover:bg-opacity-75 w-8 h-8 sm:w-12 sm:h-12 flex items-center justify-center max-sm:top-1/3"
                         onClick={prevTopSlide}
                     >
                         <ChevronLeft className="w-4 h-4 sm:w-6 sm:h-6" />
                     </button>
                     <button
-                        className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 rounded-full hover:bg-opacity-75 w-8 h-8 sm:w-12 sm:h-12 flex items-center justify-center"
+                        className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 rounded-full hover:bg-opacity-75 w-8 h-8 sm:w-12 sm:h-12 flex items-center justify-center max-sm:top-1/3"
                         onClick={nextTopSlide}
                     >
                         <ChevronRight className="w-4 h-4 sm:w-6 sm:h-6" />
@@ -150,15 +150,14 @@ const TestimonialSlider = () => {
                         <img
                             src="/image/maxresdefault.jpg"
                             alt="Video Thumbnail"
-                            className="w-full h-[400px] rounded-2xl object-cover"
+                            className="w-full h-full rounded-2xl object-cover"
                         />
-                        <div className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-40 rounded-2xl">
-                            <Play className="w-12 h-12 text-white" />
+                        <div className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-40 rounded-2xl h-full">
+                            <Play className="w-12 h-12 text-white max-md:w-10 max-md:h-10 max-sm:w-8 max-sm:h-8" />
                         </div>
                     </div>
                 </div>
             </div>
-
             {isOpen && (
                 <div
                     className="fixed inset-0 z-50 bg-black bg-opacity-80 flex justify-center items-center p-4"

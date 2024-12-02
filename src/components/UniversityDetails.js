@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect, useState } from "react";
 import "aos/dist/aos.css";
 import AOS from "aos";
@@ -42,7 +43,7 @@ const UniversityDetails = () => {
   })
 
   return (
-    <div className="flex h-[80vh] w-full">
+    <div className="flex w-full max-sm:flex-col">
       {/* Left Section - Image with Yellow Box */}
       <div className="flex flex-1 relative">
         {/* Background Image */}

@@ -1,5 +1,5 @@
 import { ArrowLeft, ArrowRight } from 'lucide-react';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const features = [
     {
@@ -46,14 +46,35 @@ const features = [
     },
 ];
 
-
 const CorporateReviews = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
-    const itemsPerPage = 4;
+    const [itemsPerPage, setItemsPerPage] = useState(4);
+
+    useEffect(() => {
+        const updateItemsPerPage = () => {
+            const width = window.innerWidth;
+            if (width < 640) {
+                setItemsPerPage(1);
+            } else if (width >= 640 && width < 768) {
+                setItemsPerPage(2);
+            } else if (width >= 768 && width < 1024) {
+                setItemsPerPage(3);
+            } else {
+                setItemsPerPage(4);
+            }
+        };
+
+        updateItemsPerPage();
+
+        window.addEventListener('resize', updateItemsPerPage);
+
+        return () => {
+            window.removeEventListener('resize', updateItemsPerPage);
+        };
+    }, []);
 
     const startIndex = currentSlide * itemsPerPage;
     const endIndex = startIndex + itemsPerPage;
-
     const currentFeatures = features.slice(startIndex, endIndex);
 
     return (
@@ -61,15 +82,15 @@ const CorporateReviews = () => {
             <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-16 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-7xl mx-auto">
                     <div className="text-center mb-10">
-                        <h2 className="text-3xl sm:text-4xl font-FONT2 mb-4">Corporate speaks for GIMS</h2>
-                        <p className="text-gray-400 max-w-4xl font-FONT1 mx-auto">
-                        "Corporate Speaks for GIMS" highlights testimonials and insights from industry leaders, showcasing the impact and excellence of GIMS in shaping professionals ready for the corporate world.
+                        <h2 className="text-4xl font-FONT2 mb-4 max-lg:text-3xl max-md:text-2xl max-sm:text-xl">Corporate speaks for GIMS</h2>
+                        <p className="text-gray-400 max-w-4xl font-FONT1 mx-auto max-sm:text-sm">
+                            "Corporate Speaks for GIMS" highlights testimonials and insights from industry leaders, showcasing the impact and excellence of GIMS in shaping professionals ready for the corporate world.
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-lg:gap-5 max-md:gap-4 max-sm:gap-3">
                         {currentFeatures.map((feature, index) => (
-                            <div key={index} className="bg-gray-900/50 border-gray-800 p-6 rounded-lg backdrop-blur-sm">
+                            <div key={index} className="bg-gray-900/50 border-gray-800 p-6 rounded-lg max-lg:p-5 max-md:p-4 max-sm:p-3">
                                 <div className="h-16 w-16 rounded-full overflow-hidden mb-4">
                                     <img
                                         src={feature.imgSrc}
@@ -78,10 +99,10 @@ const CorporateReviews = () => {
                                     />
                                 </div>
                                 <div className="mb-3">
-                                    <h4 className="text-lg font-novaSemi">{feature.name}</h4>
-                                    <p className="text-sm font-novaReg text-gray-400">{feature.designation}</p>
+                                    <h4 className="text-lg font-novaSemi max-sm:text-sm">{feature.name}</h4>
+                                    <p className="text-sm font-novaReg text-gray-400 max-sm:text-xs">{feature.designation}</p>
                                 </div>
-                                <p className="text-gray-400 text-sm font-novaReg leading-relaxed">{feature.description}</p>
+                                <p className="text-gray-400 text-sm font-novaReg leading-relaxed max-sm:text-xs">{feature.description}</p>
                             </div>
                         ))}
                     </div>
@@ -97,7 +118,7 @@ const CorporateReviews = () => {
                         <div className="w-64 h-1 bg-gray-800 rounded-full overflow-hidden">
                             <div
                                 className="h-full bg-gradient-to-r from-blue-500 via-cyan-400 to-cyan-300 transition-all duration-500"
-                                style={{ width: `${((currentSlide + 1) / Math.ceil(features.length / itemsPerPage)) * 100}%` }}/>
+                                style={{ width: `${((currentSlide + 1) / Math.ceil(features.length / itemsPerPage)) * 100}%` }} />
                         </div>
 
                         <button

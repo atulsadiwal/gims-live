@@ -7,42 +7,42 @@ export default function VideoShowcase() {
     const closeModal = () => setIsOpen(false);
 
     return (
-        <div className="max-w-5xl mx-auto px-4 py-10">
-            <div className="relative rounded-lg mb-16">
+        <div className="max-w-5xl mx-auto py-16 max-lg:py-12 max-md:py-10 max-sm:py-8 max-sm:px-4">
+            <div className="relative rounded-lg max-sm:mb-8 max-md:mb-12 mb-16">
                 <div className="cursor-pointer" onClick={openModal}>
                     <img
                         src="/image/maxresdefault.webp"
                         alt="Video Thumbnail"
-                        className="w-full aspect-[2/1] object-cover rounded-3xl"
+                        className="w-full aspect-video object-cover rounded-3xl max-sm:rounded-xl max-md:rounded-2xl"
                     />
-                    <div className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-40 rounded-3xl">
-                        <img src="/image/play.gif" alt="play" className='rounded-full w-14' />
+                    <div className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-40 max-sm:rounded-xl max-md:rounded-2xl rounded-3xl">
+                        <img src="/image/play.gif" alt="play" className='rounded-full max-sm:w-10 max-md:w-12 w-14' />
                     </div>
                 </div>
             </div>
             <div className="text-center">
-                <h2 className="text-2xl md:text-3xl font-FONT2 mb-12">
+                <h2 className="text-3xl font-FONT2 mb-12 max-lg:text-2xl max-md:text-xl max-sm:text-lg max-sm:mb-4 max-md:mb-7 max-lg:mb-9">
                     GAIN GLOBAL EXPOSURE THROUGH EXTENSIVE INTERNATIONAL NETWORK
                 </h2>
-                <div className="grid md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-8 max-lg:gap-6 max-md:gap-4 max-sm:gap-3 ">
                     <div className="space-y-2">
-                        <div className="text-red-600 text-5xl font-FONT2">500+</div>
-                        <div className="text-lg font-FONT1">Collaborations</div> 
-                        <div className="text-sm font-novaReg ">
+                        <div className="text-red-600 text-5xl font-FONT2 max-lg:text-3xl max-md:text-2xl max-sm:text-xl">500+</div>
+                        <div className="text-lg font-FONT1 max-md:text-base max-sm:text-sm">Collaborations</div> 
+                        <div className="text-sm font-novaReg max-sm:text-xs">
                             with Top Ranked Foreign Universities in 95+ countries
                         </div>
                     </div>
                     <div className="space-y-2">
-                        <div className="text-red-600 text-5xl font-FONT2">1700+</div>
-                        <div className="text-lg font-FONT1">Students</div>
-                        <div className="text-sm font-novaReg">
+                        <div className="text-red-600 text-5xl font-FONT2 max-lg:text-3xl max-md:text-2xl max-sm:text-xl">1700+</div>
+                        <div className="text-lg font-FONT1 max-md:text-base max-sm:text-sm">Students</div>
+                        <div className="text-sm font-novaReg max-sm:text-xs">
                             Traveled Abroad for Semester, Summer & Cultural Exchange Programs
                         </div>
                     </div>
-                    <div className="space-y-2">
-                        <div className="text-red-600 text-5xl font-FONT2">370+</div>
-                        <div className="text-lg font-FONT1">Internships</div>
-                        <div className="text-sm font-novaReg">
+                    <div className="space-y-2 sm:col-span-2 md:col-span-1">
+                        <div className="text-red-600 text-5xl font-FONT2 max-lg:text-3xl max-md:text-2xl max-sm:text-xl">370+</div>
+                        <div className="text-lg font-FONT1 max-md:text-base max-sm:text-sm">Internships</div>
+                        <div className="text-sm font-novaReg max-sm:text-xs">
                             in Walt Disney, USA (Highest in the Region)
                         </div>
                     </div>
@@ -50,31 +50,27 @@ export default function VideoShowcase() {
             </div>
             {isOpen && (
                 <div
-                    className="fixed inset-0 z-50 bg-black bg-opacity-80 flex justify-center items-center "
+                    className="fixed inset-0 z-50 bg-black bg-opacity-80 flex justify-center items-center p-4"
                     onClick={closeModal}
                 >
                     <div
-                        className="relative p-4 rounded-lg max-w-5xl w-full"
+                        className="relative bg-white rounded-lg max-w-5xl w-full aspect-video"
                         onClick={(e) => e.stopPropagation()}
                     >
                         <button
                             onClick={closeModal}
-                            className="absolute -top-5 -right-5 text-black bg-white rounded-full w-10 h-10 flex justify-center items-center"
+                            className="absolute -top-2 -right-2 sm:-top-4 sm:-right-4 text-white bg-black rounded-full w-8 h-8 sm:w-10 sm:h-10 flex justify-center items-center"
                             aria-label="Close"
                         >
                             ✕
                         </button>
-                        <div>
-                            <iframe
-                                width="990"
-                                height="600"
-                                src="https://www.youtube.com/embed/R3spn6b0GQk"
-                                title="YouTube video player"
-                                frameBorder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowFullScreen
-                            ></iframe>
-                        </div>
+                        <iframe
+                            className="w-full h-full rounded-lg"
+                            src="https://www.youtube.com/embed/R3spn6b0GQk"
+                            title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                        ></iframe>
                     </div>
                 </div>
             )}

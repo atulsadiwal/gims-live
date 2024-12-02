@@ -5,22 +5,22 @@ import Top from './components/Top'
 import LogoSlider from './components/LogoSlider'
 import { clubsLogo, collaborationsLogo } from './utils/LogosData'
 import { Boxes, Building } from 'lucide-react'
-import CardsContainer from './components/CardsContainer'
 import TestimonialSlider from './components/TestimonialSlider'
 import Gallery from './components/Gallery'
+import CardsContainer from './components/CardsContainer'
+import PlacementHighlights from './components/PlacementHighlights'
 import CilebHighlights from './components/CilebHighlights'
 import CorporateReviews from './components/CorporateReviews'
-import VideoShowcase from './components/VideoShowcase'
-import PlacementHighlights from './components/PlacementHighlights'
 import InternationalRelations from './components/InternationalRelations'
+import VideoShowcase from './components/VideoShowcase'
+import UniversityDetails from './components/UniversityDetails'
 import Collaborations from './components/Collaborations'
 import AdmissionProcess from './components/AdmissionProcess'
+import Affiliated from './components/Affiliated'
 import GimsiansSpeak from './components/GimsiansSpeak'
 import VideoClips from './components/VideoClips'
 import CorporateMentor from './components/CorporateMentor'
-import UniversityDetails from './components/UniversityDetails'
 import AwardsAndRecognition from './components/AwardsAndRecognition'
-import Affiliated from './components/Affiliated'
 import Footer from './components/Footer'
 
 const App = () => {
@@ -30,15 +30,17 @@ const App = () => {
       <FormSection />
       <Top />
       <LogoSlider title={<><Building className='w-8 h-8' />Placements - Our Key Recruiters</>} logos={collaborationsLogo} speed={3000} />
-      <CardsContainer />
+      <TestimonialSlider />
       <LogoSlider title={<><Boxes className='w-8 h-8' />Institutional Clubs</>} logos={clubsLogo} speed={4000} />
       <Gallery />
-      <TestimonialSlider />
+      <CardsContainer />                                                                                                                                            {/*Not Done Yet*/}
       <PlacementHighlights />
       <CilebHighlights />
+      <CorporateReviews />
       <InternationalRelations />
       <VideoShowcase />
-      <CorporateReviews />
+
+      {/* From here No Component is done */}
       <UniversityDetails />
       <Collaborations />
       <AdmissionProcess />

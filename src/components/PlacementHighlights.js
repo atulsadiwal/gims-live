@@ -19,9 +19,9 @@ const placement4 = [
 
 export default function PlacementHighlights() {
     return (
-        <div className="grid grid-cols-1 xl:grid-cols-2 h-auto">
+        <div className="grid grid-cols-1 xl:grid-cols-2 h-auto max-sm:px-2">
             <div className="flex flex-col justify-center">
-                <div className="grid grid-cols-1 sm:grid-cols-2 xl:place-content-start max-xl:place-content-center max-sm:gap-2 max-sm:px-2 h-full max-lg:px-5">
+                <div className="grid grid-cols-1 sm:grid-cols-2 xl:place-content-start max-xl:place-content-center max-sm:gap-2 h-full max-sm:mb-1.5">
                     <PlacementSlider placement={placement1} delay={4000} />
                     <PlacementSlider placement={placement2} delay={3000} />
                     <PlacementSlider placement={placement3} delay={3500} />
