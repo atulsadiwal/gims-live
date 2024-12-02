@@ -6,9 +6,8 @@ import { useGSAP } from "@gsap/react";
 import gsap from 'gsap';
 
 const UniversityDetails = () => {
-  const [progress, setProgress] = useState([0, 0, 0, 0]); // Initialize progress to 0 for all bars
+  const [progress, setProgress] = useState([0, 0, 0, 0]);
 
-  // Simulate progress bar animation
   useEffect(() => {
     AOS.init({ duration: 2000 });
     const targetValues = [5, 25, 50, 92];
@@ -43,17 +42,15 @@ const UniversityDetails = () => {
   })
 
   return (
-    <div className="flex w-full max-sm:flex-col">
-      {/* Left Section - Image with Yellow Box */}
+    <div className="flex w-full max-sm:flex-col max-sm:mt-20">
       <div className="flex flex-1 relative">
-        {/* Background Image */}
         <img
-          src="/image/building.png" // Replace with your image
+          src="/image/building.png"
           alt="University"
           className="w-full h-full object-cover"
         />
 
-        <div className="box absolute bottom-0 left-0 bg-yellow-300 text-black p-6 lg:p-8 w-full lg:w-[50%] flex flex-col">
+        <div className="box absolute bottom-0 left-0 bg-yellow-300 max-sm:bg-yellow-300/70 text-black p-6 lg:p-8 w-[50%] max-xl:w-full max-lg:w-full max-md:w-full flex flex-col">
           <h4 className="text-xl lg:text-2xl font-FONT2">We Are Open For Opportunities!</h4>
           <p className="mt-4 text-sm lg:text-base font-novaReg leading-relaxed">
           Explore limitless possibilities with us! Partner for growth, innovation, and success as we embrace new opportunities and collaborations. Let’s create a brighter future together!
@@ -67,21 +64,19 @@ const UniversityDetails = () => {
         </div>
       </div>
 
-      {/* Right Section - Content */}
       <div className="flex flex-1 bg-[#0D80DA] text-white flex-col justify-center px-8 lg:px-16 py-8">
         <div>
           <h6 className="uppercase text-sm font-FONT1 tracking-widest">
             GNIOT
           </h6>
-          <h2 className="text-4xl lg:text-5xl font-FONT2 mt-2">
+          <h2 className="text-5xl font-FONT2 mt-2 max-lg:text-4xl max-md:text-3xl max-sm:text-2xl">
             Top Average Placement <br /> Excerpts @GIMS
           </h2>
-          <p className="text-lg mt-4 font-novaReg text-green-100 leading-relaxed">
+          <p className="text-lg mt-4 font-novaReg text-green-100 leading-relaxed max-md:text-base max-sm:text-sm">
             Discover the highlights of outstanding placement opportunities at GIMS, where students achieve remarkable career success across diverse industries.
           </p>
         </div>
 
-        {/* Progress Bars */}
         <div className="mt-8 space-y-6 max-w-md">
           {[
             { label: "₹ 12.45 LPA", value: 5 },

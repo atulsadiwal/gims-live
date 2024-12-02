@@ -1,4 +1,5 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
+
 import React, { useState, useEffect } from "react";
 
 const content = [
@@ -77,90 +78,69 @@ const fifthContent = [
 ];
 
 const InternationalRelations = () => {
-  const [activeIndex1, setActiveIndex1] = useState(0);
-  const [activeIndex2, setActiveIndex2] = useState(0);
-  const [activeIndex3, setActiveIndex3] = useState(0);
-  const [activeIndex4, setActiveIndex4] = useState(0);
-  const [activeIndex5, setActiveIndex5] = useState(0);
-
-  const handleContentSwitch = () => {
-    setActiveIndex1((prevIndex) => (prevIndex + 1) % content.length);
-  };
-
-  const handleSecondCardSwitch = () => {
-    setActiveIndex2((prevIndex) => (prevIndex + 1) % secondContent.length);
-  };
-
-  const handleThirdCardSwitch = () => {
-    setActiveIndex3((prevIndex) => (prevIndex + 1) % secondContent.length);
-  };
-
-  const handleFourthCardSwitch = () => {
-    setActiveIndex4((prevIndex) => (prevIndex + 1) % secondContent.length);
-  };
-
-  const handleFifthCardSwitch = () => {
-    setActiveIndex5((prevIndex) => (prevIndex + 1) % secondContent.length);
-  };
+  const [activeIndexes, setActiveIndexes] = useState([0, 0, 0, 0, 0]);
 
   useEffect(() => {
-    const interval1 = setInterval(handleContentSwitch, 7000);
-    return () => clearInterval(interval1);
+    const interval = setInterval(() => {
+      setActiveIndexes((prev) => {
+        // Increment the first two values, reset them when they reach 5
+        const newFirstValue = prev[0] === 1 ? 0 : prev[0] + 1;
+        const newSecondValue = prev[1] === 1 ? 0 : prev[1] + 1;
+        const newThirdValue = prev[2] === 1 ? 0 : prev[2] + 1;
+        const newFValue = prev[3] === 1 ? 0 : prev[3] + 1;
+        const newFiveValue = prev[4] === 1 ? 0 : prev[4] + 1;
+  
+        return [
+          newFirstValue,  // Updated first value
+          newSecondValue, // Updated second value
+          newThirdValue,        // Keep the third value the same
+          newFValue,        // Keep the fourth value the same
+          newFiveValue,        // Keep the fifth value the same
+        ];
+      });
+    }, 7000);
+  
+    return () => clearInterval(interval);
   }, []);
+  
+  
+  console.log(activeIndexes);
 
-  useEffect(() => {
-    const interval2 = setInterval(handleSecondCardSwitch, 7000);
-    return () => clearInterval(interval2);
-  }, []);
-
-  useEffect(() => {
-    const interval3 = setInterval(handleThirdCardSwitch, 7000);
-    return () => clearInterval(interval3);
-  }, []);
-
-  useEffect(() => {
-    const interval4 = setInterval(handleFourthCardSwitch, 7000);
-    return () => clearInterval(interval4);
-  }, []);
-
-  useEffect(() => {
-    const interval5 = setInterval(handleFifthCardSwitch, 7000);
-    return () => clearInterval(interval5);
-  }, []);
+  const contentArrays = [content, secondContent, thirdContent, fourthContent, fifthContent];
 
   return (
-    <div className="py-10 bg-gray-100">
-      <h2 className="text-3xl font-FONT2 text-center mb-6">
+    <div className="py-10 bg-gray-100 px-3">
+      <h2 className="text-2xl sm:text-3xl lg:text-4xl font-FONT2 text-center mb-4">
         OUR OFFICE OF INTERNATIONAL RELATIONS
       </h2>
-      <p className="text-center font-FONT1 mb-10 text-gray-600">
-        offers exclusive opportunities to explore the world
+      <p className="text-center font-FONT1 text-gray-600 text-sm sm:text-base lg:text-lg mb-8">
+        Offers exclusive opportunities to explore the world.
       </p>
-      <div className="max-w-[1400px] mx-auto grid grid-cols-3 place-items-center gap-5">
-        <div className="bg-[#15345d] text-white rounded-md shadow-md flex flex-col p-10 h-[35vh] relative">
-          <div className="flex items-center justify-center mb-4">
-            <div className="w-24 h-24 relative">
-              {content.map((item, index) => (
+      <div className="max-w-[1400px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 place-items-center">
+        <div className="bg-[#15345d] text-white rounded-md shadow-md flex flex-col p-4 sm:p-6 md:p-8 h-[300px] relative">
+          <div className="flex items-center justify-center mb-4 h-[100px]">
+            <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 relative">
+              {content.map((item, idx) => (
                 <img
-                  key={index}
+                  key={idx}
                   src={item.imageSrc}
                   alt={item.alt}
-                  className={`w-full h-full absolute transition-opacity duration-700 ${activeIndex1 === index ? "opacity-100" : "opacity-0"}`}
+                  className={`w-full h-full absolute transition-opacity duration-700 ${activeIndexes[0] === idx ? "opacity-100" : "opacity-0"}`}
                 />
               ))}
             </div>
           </div>
           <div className="text-center">
-            <h3 className="font-FONT2 text-xl mb-3">
-              {content[activeIndex1].title}
+            <h3 className="font-FONT2 text-base sm:text-lg md:text-xl mb-2">
+              {content[activeIndexes[0]] ? content[activeIndexes[0]].title : 'Loading...'}
             </h3>
-            <p className="text-base font-novaReg leading-relaxed mb-4">
-              {content[activeIndex1].text}
+            <p className="text-xs sm:text-sm md:text-base font-novaReg leading-relaxed">
+              {content[activeIndexes[0]] ? content[activeIndexes[0]].text : 'Loading...'}
             </p>
           </div>
         </div>
 
-        <div className="h-[35vh] w-full rounded-md  shadow-md">
+        <div className="h-[300px] w-full rounded-md shadow-md">
           <img
             src="/image/students.jpg"
             alt="International Programs Image"
@@ -168,98 +148,56 @@ const InternationalRelations = () => {
           />
         </div>
 
-        <div className="bg-[#b31a1a] text-white rounded-md shadow-md flex flex-col p-10 h-[35vh] relative">
-          <div className="flex items-center justify-center mb-4">
-            <div className="w-24 h-24 relative">
-              {secondContent.map((item, index) => (
+        <div className="bg-[#b31a1a] text-white rounded-md shadow-md flex flex-col p-4 sm:p-6 md:p-8 h-[300px] relative">
+          <div className="flex items-center justify-center mb-4 h-[100px]">
+            <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 relative">
+              {secondContent.map((item, idx) => (
                 <img
-                  key={index}
+                  key={idx}
                   src={item.imageSrc}
                   alt={item.alt}
-                  className={`w-full h-full absolute transition-opacity duration-700 ${activeIndex2 === index ? "opacity-100" : "opacity-0"}`}
+                  className={`w-full h-full absolute transition-opacity duration-700 ${activeIndexes[1] === idx ? "opacity-100" : "opacity-0"}`}
                 />
               ))}
             </div>
           </div>
           <div className="text-center">
-            <h3 className="font-FONT2 text-xl mb-3">
-              {secondContent[activeIndex2].title}
+            <h3 className="font-FONT2 text-base sm:text-lg md:text-xl mb-2">
+              {secondContent[activeIndexes[1]] ? secondContent[activeIndexes[1]].title : 'Loading...'}
             </h3>
-            <p className="text-base font-novaReg leading-relaxed mb-4">
-              {secondContent[activeIndex2].text}
+            <p className="text-xs sm:text-sm md:text-base font-novaReg leading-relaxed">
+              {secondContent[activeIndexes[1]] ? secondContent[activeIndexes[1]].text : 'Loading...'}
             </p>
           </div>
         </div>
 
-        <div className="bg-[#403c3d] text-white rounded-md shadow-md flex flex-col p-10 h-[35vh] relative">
-          <div className="flex items-center justify-center mb-4">
-            <div className="w-24 h-24 relative">
-              {thirdContent.map((item, index) => (
-                <img
-                  key={index}
-                  src={item.imageSrc}
-                  alt={item.alt}
-                  className={`w-full h-full absolute transition-opacity duration-700 ${activeIndex3 === index ? "opacity-100" : "opacity-0"}`}
-                />
-              ))}
+        {contentArrays.slice(2).map((contentArray, index) => (
+          <div
+            key={index + 2}
+            className={`bg-[#${index === 0 ? '403c3d' : index === 1 ? '441bb3' : '15345d'}] text-white rounded-md shadow-md flex flex-col p-4 sm:p-6 md:p-8 h-[300px] relative`}
+          >
+            <div className="flex items-center justify-center mb-4 h-[100px]">
+              <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 relative">
+                {contentArray.map((item, idx) => (
+                  <img
+                    key={idx}
+                    src={item.imageSrc}
+                    alt={item.alt}
+                    className={`w-full h-full absolute transition-opacity duration-700 ${activeIndexes[index + 2] === idx ? "opacity-100" : "opacity-0"}`}
+                  />
+                ))}
+              </div>
+            </div>
+            <div className="text-center">
+              <h3 className="font-FONT2 text-base sm:text-lg md:text-xl mb-2">
+                {contentArray[activeIndexes[index + 2]] ? contentArray[activeIndexes[index + 2]].title : 'Loading...'}
+              </h3>
+              <p className="text-xs sm:text-sm md:text-base font-novaReg leading-relaxed">
+                {contentArray[activeIndexes[index + 2]] ? contentArray[activeIndexes[index + 2]].text : 'Loading...'}
+              </p>
             </div>
           </div>
-          <div className="text-center">
-            <h3 className="font-FONT2 text-xl mb-3">
-              {thirdContent[activeIndex3].title}
-            </h3>
-            <p className="text-base font-novaReg leading-relaxed mb-4">
-              {thirdContent[activeIndex3].text}
-            </p>
-          </div>
-        </div>
-
-        <div className="bg-[#441bb3] text-white rounded-md shadow-md flex flex-col p-10 h-[35vh] relative">
-          <div className="flex items-center justify-center mb-4">
-            <div className="w-24 h-24 relative">
-              {fourthContent.map((item, index) => (
-                <img
-                  key={index}
-                  src={item.imageSrc}
-                  alt={item.alt}
-                  className={`w-full h-full absolute transition-opacity duration-700 ${activeIndex4 === index ? "opacity-100" : "opacity-0"}`}
-                />
-              ))}
-            </div>
-          </div>
-          <div className="text-center">
-            <h3 className="font-FONT2 text-xl mb-3">
-              {fourthContent[activeIndex4].title}
-            </h3>
-            <p className="text-base font-novaReg leading-relaxed mb-4">
-              {fourthContent[activeIndex4].text}
-            </p>
-          </div>
-        </div>
-
-        <div className="bg-[#15345d] text-white rounded-md shadow-md flex flex-col p-10 h-[35vh] relative">
-          <div className="flex items-center justify-center mb-4">
-            <div className="w-24 h-24 relative">
-              {fifthContent.map((item, index) => (
-                <img
-                  key={index}
-                  src={item.imageSrc}
-                  alt={item.alt}
-                  className={`w-full h-full absolute transition-opacity duration-700 ${activeIndex5 === index ? "opacity-100" : "opacity-0"}`}
-                />
-              ))}
-            </div>
-          </div>
-          <div className="text-center">
-            <h3 className="font-FONT2 text-xl mb-3">
-              {fifthContent[activeIndex5].title}
-            </h3>
-            <p className="text-base font-novaReg leading-relaxed mb-4">
-              {fifthContent[activeIndex5].text}
-            </p>
-          </div>
-        </div>
-
+        ))}
       </div>
     </div>
   );

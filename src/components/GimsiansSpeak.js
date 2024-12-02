@@ -44,60 +44,63 @@ const GimsiansSpeak = () => {
     const [activeVideo, setActiveVideo] = useState(null);
 
     return (
-        <div className="max-w-[1400px] mx-auto px-2 py-8">
-            <h1 className="text-4xl font-FONT2 text-center text-gray-900 mb-8 uppercase">
+        <div className="max-w-[1400px] mx-auto px-4 py-8 flex flex-col items-center max-md:py-6 max-sm:py-4">
+            <h1 className="text-4xl font-FONT2 text-center text-gray-900 mb-8 uppercase max-md:text-3xl max-sm:text-2xl max-md:mb-6 max-sm:mb-4">
                 Gimsians Speak
             </h1>
 
-            <Swiper
-                spaceBetween={20}
-                slidesPerView={3}
-                loop={true}
-                pagination={{ clickable: true }}
-                breakpoints={{
-                    640: {
-                        slidesPerView: 1,
-                    },
-                    768: {
-                        slidesPerView: 2,
-                    },
-                    1024: {
-                        slidesPerView: 3,
-                    },
-                }}
-                className="mySwiper"
-            >
-                {videos.map((video) => {
-                    const videoId = extractVideoId(video.videoUrl);
-                    if (!videoId) return null;
+            <div className="w-full flex flex-wrap justify-center gap-4">
+                <Swiper
+                    spaceBetween={20}
+                    slidesPerView={1}
+                    loop={true}
+                    pagination={{ clickable: true }}
+                    breakpoints={{
+                        640: {
+                            slidesPerView: 1,
+                        },
+                        768: {
+                            slidesPerView: 2,
+                        },
+                        1024: {
+                            slidesPerView: 3,
+                        },
+                    }}
+                    className="w-full"
+                >
+                    {videos.map((video) => {
+                        const videoId = extractVideoId(video.videoUrl);
+                        if (!videoId) return null;
 
-                    return (
-                        <SwiperSlide key={video.id}>
-                            <div
-                                className="bg-white shadow-lg rounded-md overflow-hidden transform transition duration-300 hover:scale-105 hover:rounded-md cursor-pointer"
-                                onClick={() => setActiveVideo(videoId)} // Set the clicked video as active
-                            >
-                                {activeVideo === videoId ? (
-                                    <iframe
-                                        className="w-full h-64 md:h-80"
-                                        src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
-                                        title={`Video ${video.id}`}
-                                        frameBorder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowFullScreen
-                                    ></iframe>
-                                ) : (
-                                    <img
-                                        src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
-                                        alt={`Video thumbnail`}
-                                        className="w-full h-auto rounded-md"
-                                    />
-                                )}
-                            </div>
-                        </SwiperSlide>
-                    );
-                })}
-            </Swiper>
+                        return (
+                            <SwiperSlide key={video.id}>
+                                <div
+                                    className="bg-white shadow-lg rounded-md overflow-hidden transform transition duration-300 hover:scale-105 hover:rounded-md cursor-pointer"
+                                    onClick={() => setActiveVideo(videoId)}
+                                >
+                                    {activeVideo === videoId ? (
+                                        <iframe
+                                            className="w-full h-64 md:h-80"
+                                            src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
+                                            title={`Video ${video.id}`}
+                                            frameBorder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowFullScreen
+                                        ></iframe>
+                                    ) : (
+                                        <img
+                                            src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
+                                            alt={`Video thumbnail`}
+                                            className="w-full h-auto rounded-md"
+                                        />
+                                    )}
+                                </div>
+                            </SwiperSlide>
+                        );
+                    })}
+                </Swiper>
+            </div>
+
         </div>
     );
 };

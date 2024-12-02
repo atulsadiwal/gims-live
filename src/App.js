@@ -33,22 +33,22 @@ const App = () => {
       <TestimonialSlider />
       <LogoSlider title={<><Boxes className='w-8 h-8' />Institutional Clubs</>} logos={clubsLogo} speed={4000} />
       <Gallery />
-      <CardsContainer />                                                                                                                                            {/*Not Done Yet*/}
-      <PlacementHighlights />
+      <CardsContainer />
+      <PlacementHighlights />                                                                                                                                      {/* Not Done Yet*/}
       <CilebHighlights />
       <CorporateReviews />
       <InternationalRelations />
       <VideoShowcase />
-
-      {/* From here No Component is done */}
       <UniversityDetails />
-      <Collaborations />
+      <Collaborations />                                                                                                                                           {/* Not Done Yet*/}
       <AdmissionProcess />
       <Affiliated />
       <GimsiansSpeak />
       <VideoClips />
       <CorporateMentor />
-      <AwardsAndRecognition />
+
+      {/* From here No Component is done */}
+      <AwardsAndRecognition />                                                                                                                                       {/*Almost Done*/}
       <Footer />
     </>
   )

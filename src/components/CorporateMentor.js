@@ -1,4 +1,6 @@
 import React from "react";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 
 const mentors = [
     { img: '/image/mentors/img1.webp', name: 'Ms. Shaweta Berry', position: 'Director Marketing & Head of Strategic Alliances', companyname: 'Aeris Communications' },
@@ -35,25 +37,53 @@ const mentors = [
 
 const CorporateMentor = () => {
     return (
-        <section className='max-w-[1400px] mx-auto px-2 py-10'>
+        <section className='max-w-[1400px] mx-auto px-2 py-10 max-lg:py-8 max-md:py-6 max-sm:py-4'>
             <div className='text-center mb-3'>
                 <h3 className='text-4xl font-FONT2'>Corporate Mentors</h3>
             </div>
-            <div className="py-3">
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2.5 px-2">
+
+            <div className="py-3 lg:hidden">
+                <Swiper
+                    spaceBetween={10}
+                    slidesPerView={1}
+                    loop={true}
+                    breakpoints={{
+                        640: {
+                            slidesPerView: 2,
+                        },
+                    }}
+                    className="w-full"
+                >
                     {mentors.map((mentor, index) => (
-                        <div key={index} className="bg-white shadow-[rgba(13,_38,_76,_0.19)_0px_0px_10px] rounded-lg overflow-hidden p-4 hover:shadow-xl transition duration-300">
-                            <img 
-                                src={mentor.img || "https://via.placeholder.com/150"} 
-                                alt={mentor.name} 
-                                className="w-full h-36 rounded-t-3xl mb-4 object-contain bg-gray-200" 
-                            />
-                            <h3 className="text-base font-semibold mb-2">{mentor.name}</h3>
-                            <p className="text-gray-700 text-sm">{mentor.position}</p>
-                            <p className="text-gray-500 text-sm">{mentor.companyname}</p>
-                        </div>
+                        <SwiperSlide key={index}>
+                            <div className="bg-white shadow-[rgba(13,_38,_76,_0.19)_0px_0px_10px] rounded-lg overflow-hidden p-4 hover:shadow-xl transition duration-300 h-[350px]">
+                                <img 
+                                    src={mentor.img || "https://via.placeholder.com/150"} 
+                                    alt={mentor.name} 
+                                    className="w-full h-36 rounded-t-3xl mb-4 object-contain bg-gray-200" 
+                                />
+                                <h3 className="text-base font-semibold mb-2">{mentor.name}</h3>
+                                <p className="text-gray-700 text-sm">{mentor.position}</p>
+                                <p className="text-gray-500 text-sm">{mentor.companyname}</p>
+                            </div>
+                        </SwiperSlide>
                     ))}
-                </div>
+                </Swiper>
+            </div>
+
+            <div className="py-3 hidden lg:grid grid-cols-6 gap-2.5 px-2">
+                {mentors.map((mentor, index) => (
+                    <div key={index} className="bg-white shadow-[rgba(13,_38,_76,_0.19)_0px_0px_10px] rounded-lg overflow-hidden p-4 hover:shadow-xl transition duration-300 h-[350px] sm:h-[250px] md:h-[300px]">
+                        <img 
+                            src={mentor.img || "https://via.placeholder.com/150"} 
+                            alt={mentor.name} 
+                            className="w-full h-36 rounded-t-3xl mb-4 object-contain bg-gray-200" 
+                        />
+                        <h3 className="text-base font-semibold mb-2">{mentor.name}</h3>
+                        <p className="text-gray-700 text-sm">{mentor.position}</p>
+                        <p className="text-gray-500 text-sm">{mentor.companyname}</p>
+                    </div>
+                ))}
             </div>
         </section>
     );
