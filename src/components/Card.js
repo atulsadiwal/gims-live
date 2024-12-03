@@ -12,8 +12,8 @@ const Card = ({ imageUrl, number, description }) => {
         >
             <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent"/>
             <div className="relative p-10 mb-10 max-lg:p-8 max-lg:mb-8 max-md:p-6 max-md:mb-6 max-sm:p-4 max-sm:mb-4">
-                <h2 className="text-[5rem] leading-none font-FONT2 max-lg:text-6xl max-md:text-5xl max-sm:text-4xl">{number}</h2>
-                <p className="mt-2 text-xl font-FONT1 max-md:text-lg max-sm:text-base">{description}</p>
+                <h2 className="text-[5rem] leading-none font-FONT2">{number}</h2>
+                <p className="mt-2 text-xl font-FONT1">{description}</p>
             </div>
         </div>
     );

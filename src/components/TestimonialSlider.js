@@ -111,12 +111,12 @@ const TestimonialSlider = () => {
                                 transition={{ duration: 0.5 }}
                                 className="absolute inset-0"
                             >
-                                <div className="relative w-full h-full flex flex-col sm:flex-row bg-[#E8E8E8]">
-                                    <div className="w-full sm:w-2/5 h-1/3 sm:h-full">
+                                <div className="relative w-full h-full flex max-sm:items-center flex-col sm:flex-row bg-[#E8E8E8]">
+                                    <div className="sm:w-2/5 sm:h-full max-sm:bg-white max-sm:h-32 max-sm:w-32 max-sm:rounded-full max-sm:overflow-hidden max-sm:mt-5">
                                         <img
                                             src={studentReviews[currentTopSlide].image}
                                             alt="Student"
-                                            className="w-full h-full object-cover max-sm:object-contain"
+                                            className="w-full h-full object-cover max-sm:object-cover max-sm:object-top"
                                         />
                                     </div>
                                     <div className="w-full sm:w-3/5 h-2/3 sm:h-full flex flex-col items-start justify-center p-6 max-sm:p-2">

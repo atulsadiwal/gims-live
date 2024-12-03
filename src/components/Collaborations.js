@@ -13,7 +13,7 @@ const Collaborations = () => {
                     ))}
                 </div>
                 <div className="w-full text-center mb-10">
-                    <h3 className="text-4xl text-black font-FONT2">Affiliations, Accreditations & Collaborations</h3>
+                    <h3 className="text-2xl md:text-3xl lg:text-4xl text-black font-FONT2">Affiliations, Accreditations & Collaborations</h3>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-4">

@@ -164,10 +164,7 @@ const InternationalRelations = () => {
         </div>
 
         {contentArrays.slice(2).map((contentArray, index) => (
-          <div
-            key={index + 2}
-            className={`bg-[#${index === 0 ? '403c3d' : index === 1 ? '441bb3' : '15345d'}] text-white rounded-md shadow-md flex flex-col p-4 sm:p-6 md:p-8 h-[300px] relative`}
-          >
+          <div key={index + 2} className={`${ index === 0 ? 'bg-[#403c3d]' : index === 1 ? 'bg-[#441bb3]' : 'bg-[#15345d]' } text-white rounded-md shadow-md flex flex-col p-4 sm:p-6 md:p-8 h-[300px] relative`}>
             <div className="flex items-center justify-center mb-4 h-[100px]">
               <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 relative rounded-full bg-white">
                 {contentArray.map((item, idx) => (
