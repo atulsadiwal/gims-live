@@ -56,16 +56,18 @@ const CorporateMentor = () => {
                 >
                     {mentors.map((mentor, index) => (
                         <SwiperSlide key={index}>
-                            <div className="bg-white shadow-[rgba(13,_38,_76,_0.19)_0px_0px_10px] rounded-lg overflow-hidden p-4 hover:shadow-xl transition duration-300 h-[350px]">
-                                <img 
-                                    src={mentor.img || "https://via.placeholder.com/150"} 
-                                    alt={mentor.name} 
-                                    className="w-full h-36 rounded-t-3xl mb-4 object-contain bg-gray-200" 
-                                />
-                                <h3 className="text-base font-semibold mb-2">{mentor.name}</h3>
-                                <p className="text-gray-700 text-sm">{mentor.position}</p>
-                                <p className="text-gray-500 text-sm">{mentor.companyname}</p>
-                            </div>
+                            <section className="max-lg:p-2">
+                                <div className="bg-white shadow-[rgba(13,_38,_76,_0.19)_0px_0px_10px] rounded-lg overflow-hidden p-4 hover:shadow-xl transition duration-300 h-[350px]">
+                                    <img
+                                        src={mentor.img || "https://via.placeholder.com/150"}
+                                        alt={mentor.name}
+                                        className="w-full h-36 rounded-t-3xl mb-4 object-contain bg-gray-200"
+                                    />
+                                    <h3 className="text-base font-semibold mb-2">{mentor.name}</h3>
+                                    <p className="text-gray-700 text-sm">{mentor.position}</p>
+                                    <p className="text-gray-500 text-sm">{mentor.companyname}</p>
+                                </div>
+                            </section>
                         </SwiperSlide>
                     ))}
                 </Swiper>
@@ -74,10 +76,10 @@ const CorporateMentor = () => {
             <div className="py-3 hidden lg:grid grid-cols-6 gap-2.5 px-2">
                 {mentors.map((mentor, index) => (
                     <div key={index} className="bg-white shadow-[rgba(13,_38,_76,_0.19)_0px_0px_10px] rounded-lg overflow-hidden p-4 hover:shadow-xl transition duration-300 h-[350px] sm:h-[250px] md:h-[300px]">
-                        <img 
-                            src={mentor.img || "https://via.placeholder.com/150"} 
-                            alt={mentor.name} 
-                            className="w-full h-36 rounded-t-3xl mb-4 object-contain bg-gray-200" 
+                        <img
+                            src={mentor.img || "https://via.placeholder.com/150"}
+                            alt={mentor.name}
+                            className="w-full h-36 rounded-t-3xl mb-4 object-contain bg-gray-200"
                         />
                         <h3 className="text-base font-semibold mb-2">{mentor.name}</h3>
                         <p className="text-gray-700 text-sm">{mentor.position}</p>
