@@ -23,7 +23,6 @@ export default {
         'BG4': "url('/public/image/building-gims.webp')",
         'BG5': "url('/public/image/awards.png')",
         'BG6': "url('/public/image/pgdmBG.jpg')",
-        'kalpana': "url('https://cucet.cuchd.in/new-assets/img/kalpana-bg.webp')",
       },
       colors: {
         'home': '#3E0066',

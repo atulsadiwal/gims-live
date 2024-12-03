@@ -87,26 +87,20 @@ const CorporateReviews = () => {
                             "Corporate Speaks for GIMS" highlights testimonials and insights from industry leaders, showcasing the impact and excellence of GIMS in shaping professionals ready for the corporate world.
                         </p>
                     </div>
-
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-lg:gap-5 max-md:gap-4 max-sm:gap-3">
                         {currentFeatures.map((feature, index) => (
-                            <div key={index} className="bg-gray-900/50 border-gray-800 p-6 rounded-lg max-lg:p-5 max-md:p-4 max-sm:p-3">
-                                <div className="h-16 w-16 rounded-full overflow-hidden mb-4">
-                                    <img
-                                        src={feature.imgSrc}
-                                        alt={feature.name}
-                                        className="h-full w-full object-cover"
-                                    />
+                            <div key={index} className="bg-gray-900/50 border-gray-800 p-6 rounded-lg max-lg:p-5 max-sm:text-center max-md:p-4 max-sm:p-3">
+                                <div className="rounded-full flex max-sm:justify-center w-full mb-4">
+                                    <img src={feature.imgSrc} alt={feature.name} className="h-16 w-16 rounded-full object-cover"/>
                                 </div>
                                 <div className="mb-3">
-                                    <h4 className="text-lg font-novaSemi max-sm:text-sm">{feature.name}</h4>
-                                    <p className="text-sm font-novaReg text-gray-400 max-sm:text-xs">{feature.designation}</p>
+                                    <h4 className="text-lg font-novaSemi max-sm:text-center max-sm:text-sm">{feature.name}</h4>
+                                    <p className="text-sm font-novaReg max-sm:text-center text-gray-400 max-sm:text-xs">{feature.designation}</p>
                                 </div>
                                 <p className="text-gray-400 text-sm font-novaReg leading-relaxed max-sm:text-xs">{feature.description}</p>
                             </div>
                         ))}
                     </div>
-
                     <div className="mt-8 flex items-center justify-center gap-4">
                         <button
                             onClick={() => setCurrentSlide(Math.max(0, currentSlide - 1))}
@@ -115,12 +109,11 @@ const CorporateReviews = () => {
                             <ArrowLeft className='w-5 h-5 text-black' />
                         </button>
 
-                        <div className="w-64 h-1 bg-gray-800 rounded-full overflow-hidden">
+                        <div className="w-64 max-sm:w-48 h-1 bg-gray-800 rounded-full overflow-hidden">
                             <div
                                 className="h-full bg-gradient-to-r from-blue-500 via-cyan-400 to-cyan-300 transition-all duration-500"
                                 style={{ width: `${((currentSlide + 1) / Math.ceil(features.length / itemsPerPage)) * 100}%` }} />
                         </div>
-
                         <button
                             onClick={() => setCurrentSlide(Math.min(Math.ceil(features.length / itemsPerPage) - 1, currentSlide + 1))}
                             className="text-white bg-gray-500 flex justify-center items-center hover:scale-110 transition duration-200 ease-linear w-8 h-8 rounded-full"

@@ -39,7 +39,7 @@ export default function PlacementHighlights() {
                         <p className="text-sm md:text-base font-novaReg leading-none mt-2">Placement <br /> Offers</p>
                     </div>
                     <div className="text-start">
-                        <p className="text-2xl md:text-3xl lg:text-5xl font-novaThin mt-4">282</p>
+                        <p className="text-2xl md:text-3xl lg:text-5xl font-novaThin mt-4">350+</p>
                         <p className="text-sm md:text-base font-novaReg leading-none mt-2">Company <br /> Visits</p>
                     </div>
                     <div className="text-start">
@@ -60,12 +60,16 @@ export default function PlacementHighlights() {
                         <p className="text-sm md:text-base font-novaReg leading-none mt-2">Package Offered to 1042 Students</p>
                     </div>
                     <div className="text-start">
-                        <p className="text-2xl md:text-3xl lg:text-5xl text-orange-300 font-novaThin mt-4">33.80 <small className="font-novaLight text-white -ml-1 text-lg">LPA</small></p>
+                        <p className="text-2xl md:text-3xl lg:text-5xl text-orange-300 font-novaThin mt-4">12.5 <small className="font-novaLight text-white -ml-1 text-lg">LPA</small></p>
                         <p className="text-sm md:text-base font-novaReg leading-none mt-2">Highest National Package Offered</p>
                     </div>
                     <div className="text-start">
-                        <p className="text-2xl md:text-3xl lg:text-5xl text-orange-300 font-novaThin mt-4">1.13 <small className="font-novaLight text-white -ml-1 text-lg">CR</small></p>
+                        <p className="text-2xl md:text-3xl lg:text-5xl text-orange-300 font-novaThin mt-4">23.31 <small className="font-novaLight text-white -ml-1 text-lg">CR</small></p>
                         <p className="text-sm md:text-base font-novaReg leading-none mt-2">Highest International Package Offered in 2022</p>
+                    </div>
+                    <div className="text-start">
+                        <p className="text-2xl md:text-3xl lg:text-5xl text-orange-300 font-novaThin mt-4">7.25 <small className="font-novaLight text-white -ml-1 text-lg">LPA</small></p>
+                        <p className="text-sm md:text-base font-novaReg leading-none mt-2">Average Package<br /> Offered</p>
                     </div>
                 </div>
                 <div className="flex justify-start space-x-4 mt-6 max-lg:justify-center">

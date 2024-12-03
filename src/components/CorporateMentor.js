@@ -39,7 +39,7 @@ const CorporateMentor = () => {
     return (
         <section className='max-w-[1400px] mx-auto px-2 py-10 max-lg:py-8 max-md:py-6 max-sm:py-4'>
             <div className='text-center mb-3'>
-                <h3 className='text-4xl font-FONT2'>Corporate Mentors</h3>
+                <h3 className='text-2xl md:text-3xl lg:text-4xl font-FONT2'>Corporate Mentors</h3>
             </div>
 
             <div className="py-3 lg:hidden">

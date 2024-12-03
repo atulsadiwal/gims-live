@@ -45,7 +45,7 @@ const GimsiansSpeak = () => {
 
     return (
         <div className="max-w-[1400px] mx-auto px-4 py-8 flex flex-col items-center max-md:py-6 max-sm:py-4">
-            <h1 className="text-4xl font-FONT2 text-center text-gray-900 mb-8 uppercase max-md:text-3xl max-sm:text-2xl max-md:mb-6 max-sm:mb-4">
+            <h1 className="text-4xl font-FONT2 text-center text-gray-900 mb-8 max-md:text-3xl max-sm:text-2xl max-md:mb-6 max-sm:mb-4">
                 Gimsians Speak
             </h1>
 

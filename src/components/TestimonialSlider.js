@@ -122,8 +122,8 @@ const TestimonialSlider = () => {
                                     <div className="w-full sm:w-3/5 h-2/3 sm:h-full flex flex-col items-start justify-center p-6 max-sm:p-2">
                                         <span className="text-lg sm:text-2xl italic font-light">{studentReviews[currentTopSlide].heading}</span>
                                         <p className="py-2 sm:py-4 text-sm sm:text-base italic">{studentReviews[currentTopSlide].description}</p>
-                                        <h4 className="text-lg sm:text-xl text-red-500 font-semibold">{studentReviews[currentTopSlide].studentName}</h4>
-                                        <span className="text-xs sm:text-sm">{studentReviews[currentTopSlide].company}</span>
+                                        <h4 className="text-lg sm:text-xl text-red-500 font-FONT2">{studentReviews[currentTopSlide].studentName}</h4>
+                                        <span className="text-xs sm:text-sm font-FONT2 text-gray-500">{studentReviews[currentTopSlide].company}</span>
                                     </div>
                                 </div>
                             </motion.div>

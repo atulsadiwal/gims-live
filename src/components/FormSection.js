@@ -8,20 +8,20 @@ const FormSection = () => {
           <div className="w-6/12 max-sm:w-full p-6 max-md:w-full max-sm:p-0">
             <div className="flex flex-col justify-center h-full">
               <h1 className="text-4xl font-FONT2 mb-4 text-red-600 max-sm:text-xl max-sm:mb-2">GIMS</h1>
-              <h2 className="text-3xl font-novaSemi mb-4 max-sm:text-lg max-sm:mb-2">India's Premier Scholarship</h2>
-              <p className="text-lg mb-6 max-sm:text-sm max-sm:mb-3">
-                Global Institute of Management and Sciences (GIMS) empowers students with a blend of academic excellence and global exposure. It offers diverse programs designed to foster innovation, leadership, and professional growth, enabling aspirants to unlock their true potential and achieve unparalleled success.
+              <h2 className="text-3xl font-FONT2 mb-4 max-sm:text-lg max-sm:mb-2"></h2>
+              <p className="text-lg mb-6 text-gray-500 max-sm:text-sm max-sm:mb-3 font-FONT1">
+              GNIOT Institute of Management Studies (GIMS), located in the forward-looking city of Greater Noida, was founded in 2020 amidst the transformative period of the pandemic. This institution was conceived with the mission of delivering exceptional management education through its two year full time AICTE Approved, HLACT Accredited Post Graduate Diploma in Management (PGDM) program, aiming to equip Millennials with the skills necessary to navigate and excel in the evolving landscape of Industry dynamics.
               </p>
             </div>
           </div>
 
           <div className="w-6/12 max-md:w-full max-sm:w-full">
             <div className="text-center mb-6 max-sm:mb-3">
-              <h2 className="text-4xl font-novaBold mb-2 max-sm:text-xl ">Application Form 2025</h2>
+              {/* <h2 className="text-4xl font-novaBold mb-2 max-sm:text-xl ">Application Form 2025</h2> */}
             </div>
 
             <div className="shadow-lg rounded-xl bg-white p-6 max-sm:p-2">
-              <p className="text-lg text-gray-500 mb-3 text-center max-sm:mb-1.5 max-sm:text-sm">Apply for Entrance Exam</p>
+              <p className="text-lg text-gray-500 mb-3 text-center max-sm:mb-1.5 max-sm:text-sm font-novaSemi">Apply for Entrance Exam</p>
               <form className="flex flex-col items-center space-y-4 w-full max-w-lg mx-auto max-sm:space-y-2 max-md:space-y-3 max-lg:space-y-4">
                 <select className="border border-gray-300 rounded-lg h-[44px] px-4 w-full text-sm max-sm:text-xs max-md:h-[40px]">
                   <option value="" disabled selected>Select Campus</option>
@@ -83,7 +83,7 @@ const FormSection = () => {
                 </div>
 
                 <div className="flex justify-end w-full">
-                  <button type="submit" className="bg-red-600 text-white rounded-lg h-[36px] w-[120px] text-center text-sm font-bold max-md:h-[32px] max-lg:w-[100px]">
+                  <button type="submit" className="bg-red-600 text-white rounded-lg text-center text-sm font-bold px-6 py-2 w-full">
                     Apply Now
                   </button>
                 </div>

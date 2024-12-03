@@ -35,7 +35,7 @@ const Affiliated = () => {
                 <section className="relative bg-BG5 bg-cover bg-center bg-no-repeat">
                     <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50"></div>
                     <div className="max-w-[1400px] mx-auto px-4 w-full flex flex-col justify-center items-center py-6">
-                        <h1 className="relative text-white text-4xl font-FONT2 text-center mb-6 z-10">Glimpses</h1>
+                        <h1 className="relative text-white text-2xl md:text-3xl lg:text-4xl font-FONT2 text-center mb-6 z-10">Glimpses</h1>
                         <Swiper
                             spaceBetween={20}
                             slidesPerView={1}
@@ -55,7 +55,7 @@ const Affiliated = () => {
                                                 alt="leaf left"
                                                 className="w-8 h-20"
                                             />
-                                            <span className="z-10">{point}</span>
+                                            <span className="z-10 font-FONT1 max-sm:text-sm">{point}</span>
                                             <img
                                                 src="/image/right-white.png"
                                                 alt="leaf right"
@@ -72,7 +72,7 @@ const Affiliated = () => {
                 <section className="relative bg-BG5 bg-cover bg-center bg-no-repeat">
                     <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50"></div>
                     <div className="max-w-[1400px] mx-auto px-2 w-full flex flex-col justify-center items-center py-6">
-                        <h1 className="relative text-white text-4xl font-FONT2 text-center mb-6 z-10">Glimpses</h1>
+                        <h1 className="relative text-white text-3xl lg:text-4xl font-FONT2 text-center mb-6 z-10">Glimpses</h1>
                         <div className="relative z-10 grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-y-12 gap-x-8 px-6">
                             {bulletPoints.map((point, index) => (
                                 <div
@@ -85,7 +85,7 @@ const Affiliated = () => {
                                             alt="leaf left"
                                             className="w-8 h-20"
                                         />
-                                        <span className="z-10">{point}</span>
+                                        <span className="z-10 font-FONT1 text-sm">{point}</span>
                                         <img
                                             src="/image/right-white.png"
                                             alt="leaf right"

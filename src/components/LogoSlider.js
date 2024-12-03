@@ -17,7 +17,7 @@ export default function LogoSlider({ logos, title, speed }) {
         <>
             <section className="py-5 max-sm:py-2.5">
                 <div className="break1:max-w-[1650px] break2:max-w-[1320px] break3:max-w-[1140px] break4:max-w-[960px] mx-auto bg-white block py-10 px-16 max-lg:py-7 max-lg:px-8 max-md:py-5 max-md:px-6 max-sm:px-3 max-sm:py-3">
-                    <h1 className="font-FONT2 text-3xl flex items-center justify-center gap-2 max-md:text-2xl max-sm:text-xl">{title}</h1>
+                    <h1 className="font-FONT2 text-3xl flex items-center justify-center gap-2 max-md:text-2xl max-sm:text-lg">{title}</h1>
                     <div className="mx-auto py-10 max-md:py-6 max-sm:py-4">
                         <Swiper
                             modules={[Autoplay, Navigation]}
@@ -25,8 +25,7 @@ export default function LogoSlider({ logos, title, speed }) {
                             loop={true}
                             autoplay={{ delay: 0, disableOnInteraction: false }}
                             speed={speed}
-                            breakpoints={breakpoints}
-                        >
+                            breakpoints={breakpoints}>
                             {logos?.map((image, index) => (
                                 <SwiperSlide key={index}>
                                     <div className="flex justify-center items-center border rounded-md h-16 max-sm:h-12">

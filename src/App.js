@@ -29,9 +29,9 @@ const App = () => {
       <HomePage />
       <FormSection />
       <Top />
-      <LogoSlider title={<><Building className='w-8 h-8' />Placements - Our Key Recruiters</>} logos={collaborationsLogo} speed={3000} />
+      <LogoSlider title={<><Building className='w-6 h-6 sm:h-8 sm:w-8' />Placements - Our Key Recruiters</>} logos={collaborationsLogo} speed={3000} />
       <TestimonialSlider />
-      <LogoSlider title={<><Boxes className='w-8 h-8' />Institutional Clubs</>} logos={clubsLogo} speed={4000} />
+      <LogoSlider title={<><Boxes className='w-6 h-6 sm:h-8 sm:w-8' />Institutional Clubs</>} logos={clubsLogo} speed={4000} />
       <Gallery />
       <CardsContainer />
       <PlacementHighlights />                                                                                                                                      {/* Not Done Yet*/}

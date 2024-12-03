@@ -80,7 +80,7 @@ const AwardsAndRecognition = () => {
             <div className="max-w-[1500px] mx-auto px-4 relative z-10 py-8">
                 <div className="flex flex-col lg:flex-row gap-6">
                     <div className="w-full lg:w-7/12 py-6 px-2 flex flex-col justify-center">
-                        <h1 className="text-3xl md:text-4xl font-FONT2 text-white mb-6 text-center">
+                        <h1 className="text-2xl md:text-3xl lg:text-4xl font-FONT2 text-white mb-6 text-center">
                             Awards & Recognitions
                         </h1>
                         <div className="grid grid-cols-3 max-xl:grid-cols-2 max-lg:grid-cols-2 max-md:grid-cols-2 max-sm:grid-cols-1 gap-y-8 gap-x-3">
@@ -110,7 +110,7 @@ const AwardsAndRecognition = () => {
                     </div>
 
                     <div className="w-full lg:w-5/12 px-4 py-6">
-                        <h1 className="text-3xl md:text-4xl font-FONT2 text-white mb-6 flex items-center justify-center transition-transform duration-300 transform hover:scale-105">
+                        <h1 className="text-2xl md:text-3xl lg:text-4xl font-FONT2 text-white mb-6 flex items-center justify-center transition-transform duration-300 transform hover:scale-105">
                             <Star className="w-8 h-8 md:w-10 md:h-10 mr-2 text-yellow-400 animate-pulse" />
                             Latest @GIMS
                         </h1>
