@@ -3,8 +3,8 @@ import HomePage from './components/HomePage'
 import FormSection from './components/FormSection'
 import Top from './components/Top'
 import LogoSlider from './components/LogoSlider'
-import { clubsLogo, collaborationsLogo } from './utils/LogosData'
-import { Boxes, Building } from 'lucide-react'
+import { clubsLogo } from './utils/LogosData'
+import { Boxes } from 'lucide-react'
 import TestimonialSlider from './components/TestimonialSlider'
 import Gallery from './components/Gallery'
 import CardsContainer from './components/CardsContainer'
@@ -22,6 +22,7 @@ import VideoClips from './components/VideoClips'
 import CorporateMentor from './components/CorporateMentor'
 import AwardsAndRecognition from './components/AwardsAndRecognition'
 import Footer from './components/Footer'
+import PlacementRecruiters from './components/PlacementRecruiters'
 
 const App = () => {
   return (
@@ -29,26 +30,25 @@ const App = () => {
       <HomePage />
       <FormSection />
       <Top />
-      <LogoSlider title={<><Building className='w-6 h-6 sm:h-8 sm:w-8' />Placements Recruiters</>} logos={collaborationsLogo} speed={3000} />
+      {/* <LogoSlider title={<><Building className='w-6 h-6 sm:h-8 sm:w-8' />Placements Recruiters</>} logos={collaborationsLogo} speed={3000} /> */}
+      <PlacementRecruiters />
       <TestimonialSlider />
       <LogoSlider title={<><Boxes className='w-6 h-6 sm:h-8 sm:w-8' />Institutional Clubs</>} logos={clubsLogo} speed={4000} />
       <Gallery />
       <CardsContainer />
-      <PlacementHighlights />                                                                                                                                      {/* Not Done Yet*/}
+      <PlacementHighlights />
       <CilebHighlights />
       <CorporateReviews />
       <InternationalRelations />
       <VideoShowcase />
       <UniversityDetails />
-      <Collaborations />                                                                                                                                           {/* Not Done Yet*/}
+      <Collaborations />
       <AdmissionProcess />
       <Affiliated />
       <GimsiansSpeak />
       <VideoClips />
       <CorporateMentor />
-
-      {/* From here No Component is done */}
-      <AwardsAndRecognition />                                                                                                                                       {/*Almost Done*/}
+      <AwardsAndRecognition />
       <Footer />
     </>
   )
