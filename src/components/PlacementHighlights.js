@@ -1,20 +1,20 @@
 import PlacementSlider from "./PlacementSlider";
 
 const placement1 = [
-    "/image/student/placement-7.jpg",
-    "/image/student/placement-8.jpg",
+    "/image/student/Abhay-Kumar.jpg",
+    "/image/student/Ankur-Mishra.jpg",
 ]
 const placement2 = [
-    "/image/student/placement-5.jpg",
-    "/image/student/placement-6.jpg",
+    "/image/student/Dilpreet-Singh.jpg",
+    "/image/student/Hanshika-Bhushan.jpg",
 ]
 const placement3 = [
-    "/image/student/placement-1.jpg",
-    "/image/student/placement-2.jpg",
+    "/image/student/Raksha-Shreya.jpg",
+    "/image/student/Ritika-Saxena.jpg",
 ]
 const placement4 = [
-    "/image/student/placement-3.jpg",
-    "/image/student/placement-4.jpg",
+    "/image/student/Sunaina-Thakur.jpg",
+    "/image/student/Vivek-Yadav.jpg",
 ]
 
 export default function PlacementHighlights() {

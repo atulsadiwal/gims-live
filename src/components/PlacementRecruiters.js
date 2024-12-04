@@ -83,7 +83,6 @@ export const collaborationsLogo = [
     { alt: "Sheela", src: "/image/recruiter/logo81.webp" },
 ];
 
-// Split into 3 groups
 const group1 = collaborationsLogo.slice(0, 25);
 const group2 = collaborationsLogo.slice(25, 50);
 const group3 = collaborationsLogo.slice(50);
@@ -100,7 +99,7 @@ const PlacementRecruiters = () => {
     return (
         <section className="py-10">
             <div className="break1:max-w-[1650px] break2:max-w-[1320px] break3:max-w-[1140px] break4:max-w-[960px] mx-auto bg-white block py-10 px-16 max-lg:py-7 max-lg:px-8 max-md:py-5 max-md:px-6 max-sm:px-3 max-sm:py-3">
-                <h1 className="font-FONT2 text-2xl md:text-3xl lg:text-4xl flex items-center justify-center gap-2">
+                <h1 className="font-FONT2 text-4xl flex items-center justify-center gap-2 max-lg:text-3xl max-md:text-2xl max-sm:text-xl">
                     <Building className='w-6 h-6 sm:h-8 sm:w-8' />
                     Placements Recruiters
                 </h1>
