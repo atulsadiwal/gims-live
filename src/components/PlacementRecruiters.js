@@ -93,7 +93,7 @@ const PlacementRecruiters = () => {
         480: { slidesPerView: 3 },
         768: { slidesPerView: 4 },
         1024: { slidesPerView: 5 },
-        1280: { slidesPerView: 9 },
+        1280: { slidesPerView: 8 },
     };
 
     return (
@@ -115,7 +115,7 @@ const PlacementRecruiters = () => {
                     >
                         {group1.map((logo, index) => (
                             <SwiperSlide key={index}>
-                                <div className="flex justify-center items-center border rounded-md h-16 max-sm:h-12">
+                                <div className="flex justify-center items-center border rounded-md h-20 max-sm:h-12">
                                     <img
                                         alt={logo.alt}
                                         src={logo.src}
@@ -137,7 +137,7 @@ const PlacementRecruiters = () => {
                     >
                         {group2.map((logo, index) => (
                             <SwiperSlide key={index}>
-                                <div className="flex justify-center items-center border rounded-md h-16 max-sm:h-12">
+                                <div className="flex justify-center items-center border rounded-md h-20 max-sm:h-12">
                                     <img
                                         alt={logo.alt}
                                         src={logo.src}
@@ -159,7 +159,7 @@ const PlacementRecruiters = () => {
                     >
                         {group3.map((logo, index) => (
                             <SwiperSlide key={index}>
-                                <div className="flex justify-center items-center border rounded-md h-16 max-sm:h-12">
+                                <div className="flex justify-center items-center border rounded-md h-20 max-sm:h-12">
                                     <img
                                         alt={logo.alt}
                                         src={logo.src}
