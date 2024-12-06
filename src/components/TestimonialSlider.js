@@ -5,76 +5,76 @@ import { ChevronLeft, ChevronRight, Play } from 'lucide-react';
 const studentReviews = [
     {
         id: 1,
-        studentName: "Swati Mishra​",
+        studentName: "Golu Singh​",
         company: "InfoEdge India",
         heading: "Countless Opportunities at One Place",
         description: "A big thank you to my support system GIMS for their unwavering belief in me which resulted into getting me a job in INFOEDGE. I am extremely grateful to the college for playing a significant role in helping me secure my dream job.​",
-        image: "/image/student/1.png"
+        image: "/image/student/1.jpg"
     },
     {
         id: 2,
-        studentName: "Ritika Saxena",
+        studentName: "Shweta Singh",
         company: "Deloitte",
         heading: "Countless Opportunities at One Place",
         description: "Sky is the limit' is what is taught in GIMS. Delighted to announce my placement at Deloitte. Thanks for the guidance and opportunities my college provided.​",
-        image: "/image/student/2.png"
+        image: "/image/student/2.jpg"
     },
     {
         id: 3,
-        studentName: "Aditya Kumar",
+        studentName: "Navada Tyagi",
         company: "Decathlon",
         heading: "Countless Opportunities at One Place",
         description: "I am thrilled to have secured a position at DECATHALON. And I credit much of my success to my college GIMS to provide me such an amazing Opportunity.​",
-        image: "/image/student/4.png"
+        image: "/image/student/3.jpg"
     },
     {
         id: 4,
-        studentName: "Dilpreet Singh",
+        studentName: "Mansi Mishra",
         company: "Sonalika International",
         heading: "Countless Opportunities at One Place",
         description: "A huge thank you to GIMS for their unwavering support. The guidance and career services provided by the college helped me secure my dream job at Accenture. I am excited to start this new journey.",
-        image: "/image/student/4.png"
+        image: "/image/student/4.jpg"
     },
-    {
-        id: 5,
-        studentName: "Navda Tyagi",
-        company: "ITC Limited",
-        heading: "Countless Opportunities at One Place",
-        description: "A big shoutout to my support system GIMS for enlightening my career by providing me with an opportunity to work with ITC LTD. Your continual support is really appreciable.​",
-        image: "/image/student/1.png"
-    },
-    {
-        id: 6,
-        studentName: "Kishan Kumar Singh",
-        company: "Asian Paints Ltd",
-        heading: "Countless Opportunities at One Place",
-        description: "Securing a placement opportunity through GIMS was one of the most valuable experiences of my academic journey. The support and guidance provided by the college were instrumental in helping me find a placement in ASIAN PAINTS. that aligned perfectly with my career goals.",
-        image: "/image/student/4.png"
-    },
-    {
-        id: 7,
-        studentName: "Vibha Kumari",
-        company: "Bandhan Bank",
-        heading: "Countless Opportunities at One Place",
-        description: "Choosing GIMS was a game-changer for me. The rigorous curriculum, supplemented by practical experiences and industry connections, set me up for success in the competitive job market .Thrilled to get placed at BANDHAN BANK. Thanks a ton to GIMS.",
-        image: "/image/student/2.png"
-    },
-    {
-        id: 8,
-        studentName: "Shivam Pandey",
-        company: "Ujjivan Small Finance Bank",
-        heading: "Countless Opportunities at One Place",
-        description: "Thanks to my college GIMS, I landed a job that aligns perfectly with my interests and aspirations. Got successfully placed in UJJIVAN SMALL FINANCE BANK.",
-        image: "/image/student/4.png"
-    },
-    {
-        id: 9,
-        studentName: "Ankur Kumar",
-        company: "HCLTech",
-        heading: "Countless Opportunities at One Place",
-        description: "I am very proud and blessed to be a part of this college as it has taught me many lessons for life. A deep sense of gratitude for being placed in HCL. Really appreciate the support provided by my college GIMS.",
-        image: "/image/student/4.png"
-    },
+    // {
+    //     id: 5,
+    //     studentName: "Navda Tyagi",
+    //     company: "ITC Limited",
+    //     heading: "Countless Opportunities at One Place",
+    //     description: "A big shoutout to my support system GIMS for enlightening my career by providing me with an opportunity to work with ITC LTD. Your continual support is really appreciable.​",
+    //     image: "/image/student/1.png"
+    // },
+    // {
+    //     id: 6,
+    //     studentName: "Kishan Kumar Singh",
+    //     company: "Asian Paints Ltd",
+    //     heading: "Countless Opportunities at One Place",
+    //     description: "Securing a placement opportunity through GIMS was one of the most valuable experiences of my academic journey. The support and guidance provided by the college were instrumental in helping me find a placement in ASIAN PAINTS. that aligned perfectly with my career goals.",
+    //     image: "/image/student/4.png"
+    // },
+    // {
+    //     id: 7,
+    //     studentName: "Vibha Kumari",
+    //     company: "Bandhan Bank",
+    //     heading: "Countless Opportunities at One Place",
+    //     description: "Choosing GIMS was a game-changer for me. The rigorous curriculum, supplemented by practical experiences and industry connections, set me up for success in the competitive job market .Thrilled to get placed at BANDHAN BANK. Thanks a ton to GIMS.",
+    //     image: "/image/student/2.png"
+    // },
+    // {
+    //     id: 8,
+    //     studentName: "Shivam Pandey",
+    //     company: "Ujjivan Small Finance Bank",
+    //     heading: "Countless Opportunities at One Place",
+    //     description: "Thanks to my college GIMS, I landed a job that aligns perfectly with my interests and aspirations. Got successfully placed in UJJIVAN SMALL FINANCE BANK.",
+    //     image: "/image/student/4.png"
+    // },
+    // {
+    //     id: 9,
+    //     studentName: "Ankur Kumar",
+    //     company: "HCLTech",
+    //     heading: "Countless Opportunities at One Place",
+    //     description: "I am very proud and blessed to be a part of this college as it has taught me many lessons for life. A deep sense of gratitude for being placed in HCL. Really appreciate the support provided by my college GIMS.",
+    //     image: "/image/student/4.png"
+    // },
 ];
 
 const TestimonialSlider = () => {
@@ -116,7 +116,7 @@ const TestimonialSlider = () => {
                                         <img
                                             src={studentReviews[currentTopSlide].image}
                                             alt="Student"
-                                            className="w-full h-full object-cover max-sm:object-cover max-sm:object-top"
+                                            className="w-full h-full object-cover object-top max-sm:object-cover max-sm:object-top"
                                         />
                                     </div>
                                     <div className="w-full sm:w-3/5 h-2/3 sm:h-full flex flex-col items-start justify-center p-6 max-sm:p-2">

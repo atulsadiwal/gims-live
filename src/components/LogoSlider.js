@@ -10,7 +10,7 @@ export default function LogoSlider({ logos, title, speed }) {
         480: { slidesPerView: 3 },
         768: { slidesPerView: 4 },
         1024: { slidesPerView: 5 },
-        1280: { slidesPerView: 9 }
+        1280: { slidesPerView: 8 }
     };
 
     return (
@@ -28,7 +28,7 @@ export default function LogoSlider({ logos, title, speed }) {
                             breakpoints={breakpoints}>
                             {logos?.map((image, index) => (
                                 <SwiperSlide key={index}>
-                                    <div className="flex justify-center items-center border rounded-md h-16 max-sm:h-12">
+                                    <div className="flex justify-center items-center border rounded-md h-20 max-sm:h-12">
                                         <img
                                             alt={image.alt}
                                             src={image.src}

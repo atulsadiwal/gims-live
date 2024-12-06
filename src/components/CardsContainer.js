@@ -19,18 +19,12 @@ const CardsContainer = () => {
                     className="flex flex-wrap gap-6 justify-center p-2">
                     <Card
                         imageUrl="/image/gims4.jpg"
-                        number="150+"
-                        description="Start-ups running very successfully"
                     />
                     <Card
                         imageUrl="/image/gims5.jpg"
-                        number="7"
-                        description="Start-ups Recognised by Start-up India"
                     />
                     <Card
                         imageUrl="/image/gims6.jpg"
-                        number="50+"
-                        description="Companies with more than 50 Lakh Turnover"
                     />
                 </div>
             </div>
