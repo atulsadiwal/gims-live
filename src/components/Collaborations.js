@@ -18,7 +18,7 @@ const Collaborations = () => {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-4">
                     <div className="sm:col-span-2 sm:row-span-2">
-                        <div className="h-full shadow-[rgba(13,_38,_76,_0.19)_0px_0px_10px] rounded-lg overflow-hidden bg-BG2 bg-cover bg-center">
+                        <div className="h-full rounded-lg overflow-hidden bg-BG2 bg-cover bg-center">
                             <div className="py-4 px-2 flex gap-2">
                                 <div className='w-28'>
                                     <img
@@ -35,7 +35,7 @@ const Collaborations = () => {
                         </div>
                     </div>
                     <div className="sm:col-span-2 sm:row-span-2 md:col-start-1 md:row-start-3">
-                        <div className="h-full shadow-[rgba(13,_38,_76,_0.19)_0px_0px_10px] rounded-lg overflow-hidden bg-BG2 bg-cover bg-center">
+                        <div className="h-full rounded-lg overflow-hidden bg-BG2 bg-cover bg-center">
                             <div className="py-6 px-2 flex gap-2">
                                 <div className='p-4'>
                                     <img
@@ -54,7 +54,7 @@ const Collaborations = () => {
                         </div>
                     </div>
                     <div className="md:col-span-2 lg:col-start-3 xl:row-start-1 h-full">
-                        <div className="shadow-[rgba(13,_38,_76,_0.19)_0px_0px_10px] rounded-lg overflow-hidden h-full bg-[#e8e8e8]">
+                        <div className="rounded-lg overflow-hidden h-full bg-[#e8e8e8]">
                             <div className="py-6 px-2 flex gap-4 h-full">
                                 <div className='p-4'>
                                     <img
@@ -72,7 +72,7 @@ const Collaborations = () => {
                         </div>
                     </div>
                     <div className="md:col-span-2 lg:col-start-5 xl:row-start-1 h-full">
-                        <div className="shadow-[rgba(13,_38,_76,_0.19)_0px_0px_10px] rounded-lg overflow-hidden h-full bg-[#e8e8e8]">
+                        <div className="rounded-lg overflow-hidden h-full bg-[#e8e8e8]">
                             <div className="py-6 px-2 flex gap-4 h-full">
                                 <div className='w-28'>
                                     <img
@@ -95,7 +95,7 @@ const Collaborations = () => {
                         </div>
                     </div>
                     <div className="md:col-span-2 lg:col-start-1 lg:row-start-3 xl:col-start-7 xl:row-start-1 h-full">
-                        <div className="shadow-[rgba(13,_38,_76,_0.19)_0px_0px_10px] rounded-lg overflow-hidden h-full bg-[#e8e8e8]">
+                        <div className="rounded-lg overflow-hidden h-full bg-[#e8e8e8]">
                             <div className="py-6 px-2 flex gap-4 h-full">
                                 <div className='w-32'>
                                     <img
@@ -113,7 +113,7 @@ const Collaborations = () => {
                         </div>
                     </div>
                     <div className="md:col-span-2 lg:col-span-3 lg:col-start-3 lg:row-start-2 h-full">
-                        <div className="shadow-[rgba(13,_38,_76,_0.19)_0px_0px_10px] rounded-lg overflow-hidden h-full bg-[#e8e8e8]">
+                        <div className="rounded-lg overflow-hidden h-full bg-[#e8e8e8]">
                             <div className="py-6 px-2 flex gap-4 h-full">
                                 <div className='w-36'>
                                     <img
@@ -133,7 +133,7 @@ const Collaborations = () => {
                         </div>
                     </div>
                     <div className="md:col-span-2 lg:col-span-3 lg:col-start-6 lg:row-start-2 h-full">
-                        <div className="shadow-[rgba(13,_38,_76,_0.19)_0px_0px_10px] rounded-lg overflow-hidden h-full bg-[#e8e8e8]">
+                        <div className="rounded-lg overflow-hidden h-full bg-[#e8e8e8]">
                             <div className="py-6 px-2 flex gap-4 h-full">
                                 <div className='h-40 w-40'>
                                     <img
@@ -153,7 +153,7 @@ const Collaborations = () => {
                         </div>
                     </div>
                     <div className="md:col-span-2 lg:col-start-3 lg:row-start-3 h-full">
-                        <div className="shadow-[rgba(13,_38,_76,_0.19)_0px_0px_10px] rounded-lg overflow-hidden h-full bg-[#e8e8e8]">
+                        <div className="rounded-lg overflow-hidden h-full bg-[#e8e8e8]">
                             <div className="py-6 px-2 flex gap-4 h-full">
                                 <div className='h-28 w-28'>
                                     <img
@@ -169,7 +169,7 @@ const Collaborations = () => {
                         </div>
                     </div>
                     <div className="md:col-span-2 lg:col-start-5 lg:row-start-3 h-full">
-                        <div className="shadow-[rgba(13,_38,_76,_0.19)_0px_0px_10px] rounded-lg overflow-hidden h-full bg-[#e8e8e8]">
+                        <div className="rounded-lg overflow-hidden h-full bg-[#e8e8e8]">
                             <div className="py-6 px-2 flex gap-4 h-full">
                                 <div className='h-32 w-32'>
                                     <img
@@ -185,7 +185,7 @@ const Collaborations = () => {
                         </div>
                     </div>
                     <div className="md:col-span-2 lg:col-start-1 lg:row-start-4 xl:col-start-7 xl:row-start-3 h-full">
-                        <div className="shadow-[rgba(13,_38,_76,_0.19)_0px_0px_10px] rounded-lg overflow-hidden h-full bg-[#e8e8e8]">
+                        <div className="rounded-lg overflow-hidden h-full bg-[#e8e8e8]">
                             <div className="py-6 px-2 flex gap-4 h-full">
                                 <div className='h-32 w-32'>
                                     <img
@@ -200,8 +200,8 @@ const Collaborations = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="md:col-span-2 lg:col-span-3 lg:col-start-3 lg:row-start-4 h-full">
-                        <div className="shadow-[rgba(13,_38,_76,_0.19)_0px_0px_10px] rounded-lg overflow-hidden h-full bg-[#e8e8e8]">
+                    <div className="md:col-span-2 lg:col-span-2 lg:col-start-3 lg:row-start-4 h-full">
+                        <div className="rounded-lg overflow-hidden h-full bg-[#e8e8e8]">
                             <div className="py-6 px-2 flex gap-4 h-full">
                                 <div className='h-32 w-32'>
                                     <img
@@ -219,8 +219,8 @@ const Collaborations = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="md:col-span-2 lg:col-span-3 lg:col-start-6 lg:row-start-4 h-full">
-                        <div className="shadow-[rgba(13,_38,_76,_0.19)_0px_0px_10px] rounded-lg overflow-hidden h-full bg-[#e8e8e8]">
+                    <div className="md:col-span-2 lg:col-span-2 lg:col-start-5 lg:row-start-4 h-full">
+                        <div className="rounded-lg overflow-hidden h-full bg-[#e8e8e8]">
                             <div className="py-6 px-2 flex gap-4 h-full">
                                 <div className='h-32 w-32'>
                                     <img
@@ -238,6 +238,26 @@ const Collaborations = () => {
                             </div>
                         </div>
                     </div>
+                    <div className="md:col-span-2 lg:col-span-2 lg:col-start-7 lg:row-start-4 h-full">
+                        <div className="rounded-lg overflow-hidden h-full bg-[#e8e8e8]">
+                            <div className="py-6 px-2 flex gap-4 h-full">
+                                <div className='h-32 w-32'>
+                                    <img
+                                        src="/image/logos/atal.jpg"
+                                        alt="The Week"
+                                        className="w-full mt-5 object:contain"
+                                    />
+                                </div>
+                                <div>
+                                    <h3 className="font-FONT2">The Week Best University Rankings 2024</h3>
+                                    <a href="#" className="text-sm text-primary hover:underline">
+                                        Click to Read More
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </section>
         </>
