@@ -33,7 +33,7 @@ const App = () => {
       {/* <LogoSlider title={<><Building className='w-6 h-6 sm:h-8 sm:w-8' />Placements Recruiters</>} logos={collaborationsLogo} speed={3000} /> */}
       <PlacementRecruiters />
       <TestimonialSlider />
-      <LogoSlider title={<><Boxes className='w-6 h-6 sm:h-8 sm:w-8' />Institutional Clubs</>} logos={clubsLogo} speed={4000} />
+      <LogoSlider title={<><Boxes className='w-6 h-6 sm:h-8 sm:w-8' />International Collaborations​</>} logos={clubsLogo} speed={4000} />
       <Gallery />
       <CardsContainer />
       <PlacementHighlights />
