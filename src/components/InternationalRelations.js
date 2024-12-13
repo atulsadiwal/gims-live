@@ -4,185 +4,132 @@ import React, { useState, useEffect } from "react";
 
 const content = [
   {
-    title: "Global Summer & Winter Opportunities",
-    text: "Experience the world through condensed summer and winter programs, designed to blend academics with global cultural exploration.",
+    title: "Self-Directed Learning (SDL):",
+    text: "An innovative approach that empowers students to harness their inherent potential through MOOCs Course, Research Paper Publication, Conference Paper Presentation, Live Project for minimum 15 days, External Academic participation, SSO (Self Society Organization).",
     imageSrc: "/image/logos/logo13.png",
     alt: "International Summer/Winter Programs Icon",
-  },
-  {
-    title: "Alternative Summer & Winter Programs",
-    text: "Explore new adventures with alternative summer and winter programs that focus on expanding your global perspective.",
-    imageSrc: "/image/logos/logo14.png",
-    alt: "Alternative Summer/Winter Icon",
   },
 ];
 
 const secondContent = [
   {
-    title: "International Academic Exchange",
-    text: "Pursue your degree abroad for a semester to gain unique academic insights and international connections that will benefit your career.",
-    imageSrc: "/image/logos/logo15.png",
-    alt: "Semester Abroad/Exchange Programs Icon",
-  },
-  {
-    title: "Student Exchange Programs",
-    text: "Join student exchange programs to explore different academic cultures and gain a global perspective.",
-    imageSrc: "/image/logos/logo16.png",
-    alt: "Student Exchange Programs Icon",
+    title: "International Immersion Program(II) :",
+    text: "Enriching 1-2 weeks overseas experience, complete with certifications from partner universities. Visited so far Mahsa University, Malaysia, De Montfort University, Dubai campus, Middlesex University, Dubai Campus, Curtin University, Singapore, and Politeknik Negeri, Bali.",
+    imageSrc: [
+      "/image/logos/logo13.png",
+      "/image/logos/logo14.png",
+      "/image/logos/logo15.png",
+      "/image/logos/logo16.png",
+      "/image/logos/logo17.png",
+      "/image/logos/logo18.png",
+      "/image/logos/logo31.png",
+      "/image/logos/logo19.png",
+      "/image/logos/logo20.png",
+      "/image/logos/logo21.webp"
+    ],
+    alt: "Alternative Summer/Winter Icon",
   },
 ];
 
 const thirdContent = [
   {
-    title: "International Academic Exchange",
-    text: "Pursue your degree abroad for a semester to gain unique academic insights and international connections that will benefit your career.",
+    title: "Corporate Mentorship: ",
+    text: "The students are mentored by the corporate personnel from the II trimester, where the students are guided on the various aspects of industry demands from the professionals.",
     imageSrc: "/image/logos/logo17.png",
     alt: "Semester Abroad/Exchange Programs Icon",
-  },
-  {
-    title: "Student Exchange Programs",
-    text: "Join student exchange programs to explore different academic cultures and gain a global perspective.",
-    imageSrc: "/image/logos/logo18.png",
-    alt: "Student Exchange Programs Icon",
   },
 ];
 
 const fourthContent = [
   {
-    title: "International Academic Exchange",
-    text: "Pursue your degree abroad for a semester to gain unique academic insights and international connections that will benefit your career.",
+    title: "Incubation Centre:",
+    text: "Working closely with the Institute Innovation Councils (IICs), drives innovation and entrepreneurship through incubation support to help students refine their ideas and develop prototypes. InnovateUp, The GIMS incubation centre supports start-up creation by offering mentorship, funding opportunities, and networking connections for aspiring entrepreneurs.",
     imageSrc: "/image/logos/logo31.png",
     alt: "Semester Abroad/Exchange Programs Icon",
-  },
-  {
-    title: "Student Exchange Programs",
-    text: "Join student exchange programs to explore different academic cultures and gain a global perspective.",
-    imageSrc: "/image/logos/logo19.png",
-    alt: "Student Exchange Programs Icon",
   },
 ];
 
 const fifthContent = [
   {
-    title: "International Academic Exchange",
-    text: "Pursue your degree abroad for a semester to gain unique academic insights and international connections that will benefit your career.",
+    title: "Non-credit inputs:",
+    text: "To support student growth and skill-building, the non-credit courses, designed in collaboration with our faculty and industry experts, cover critical areas including Microsoft Excel, Learning and Development, Reasoning, Soft Skills, Communication, and Aptitude Training are imparted.",
     imageSrc: "/image/logos/logo20.png",
     alt: "Semester Abroad/Exchange Programs Icon",
   },
+];
+
+const sixthContent = [
   {
-    title: "Student Exchange Programs",
-    text: "Join student exchange programs to explore different academic cultures and gain a global perspective.",
-    imageSrc: "/image/logos/logo22.jpg",
-    alt: "Student Exchange Programs Icon",
+    title: "The Corporate Talk Series: ",
+    text: "Corporate interaction is a regular affair at GIMS, through The Chanakya Talk Series (CTS), The Prabodhan Talk Series (PTS), The Samrik Talk Series (STS) and The HR Talk Series (HTS) inviting leaders from the corporate world, veterans from the Defence forces and administrative services and the professional at operational level in the corporate world.",
+    imageSrc: "/image/logos/logo20.png",
+    alt: "Corporate Talk Series Icon",
   },
 ];
 
 const InternationalRelations = () => {
-  const [activeIndexes, setActiveIndexes] = useState([0, 0, 0, 0, 0]);
+  const contentArrays = [content, secondContent, thirdContent, fourthContent, fifthContent, sixthContent];
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setActiveIndexes((prev) => {
-        // Increment the first two values, reset them when they reach 5
-        const newFirstValue = prev[0] === 1 ? 0 : prev[0] + 1;
-        const newSecondValue = prev[1] === 1 ? 0 : prev[1] + 1;
-        const newThirdValue = prev[2] === 1 ? 0 : prev[2] + 1;
-        const newFValue = prev[3] === 1 ? 0 : prev[3] + 1;
-        const newFiveValue = prev[4] === 1 ? 0 : prev[4] + 1;
-
-        return [
-          newFirstValue,  // Updated first value
-          newSecondValue, // Updated second value
-          newThirdValue,        // Keep the third value the same
-          newFValue,        // Keep the fourth value the same
-          newFiveValue,        // Keep the fifth value the same
-        ];
-      });
-    }, 7000);
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % secondContent[0].imageSrc.length);
+    }, 3000); // change the image every 3 seconds
 
     return () => clearInterval(interval);
   }, []);
 
-  const contentArrays = [content, secondContent, thirdContent, fourthContent, fifthContent];
-
   return (
     <div className="py-10 bg-gray-100 px-3">
       <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-FONT2 text-center mb-4">
-      International Immersion Program (IIP)
+        Salient Features of the Programme
       </h2>
       <p className="text-center font-FONT1 text-gray-600 text-sm sm:text-base lg:text-lg mb-8">
         Offers exclusive opportunities to explore the world.
       </p>
       <div className="max-w-[1400px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 place-items-center">
-        <div className="bg-[#15345d] text-white rounded-md shadow-md flex flex-col p-4 sm:p-6 md:p-8 h-[300px] relative">
-          <div className="flex items-center justify-center mb-4 h-[100px]">
-            <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 relative rounded-full bg-white">
-              {content.map((item, idx) => (
-                <img key={idx} src={item.imageSrc} alt={item.alt} className={`w-full h-full absolute transition-opacity duration-700 p-3 rounded-full ${activeIndexes[0] === idx ? "opacity-100" : "opacity-0"}`} />
-              ))}
-            </div>
-          </div>
-          <div className="text-center">
-            <h3 className="font-FONT2 text-base sm:text-lg md:text-xl mb-2">
-              {content[activeIndexes[0]] ? content[activeIndexes[0]].title : 'Loading...'}
-            </h3>
-            <p className="text-xs sm:text-sm md:text-base font-novaReg leading-relaxed">
-              {content[activeIndexes[0]] ? content[activeIndexes[0]].text : 'Loading...'}
-            </p>
-          </div>
-        </div>
-
-        <div className="h-[300px] w-full rounded-md shadow-md">
-          <img
-            src="/image/students.jpg"
-            alt="International Programs Image"
-            className="w-full h-full object-cover object-top rounded-md"
-          />
-        </div>
-
-        <div className="bg-[#b31a1a] text-white rounded-md shadow-md flex flex-col p-4 sm:p-6 md:p-8 h-[300px] relative">
-          <div className="flex items-center justify-center mb-4 h-[100px]">
-            <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 relative rounded-full bg-white">
-              {secondContent.map((item, idx) => (
-                <img
-                  key={idx}
-                  src={item.imageSrc}
-                  alt={item.alt}
-                  className={`w-full h-full absolute transition-opacity duration-700 p-4 ${activeIndexes[1] === idx ? "opacity-100" : "opacity-0"}`}
-                />
-              ))}
-            </div>
-          </div>
-          <div className="text-center">
-            <h3 className="font-FONT2 text-base sm:text-lg md:text-xl mb-2">
-              {secondContent[activeIndexes[1]] ? secondContent[activeIndexes[1]].title : 'Loading...'}
-            </h3>
-            <p className="text-xs sm:text-sm md:text-base font-novaReg leading-relaxed">
-              {secondContent[activeIndexes[1]] ? secondContent[activeIndexes[1]].text : 'Loading...'}
-            </p>
-          </div>
-        </div>
-
-        {contentArrays.slice(2).map((contentArray, index) => (
-          <div key={index + 2} className={`${ index === 0 ? 'bg-[#403c3d]' : index === 1 ? 'bg-[#441bb3]' : 'bg-[#15345d]' } text-white rounded-md shadow-md flex flex-col p-4 sm:p-6 md:p-8 h-[300px] relative`}>
+        {contentArrays.map((contentArray, index) => (
+          <div
+            key={index}
+            className={`${index === 0
+              ? "bg-[#15345d]"
+              : index === 1
+                ? "bg-[#b31a1a]"
+                : index === 2
+                  ? "bg-[#403c3d]"
+                  : index === 3
+                    ? "bg-[#441bb3]"
+                    : index === 4
+                      ? "bg-[#15345d]"
+                      : "bg-[#3da571]"} text-white rounded-md shadow-md flex flex-col p-4 sm:p-6 md:p-8 h-[380px] relative`}
+          >
             <div className="flex items-center justify-center mb-4 h-[100px]">
-              <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 relative rounded-full bg-white">
-                {contentArray.map((item, idx) => (
+              {index === 1 && (
+                <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 relative bg-white flex justify-center items-center rounded-full overflow-hidden">
                   <img
-                    key={idx}
-                    src={item.imageSrc}
-                    alt={item.alt}
-                    className={`w-full h-full object-contain absolute transition-opacity duration-700 p-3 ${activeIndexes[index + 2] === idx ? "opacity-100" : "opacity-0"}`}
+                    src={secondContent[0].imageSrc[currentImageIndex]}
+                    alt={secondContent[0].alt}
+                    className="w-full h-full object-contain"
                   />
-                ))}
-              </div>
+                </div>
+              )}
+              {index !== 1 && (
+                <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 relative bg-white flex justify-center items-center rounded-full overflow-hidden">
+                  <img
+                    src={contentArray[0].imageSrc}
+                    alt={contentArray[0].alt}
+                    className="w-full h-full object-contain transition-opacity duration-700 p-3 opacity-100"
+                  />
+                </div>
+              )}
             </div>
             <div className="text-center">
               <h3 className="font-FONT2 text-base sm:text-lg md:text-xl mb-2">
-                {contentArray[activeIndexes[index + 2]] ? contentArray[activeIndexes[index + 2]].title : 'Loading...'}
+                {contentArray[0].title}
               </h3>
               <p className="text-xs sm:text-sm md:text-base font-novaReg leading-relaxed">
-                {contentArray[activeIndexes[index + 2]] ? contentArray[activeIndexes[index + 2]].text : 'Loading...'}
+                {contentArray[0].text}
               </p>
             </div>
           </div>
