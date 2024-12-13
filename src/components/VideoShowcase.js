@@ -26,17 +26,17 @@ export default function VideoShowcase() {
                 </h2>
                 <div className="grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-8 max-lg:gap-6 max-md:gap-4 max-sm:gap-3 ">
                     <div className="space-y-2">
-                        <div className="text-red-600 text-5xl font-FONT2 max-lg:text-3xl max-md:text-2xl max-sm:text-xl">500+</div>
-                        <div className="text-lg font-FONT1 max-md:text-base max-sm:text-sm">Collaborations</div> 
+                        <div className="text-red-600 text-5xl font-FONT2 max-lg:text-3xl max-md:text-2xl max-sm:text-xl">25+</div>
+                        <div className="text-lg font-FONT1 max-md:text-base max-sm:text-sm">Collaborations</div>
                         <div className="text-sm font-novaReg max-sm:text-xs">
-                            with Top Ranked Foreign Universities in 95+ countries
+                            with Top Ranked Foreign Universities in 15+ countries
                         </div>
                     </div>
                     <div className="space-y-2">
-                        <div className="text-red-600 text-5xl font-FONT2 max-lg:text-3xl max-md:text-2xl max-sm:text-xl">1700+</div>
+                        <div className="text-red-600 text-5xl font-FONT2 max-lg:text-3xl max-md:text-2xl max-sm:text-xl">500+</div>
                         <div className="text-lg font-FONT1 max-md:text-base max-sm:text-sm">Students</div>
                         <div className="text-sm font-novaReg max-sm:text-xs">
-                            Traveled Abroad for Semester, Summer & Cultural Exchange Programs
+                            Travelled abroad for Student Exchange programme
                         </div>
                     </div>
                     <div className="space-y-2 sm:col-span-2 md:col-span-1">

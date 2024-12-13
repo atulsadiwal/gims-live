@@ -27,40 +27,40 @@ export default function PlacementHighlights() {
                 <p className="text-lg md:text-xl lg:text-2xl font-novaLight leading-5 mt-3">Record-Breaking Achievements and Industry-Driven Success</p>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 mt-6">
                     <div className="text-start">
-                        <p className="text-2xl md:text-3xl lg:text-5xl font-novaThin mt-4">1406</p>
+                        <p className="text-2xl md:text-3xl lg:text-5xl font-novaThin mt-4">22852</p>
                         <p className="text-sm md:text-base font-novaReg leading-none mt-2">Placement <br /> Offers</p>
                     </div>
                     <div className="text-start">
-                        <p className="text-2xl md:text-3xl lg:text-5xl font-novaThin mt-4">350+</p>
+                        <p className="text-2xl md:text-3xl lg:text-5xl font-novaThin mt-4">858+</p>
                         <p className="text-sm md:text-base font-novaReg leading-none mt-2">Company <br /> Visits</p>
                     </div>
                     <div className="text-start">
-                        <p className="text-2xl md:text-3xl lg:text-5xl font-novaThin mt-4">20 <small className="font-novaLight -ml-1 text-lg">LPA</small></p>
-                        <p className="text-sm md:text-base font-novaReg leading-none mt-2">Package Offered to 5 Students</p>
+                        <p className="text-2xl md:text-3xl lg:text-5xl font-novaThin mt-4">20-70 <small className="font-novaLight -ml-1 text-lg">LPA</small></p>
+                        <p className="text-sm md:text-base font-novaReg leading-none mt-2">Package Offered to 150 Students</p>
                     </div>
                     <div className="text-start">
                         <p className="text-2xl md:text-3xl lg:text-5xl font-novaThin mt-4">10-20 <small className="font-novaLight -ml-1 text-lg">LPA</small></p>
-                        <p className="text-sm md:text-base font-novaReg leading-none mt-2">Package Offered to 53 Students</p>
+                        <p className="text-sm md:text-base font-novaReg leading-none mt-2">Package Offered to 5792 Students</p>
                     </div>
                     <div className="text-start">
                         <p className="text-2xl md:text-3xl lg:text-5xl font-novaThin mt-4">5-10 <small className="font-novaLight -ml-1 text-lg">LPA</small></p>
-                        <p className="text-sm md:text-base font-novaReg leading-none mt-2">Package Offered to Approx 306 Students</p>
+                        <p className="text-sm md:text-base font-novaReg leading-none mt-2">Package Offered to Approx 7042 Students</p>
                     </div>
                     <div className="text-start">
                         <p className="text-2xl md:text-3xl lg:text-5xl font-novaThin mt-4">5 <small className="font-novaLight -ml-1 text-lg">LPA</small>
                         </p>
-                        <p className="text-sm md:text-base font-novaReg leading-none mt-2">Package Offered to 1042 Students</p>
+                        <p className="text-sm md:text-base font-novaReg leading-none mt-2">Package Offered to 9952 Students</p>
                     </div>
                     <div className="text-start">
-                        <p className="text-2xl md:text-3xl lg:text-5xl text-orange-300 font-novaThin mt-4">12.5 <small className="font-novaLight text-white -ml-1 text-lg">LPA</small></p>
+                        <p className="text-2xl md:text-3xl lg:text-5xl text-orange-300 font-novaThin mt-4">23.31 <small className="font-novaLight text-white -ml-1 text-lg">LPA</small></p>
                         <p className="text-sm md:text-base font-novaReg leading-none mt-2">Highest National Package Offered</p>
                     </div>
                     <div className="text-start">
-                        <p className="text-2xl md:text-3xl lg:text-5xl text-orange-300 font-novaThin mt-4">23.31 <small className="font-novaLight text-white -ml-1 text-lg">CR</small></p>
+                        <p className="text-2xl md:text-3xl lg:text-5xl text-orange-300 font-novaThin mt-4">70 <small className="font-novaLight text-white -ml-1 text-lg">LPA</small></p>
                         <p className="text-sm md:text-base font-novaReg leading-none mt-2">Highest International Package Offered in 2022</p>
                     </div>
                     <div className="text-start">
-                        <p className="text-2xl md:text-3xl lg:text-5xl text-orange-300 font-novaThin mt-4">7.25 <small className="font-novaLight text-white -ml-1 text-lg">LPA</small></p>
+                        <p className="text-2xl md:text-3xl lg:text-5xl text-orange-300 font-novaThin mt-4">12.5 <small className="font-novaLight text-white -ml-1 text-lg">LPA</small></p>
                         <p className="text-sm md:text-base font-novaReg leading-none mt-2">Average Package<br /> Offered</p>
                     </div>
                 </div>

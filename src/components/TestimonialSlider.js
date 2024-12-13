@@ -33,7 +33,7 @@ const studentReviews = [
         company: "Sonalika International",
         heading: "Countless Opportunities at One Place",
         description: "A huge thank you to GIMS for their unwavering support. The guidance and career services provided by the college helped me secure my dream job at Accenture. I am excited to start this new journey.",
-        image: "/image/student/4.jpg"
+        image: "/image/student/mansi.jpg"
     },
     // {
     //     id: 5,
