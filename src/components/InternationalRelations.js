@@ -25,7 +25,7 @@ const secondContent = [
       "/image/international-collaborations​/logo7.png",
       "/image/international-collaborations​/logo8.png",
       "/image/international-collaborations​/logo9.png",
-      "/image/international-collaborations​/udlogo10.png"
+      "/image/international-collaborations​/logo10.png"
     ],
     alt: "Alternative Summer/Winter Icon",
   },
