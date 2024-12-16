@@ -6,7 +6,7 @@ const content = [
   {
     title: "Self-Directed Learning (SDL):",
     text: "An innovative approach that empowers students to harness their inherent potential through MOOCs Course, Research Paper Publication, Conference Paper Presentation, Live Project for minimum 15 days, External Academic participation, SSO (Self Society Organization).",
-    imageSrc: "/image/logos/logo13.png",
+    imageSrc: "/image/international-collaborations​/logo8.png",
     alt: "International Summer/Winter Programs Icon",
   },
 ];
@@ -16,16 +16,16 @@ const secondContent = [
     title: "International Immersion Program(II) :",
     text: "Enriching 1-2 weeks overseas experience, complete with certifications from partner universities. Visited so far Mahsa University, Malaysia, De Montfort University, Dubai campus, Middlesex University, Dubai Campus, Curtin University, Singapore, and Politeknik Negeri, Bali.",
     imageSrc: [
-      "/image/logos/logo13.png",
-      "/image/logos/logo14.png",
-      "/image/logos/logo15.png",
-      "/image/logos/logo16.png",
-      "/image/logos/logo17.png",
-      "/image/logos/logo18.png",
-      "/image/logos/logo31.png",
-      "/image/logos/logo19.png",
-      "/image/logos/logo20.png",
-      "/image/logos/logo21.webp"
+      "/image/international-collaborations​/logo1.png",
+      "/image/international-collaborations​/logo2.png",
+      "/image/international-collaborations​/logo3.png",
+      "/image/international-collaborations​/logo4.png",
+      "/image/international-collaborations​/logo5.png",
+      "/image/international-collaborations​/logo6.png",
+      "/image/international-collaborations​/logo7.png",
+      "/image/international-collaborations​/logo8.png",
+      "/image/international-collaborations​/logo9.png",
+      "/image/international-collaborations​/udlogo10.png"
     ],
     alt: "Alternative Summer/Winter Icon",
   },
@@ -35,7 +35,7 @@ const thirdContent = [
   {
     title: "Corporate Mentorship: ",
     text: "The students are mentored by the corporate personnel from the II trimester, where the students are guided on the various aspects of industry demands from the professionals.",
-    imageSrc: "/image/logos/logo17.png",
+    imageSrc: "/image/international-collaborations​/logo1.png",
     alt: "Semester Abroad/Exchange Programs Icon",
   },
 ];
@@ -44,7 +44,7 @@ const fourthContent = [
   {
     title: "Incubation Centre:",
     text: "Working closely with the Institute Innovation Councils (IICs), drives innovation and entrepreneurship through incubation support to help students refine their ideas and develop prototypes. InnovateUp, The GIMS incubation centre supports start-up creation by offering mentorship, funding opportunities, and networking connections for aspiring entrepreneurs.",
-    imageSrc: "/image/logos/logo31.png",
+    imageSrc: "/image/international-collaborations​/logo2.png",
     alt: "Semester Abroad/Exchange Programs Icon",
   },
 ];
@@ -53,7 +53,7 @@ const fifthContent = [
   {
     title: "Non-credit inputs:",
     text: "To support student growth and skill-building, the non-credit courses, designed in collaboration with our faculty and industry experts, cover critical areas including Microsoft Excel, Learning and Development, Reasoning, Soft Skills, Communication, and Aptitude Training are imparted.",
-    imageSrc: "/image/logos/logo20.png",
+    imageSrc: "/image/international-collaborations​/logo4.png",
     alt: "Semester Abroad/Exchange Programs Icon",
   },
 ];
@@ -62,7 +62,7 @@ const sixthContent = [
   {
     title: "The Corporate Talk Series: ",
     text: "Corporate interaction is a regular affair at GIMS, through The Chanakya Talk Series (CTS), The Prabodhan Talk Series (PTS), The Samrik Talk Series (STS) and The HR Talk Series (HTS) inviting leaders from the corporate world, veterans from the Defence forces and administrative services and the professional at operational level in the corporate world.",
-    imageSrc: "/image/logos/logo20.png",
+    imageSrc: "/image/international-collaborations​/logo6.png",
     alt: "Corporate Talk Series Icon",
   },
 ];

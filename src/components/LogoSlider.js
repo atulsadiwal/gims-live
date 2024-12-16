@@ -10,7 +10,7 @@ export default function LogoSlider({ logos, title, speed }) {
         480: { slidesPerView: 3 },
         768: { slidesPerView: 4 },
         1024: { slidesPerView: 5 },
-        1280: { slidesPerView: 8 }
+        1280: { slidesPerView: 9 }
     };
 
     return (

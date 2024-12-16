@@ -77,14 +77,14 @@ export const collaborationsLogo = [
 ];
 
 export const clubsLogo = [
-    { alt: "AIT", src: "/image/logos/logo13.png" },
-    { alt: "LSUS", src: "/image/logos/logo14.png" },
-    { alt: "BFSI", src: "/image/logos/logo15.png" },
-    { alt: "Kathmandu", src: "/image/logos/logo16.png" },
-    { alt: "University of Dubai ", src: "/image/logos/logo17.png" },
-    { alt: "MAHSA", src: "/image/logos/logo18.png" },
-    { alt: "DE MONTFORT", src: "/image/logos/logo19.png" },
-    { alt: "POLITEKNIK", src: "/image/logos/logo20.png" },
-    { alt: "Financial Uni", src: "/image/logos/logo24.png" },
-    { alt: "Uniglobe College", src: "/image/logos/logo22.jpg" },
-];
+    { alt: "AIT", src: "/image/international-collaborations​/logo1.png" },
+    { alt: "LSUS", src: "/image/international-collaborations​/logo2.png" },
+    { alt: "BFSI", src: "/image/international-collaborations​/logo3.png" },
+    { alt: "Kathmandu", src: "/image/international-collaborations​/logo4.png" },
+    { alt: "University of Dubai ", src: "/image/international-collaborations​/logo5.png" },
+    { alt: "MAHSA", src: "/image/international-collaborations​/logo6.png" },
+    { alt: "DE MONTFORT", src: "/image/international-collaborations​/logo7.png" },
+    { alt: "POLITEKNIK", src: "/image/international-collaborations​/logo8.png" },
+    { alt: "POLITEKNIK", src: "/image/international-collaborations​/logo9.png" },
+    { alt: "POLITEKNIK", src: "/image/international-collaborations​/logo10.png" },
+];  

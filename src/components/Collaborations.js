@@ -22,7 +22,7 @@ const Collaborations = () => {
                             <div className="py-4 px-2 flex gap-2">
                                 <div className='w-28'>
                                     <img
-                                        src="/image/logos/quality-assured.png"
+                                        src="/image/affiliations-accreditations-and-collaborations​/logo1.png"
                                         alt="Trophy and graduation cap"
                                         className="w-full h-full object-contain" />
                                 </div>
@@ -39,7 +39,7 @@ const Collaborations = () => {
                             <div className="py-6 px-2 flex gap-2">
                                 <div className='p-4'>
                                     <img
-                                        src="/image/logos/aicte.png"
+                                        src="/image/affiliations-accreditations-and-collaborations​/logo2.png"
                                         alt="QS University Rankings"
                                         className="w-full object-cover"
                                     />
@@ -58,7 +58,7 @@ const Collaborations = () => {
                             <div className="py-6 px-2 flex gap-4 h-full">
                                 <div className='p-4'>
                                     <img
-                                        src="/image/logos/analytics.png"
+                                        src="/image/affiliations-accreditations-and-collaborations​/logo3.png"
                                         alt="QS World Rankings"
                                         className="w-full h-full object-contain"
                                     />
@@ -76,7 +76,7 @@ const Collaborations = () => {
                             <div className="py-6 px-2 flex gap-4 h-full">
                                 <div className='w-28'>
                                     <img
-                                        src="/image/logos/logo3.png"
+                                        src="/image/affiliations-accreditations-and-collaborations​/logo4.png"
                                         alt="NIRF Rankings"
                                         className="w-full h-full object-contain"
                                     />
@@ -99,7 +99,7 @@ const Collaborations = () => {
                             <div className="py-6 px-2 flex gap-4 h-full">
                                 <div className='w-32'>
                                     <img
-                                        src="/image/logos/logo4.png"
+                                        src="/image/affiliations-accreditations-and-collaborations​/logo5.png"
                                         alt="ABET"
                                         className="w-full h-full object-contain"
                                     />
@@ -117,7 +117,7 @@ const Collaborations = () => {
                             <div className="py-6 px-2 flex gap-4 h-full">
                                 <div className='w-36'>
                                     <img
-                                        src="/image/logos/logo5.png"
+                                        src="/image/affiliations-accreditations-and-collaborations​/logo6.png"
                                         alt="NBA"
                                         className="w-full h-full object-contain"
                                     />
@@ -137,7 +137,7 @@ const Collaborations = () => {
                             <div className="py-6 px-2 flex gap-4 h-full">
                                 <div className='h-40 w-40'>
                                     <img
-                                        src="/image/logos/logo6.png"
+                                        src="/image/affiliations-accreditations-and-collaborations​/logo7.png"
                                         alt="NAAC"
                                         className="w-full h-full object-contain"
                                     />
@@ -157,7 +157,7 @@ const Collaborations = () => {
                             <div className="py-6 px-2 flex gap-4 h-full">
                                 <div className='h-28 w-28'>
                                     <img
-                                        src="/image/logos/logo7.png"
+                                        src="/image/affiliations-accreditations-and-collaborations​/logo8.png"
                                         alt="Outlook"
                                         className="w-full h-full object-contain"
                                     />
@@ -173,7 +173,7 @@ const Collaborations = () => {
                             <div className="py-6 px-2 flex gap-4 h-full">
                                 <div className='h-32 w-32'>
                                     <img
-                                        src="/image/logos/logo8.png"
+                                        src="/image/affiliations-accreditations-and-collaborations​/logo9.png"
                                         alt="The Week"
                                         className="w-full h-full object-contain"
                                     />
@@ -189,7 +189,7 @@ const Collaborations = () => {
                             <div className="py-6 px-2 flex gap-4 h-full">
                                 <div className='h-32 w-32'>
                                     <img
-                                        src="/image/logos/logo9.png"
+                                        src="/image/affiliations-accreditations-and-collaborations​/logo10.png"
                                         alt="The Week"
                                         className="w-full h-full object-contain"
                                     />
@@ -205,7 +205,7 @@ const Collaborations = () => {
                             <div className="py-6 px-2 flex gap-4 h-full">
                                 <div className='h-32 w-32'>
                                     <img
-                                        src="/image/logos/xlri.jpg"
+                                        src="/image/affiliations-accreditations-and-collaborations​/logo11.png"
                                         alt="The Week"
                                         className="w-full mt-5"
                                     />
@@ -224,7 +224,7 @@ const Collaborations = () => {
                             <div className="py-6 px-2 flex gap-4 h-full">
                                 <div className='h-32 w-32'>
                                     <img
-                                        src="/image/logos/logo10.png"
+                                        src="/image/affiliations-accreditations-and-collaborations​/logo12.png"
                                         alt="The Week"
                                         className="w-full mt-5"
                                     />
@@ -243,7 +243,7 @@ const Collaborations = () => {
                             <div className="py-6 px-2 flex gap-4 h-full">
                                 <div className='h-32 w-32'>
                                     <img
-                                        src="/image/logos/atal.jpg"
+                                        src="/image/affiliations-accreditations-and-collaborations​/logo13.png"
                                         alt="The Week"
                                         className="w-full mt-5 object:contain"
                                     />
@@ -257,7 +257,6 @@ const Collaborations = () => {
                             </div>
                         </div>
                     </div>
-
                 </div>
             </section>
         </>
