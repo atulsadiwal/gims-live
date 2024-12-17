@@ -40,8 +40,8 @@ export default function VideoShowcase() {
                         </div>
                     </div>
                     <div className="space-y-2 sm:col-span-2 md:col-span-1">
-                        <div className="text-red-600 text-5xl font-FONT2 max-lg:text-3xl max-md:text-2xl max-sm:text-xl">370+</div>
-                        <div className="text-lg font-FONT1 max-md:text-base max-sm:text-sm">Internships</div>
+                        <div className="text-red-600 text-5xl font-FONT2 max-lg:text-3xl max-md:text-2xl max-sm:text-xl">525+</div>
+                        <div className="text-lg font-FONT1 max-md:text-base max-sm:text-sm">International certifications</div>
                         <div className="text-sm font-novaReg max-sm:text-xs">
                             in Walt Disney, USA (Highest in the Region)
                         </div>
