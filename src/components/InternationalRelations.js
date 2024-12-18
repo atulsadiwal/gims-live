@@ -13,7 +13,7 @@ const content = [
 
 const secondContent = [
   {
-    
+
     title: "Corporate Mentorship: ",
     text: "The students are mentored by the corporate personnel from the II trimester, where the students are guided on the various aspects of industry demands from the professionals.",
     alt: "Semester Abroad/Exchange Programs Icon",
@@ -56,7 +56,7 @@ const sixthContent = [
 
 
 const InternationalRelations = () => {
-  const contentArrays = [content, secondContent, thirdContent,fourthContent, fifthContent, sixthContent];
+  const contentArrays = [content, secondContent, thirdContent, fourthContent, fifthContent, sixthContent];
 
 
   return (
@@ -68,45 +68,44 @@ const InternationalRelations = () => {
         Offers exclusive opportunities to explore the world.
       </p>
       <div className="max-w-[1400px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 place-items-center">
-      {contentArrays.map((contentArray, index) => (
-  <div
-    key={index}
-    className={`text-black rounded-md shadow-md flex flex-col p-4 sm:p-6 md:p-8 h-[380px] relative transition-all duration-500`}
-    style={{
-      background: index === 1 
-        ? `linear-gradient(to bottom, rgba(173, 216, 230, 0.7), rgba(0, 0, 128, 0.7)), url(${process.env.PUBLIC_URL + contentArray[0].backgroundImage})` 
-        : "white",
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-      backgroundRepeat: "no-repeat",
-      color: index === 1 ? "white" : "black",
-    }}
-    onMouseEnter={(e) => {
-      if (index !== 1) {
-        e.currentTarget.style.background = `linear-gradient(to bottom, rgba(173, 216, 230, 0.7), rgba(0, 0, 128, 0.7)), url(${process.env.PUBLIC_URL + contentArray[0].backgroundImage})`;
-        e.currentTarget.style.backgroundSize = "cover";
-        e.currentTarget.style.backgroundPosition = "center";
-        e.currentTarget.style.color = "white";
-      }
-    }}
-    onMouseLeave={(e) => {
-      if (index !== 1) {
-        e.currentTarget.style.background = "linear-gradient(to bottom,rgb(217, 228, 239),rgb(245, 219, 236))";
-        e.currentTarget.style.color = "black";
-        e.currentTarget.style.boxShadow = "0 4px 6px rgba(0, 0, 0, 0.1)";
-      }
-    }}
-  >
-    <div className="text-center">
-      <h3 className="font-bold text-base sm:text-lg md:text-2xl mb-2">
-        {contentArray[0].title}
-      </h3>
-      <p className="text-xs sm:text-sm md:text-base font-semibold leading-relaxed">
-        {contentArray[0].text}
-      </p>
-    </div>
-  </div>
-))}
+        {contentArrays.map((contentArray, index) => (
+          <div
+            key={index}
+            className={`text-black rounded-md shadow-md flex flex-col p-4 sm:p-6 md:p-8 h-[380px] relative transition-all duration-500`}
+            style={{
+              background: index === 1
+                ? `linear-gradient(to bottom, rgba(173, 216, 230, 0.7), rgba(0, 0, 128, 0.7)), url(${process.env.PUBLIC_URL + contentArray[0].backgroundImage})`
+                : `linear-gradient(to bottom,rgb(217, 228, 239),rgb(245, 219, 236))`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+              color: index === 1 ? "white" : "black",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.background = `linear-gradient(to bottom, rgba(173, 216, 230, 0.7), rgba(0, 0, 128, 0.7)), url(${process.env.PUBLIC_URL + contentArray[0].backgroundImage})`;
+              e.currentTarget.style.backgroundSize = "cover";
+              e.currentTarget.style.backgroundPosition = "center";
+              e.currentTarget.style.color = "white";
+            }}
+            onMouseLeave={(e) => {
+              if (index !== 1) {
+                e.currentTarget.style.background = `linear-gradient(to bottom,rgb(217, 228, 239),rgb(245, 219, 236))`;
+                e.currentTarget.style.color = "black";
+                e.currentTarget.style.boxShadow = "0 4px 6px rgba(0, 0, 0, 0.1)";
+              }
+            }}
+          >
+
+            <div className="text-center">
+              <h3 className="font-bold text-base sm:text-lg md:text-2xl mb-2">
+                {contentArray[0].title}
+              </h3>
+              <p className="text-xs sm:text-sm md:text-base font-semibold leading-relaxed">
+                {contentArray[0].text}
+              </p>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
