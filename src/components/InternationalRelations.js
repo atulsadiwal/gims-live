@@ -1,6 +1,6 @@
 // /* eslint-disable jsx-a11y/img-redundant-alt */
 
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 const content = [
   {
@@ -54,7 +54,6 @@ const sixthContent = [
   },
 ];
 
-// Other content arrays (fourthContent, fifthContent, sixthContent) would also have a backgroundImage field like above.
 
 const InternationalRelations = () => {
   const contentArrays = [content, secondContent, thirdContent,fourthContent, fifthContent, sixthContent];
@@ -76,11 +75,11 @@ const InternationalRelations = () => {
     style={{
       background: index === 1 
         ? `linear-gradient(to bottom, rgba(173, 216, 230, 0.7), rgba(0, 0, 128, 0.7)), url(${process.env.PUBLIC_URL + contentArray[0].backgroundImage})` 
-        : "white", // Make second card's image visible
+        : "white",
       backgroundSize: "cover",
       backgroundPosition: "center",
       backgroundRepeat: "no-repeat",
-      color: index === 1 ? "white" : "black", // Adjust text color
+      color: index === 1 ? "white" : "black",
     }}
     onMouseEnter={(e) => {
       if (index !== 1) {
@@ -92,8 +91,9 @@ const InternationalRelations = () => {
     }}
     onMouseLeave={(e) => {
       if (index !== 1) {
-        e.currentTarget.style.background = "white"; // Revert to white background
-        e.currentTarget.style.color = "black"; // Reset text color to black
+        e.currentTarget.style.background = "linear-gradient(to bottom,rgb(217, 228, 239),rgb(245, 219, 236))";
+        e.currentTarget.style.color = "black";
+        e.currentTarget.style.boxShadow = "0 4px 6px rgba(0, 0, 0, 0.1)";
       }
     }}
   >
