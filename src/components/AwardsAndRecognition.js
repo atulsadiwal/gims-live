@@ -118,7 +118,14 @@ const AwardsAndRecognition = () => {
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div className='bg-gray-200 p-1 rounded-lg'>
                                 <div className="bg-white text-black p-3 h-full rounded-lg shadow-2xl transition-transform duration-300 hover:scale-105 transform hover:bg-indigo-100">
-                                    <h3 className="text-lg md:text-xl font-novaBold mb-3 text-indigo-600">CourseEra Certifications</h3>
+                                    <h3 className="text-lg md:text-xl font-novaBold mb-3 text-indigo-600 flex items-center">
+                                        <img
+                                            src="/image/placement-recruiter/logo10.png"
+                                            alt="CourseEra Logo"
+                                            className="w-28 h-10 mr-2"
+                                        />
+                                        Certifications
+                                    </h3>
                                     <p className="text-xs md:text-sm text-gray-700">Students have received various certifications through online platforms like CourseEra to enhance their skills.</p>
                                 </div>
                             </div>

@@ -7,9 +7,11 @@ const FormSection = () => {
         <div className="flex flex-row justify-between items-center max-md:flex-col max-sm:flex-col">
           <div className="w-6/12 max-sm:w-full p-6 max-md:w-full max-sm:p-0">
             <div className="flex flex-col justify-center h-full">
-              <h1 className="text-4xl font-FONT2 mb-4 text-red-600 max-sm:text-xl max-sm:mb-2">GIMS</h1>
+              <div className='flex-shrink-0'>
+                <img src="/image/gims-logobg.png" alt="logo" className='max-md: max-sm:w-28' />
+              </div>
               <p className="text-lg mb-6 text-gray-500 max-sm:text-sm max-sm:mb-3 font-novaReg">
-              GNIOT Institute of Management Studies (GIMS), located in the forward-looking city of Greater Noida, was founded in 2020 amidst the transformative period of the pandemic. This institution was conceived with the mission of delivering exceptional management education through its two year full time AICTE Approved, HLACT Accredited Post Graduate Diploma in Management (PGDM) program, aiming to equip Millennials with the skills necessary to navigate and excel in the evolving landscape of Industry dynamics.
+                GNIOT Institute of Management Studies (GIMS), located in the forward-looking city of Greater Noida, was founded in 2020 amidst the transformative period of the pandemic. This institution was conceived with the mission of delivering exceptional management education through its two year full time AICTE Approved, HLACT Accredited Post Graduate Diploma in Management (PGDM) program, aiming to equip Millennials with the skills necessary to navigate and excel in the evolving landscape of Industry dynamics.
               </p>
             </div>
           </div>

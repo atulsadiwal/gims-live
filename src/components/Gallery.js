@@ -1,25 +1,34 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 
-import React, { useState, useEffect } from 'react';
-import { Plus } from 'lucide-react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
+import React, { useState, useEffect } from "react";
+import { Plus } from "lucide-react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+
 const memories = [
     {
-        url: '/image/gallery/1731909052-marketing-adventure8.webp',
-        icon: 'Plus',
+        url: "/image/gallery/gallery-4.jpg",
+        icon: "Plus",
     },
     {
-        url: '/image/gallery/463790411_955925189885840_3238215167815083024_n.jpg',
-        icon: 'Plus',
+        url: "/image/gallery/gallery-5.jpg",
+        icon: "Plus",
     },
     {
-        url: '/image/gallery/461175028_936955695116123_7278237797990110738_n.jpg',
-        icon: 'Plus',
+        url: "/image/gallery/gallery-6.jpg",
+        icon: "Plus",
     },
     {
-        url: '/image/gallery/gallery-29.webp',
-        icon: 'Plus',
+        url: "/image/gallery/gallery-3.jpg",
+        icon: "Plus",
+    },
+    {
+        url: "/image/gallery/gallery.jpg",
+        icon: "Plus",
+    },
+    {
+        url: "/image/gallery/gallery-2.jpg",
+        icon: "Plus",
     },
 ];
 
@@ -35,9 +44,9 @@ const Gallery = () => {
         };
 
         handleResize();
-        window.addEventListener('resize', handleResize);
-        
-        return () => window.removeEventListener('resize', handleResize);
+        window.addEventListener("resize", handleResize);
+
+        return () => window.removeEventListener("resize", handleResize);
     }, []);
 
     const handleMouseEnter = (index) => {
@@ -62,14 +71,22 @@ const Gallery = () => {
     return (
         <section className="w-full overflow-hidden py-10 max-md:py-7 max-sm:py-5">
             {isMobile ? (
-                <Swiper spaceBetween={10} slidesPerView={1}>
+                <Swiper
+                    spaceBetween={10}
+                    slidesPerView={1}
+                    breakpoints={{
+                        640: { slidesPerView: 1 },
+                        768: { slidesPerView: 2 },
+                        1024: { slidesPerView: 3 },
+                    }}
+                >
                     {memories.map((item, index) => (
                         <SwiperSlide key={index}>
                             <div className="relative group cursor-pointer transition-all duration-300">
                                 <img
                                     src={item.url}
                                     alt={`Gallery image ${index + 1}`}
-                                    className="object-cover w-full h-[400px] brightness-75 group-hover:brightness-90 transition-all"
+                                    className="object-cover w-full h-[50vh] max-sm:h-[30vh] brightness-75 group-hover:brightness-90 transition-all"
                                 />
                                 <div
                                     className="absolute inset-0 flex items-center justify-center text-white p-4 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity"
@@ -93,8 +110,8 @@ const Gallery = () => {
                             key={index}
                             className="relative group cursor-pointer transition-all duration-300"
                             style={{
-                                width: activeIndex === index ? '50%' : '25%',
-                                transition: 'width 0.3s ease',
+                                width: activeIndex === index ? "50%" : "20%",
+                                transition: "width 0.3s ease",
                             }}
                             onMouseEnter={() => handleMouseEnter(index)}
                             onMouseLeave={handleMouseLeave}
@@ -102,7 +119,7 @@ const Gallery = () => {
                             <img
                                 src={item.url}
                                 alt={`Gallery image ${index + 1}`}
-                                className="object-cover w-full h-[400px] brightness-75 group-hover:brightness-90 transition-all"
+                                className="object-cover w-full h-[400px] max-sm:h-[30vh] brightness-75 group-hover:brightness-90 transition-all"
                             />
                             <div
                                 className="absolute inset-0 flex items-center justify-center text-white p-4 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity"
@@ -122,7 +139,7 @@ const Gallery = () => {
 
             {showModal && (
                 <div
-                    className="fixed inset-0 bg-black/50 flex items-center justify-center z-50"
+                    className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 px-4"
                     onClick={closeModal}
                 >
                     <div
@@ -132,7 +149,7 @@ const Gallery = () => {
                         <img
                             src={selectedImage}
                             alt="Selected"
-                            className="object-contain w-full h-[80vh] rounded-lg"
+                            className="object-contain w-full h-[80vh] max-sm:h-[60vh] rounded-lg"
                         />
                         <button
                             className="absolute top-4 right-4 text-white text-3xl font-bold hover:text-gray-300 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 rounded"

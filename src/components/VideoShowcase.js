@@ -7,7 +7,7 @@ export default function VideoShowcase() {
     const closeModal = () => setIsOpen(false);
 
     return (
-        <div className="max-w-5xl mx-auto py-16 max-lg:py-12 max-md:py-10 max-sm:py-8 max-sm:px-4">
+        <div className="max-w-5xl mx-auto py-10 max-lg:py-8 max-md:py-6 max-sm:py-4 max-sm:px-4">
             <div className="relative rounded-lg max-sm:mb-8 max-md:mb-12 mb-16">
                 <div className="cursor-pointer" onClick={openModal}>
                     <img

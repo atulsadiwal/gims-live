@@ -136,7 +136,6 @@ const VideoClips = () => {
                     ))}
                 </Swiper>
             ) : (
-                // Default grid layout showing all 5 videos (large screens)
                 <div className="grid grid-cols-5 gap-4 py-4">
                     {videos.map((video, index) => (
                         <div

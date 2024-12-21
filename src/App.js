@@ -30,6 +30,7 @@ const App = () => {
       <HomePage />
       <FormSection />
       <Top />
+      <VideoShowcase />
       {/* <LogoSlider title={<><Building className='w-6 h-6 sm:h-8 sm:w-8' />Placements Recruiters</>} logos={collaborationsLogo} speed={3000} /> */}
       <PlacementRecruiters />
       <TestimonialSlider />
@@ -40,7 +41,6 @@ const App = () => {
       <CilebHighlights />
       <CorporateReviews />
       <InternationalRelations />
-      <VideoShowcase />
       <UniversityDetails />
       <Collaborations />
       <AdmissionProcess />

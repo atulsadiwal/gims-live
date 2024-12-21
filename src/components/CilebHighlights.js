@@ -4,20 +4,28 @@ import 'swiper/css';
 
 const slides = [
     {
-        imageUrl: "/image/celebrities/1689335261-2.jpg",
+        imageUrl: "/image/celebrities/ashneer.jpg",
         name: 'Ashneer Grover'
     },
     {
-        imageUrl: "/image/celebrities/1696931894-5.jpg",
+        imageUrl: "/image/celebrities/sanjay.jpg",
         name: 'Sanjay Mishra'
     },
     {
-        imageUrl: "/image/celebrities/1682057215-10.jpg",
+        imageUrl: "/image/celebrities/panther.jpg",
         name: 'Panther'
     },
     {
-        imageUrl: "/image/celebrities/1719548341-Hosted-9.webp",
+        imageUrl: "/image/celebrities/jaya.webp",
         name: 'Ms. Jaya Kishori'
+    },
+    {
+        imageUrl: "/image/celebrities/manoj-muntashir.jpg",
+        name: 'Manoj Muntashir'
+    },
+    {
+        imageUrl: "/image/celebrities/guru-randhawa.jpg",
+        name: 'Guru Randhawa'
     },
 ];
 
@@ -41,7 +49,7 @@ const CilebHighlights = () => {
     };
 
     return (
-        <section className="relative w-full max-w-[1450px] mx-auto py-14 max-xl:py-12 max-lg:py-10 max-md:py-8 max-sm:py-6">
+        <section className="relative w-full max-w-[1550px] mx-auto py-14 max-xl:py-12 max-lg:py-10 max-md:py-8 max-sm:py-6 pl-2 pr-10 2xl:pr-2 max-md:pr-2 max-sm:pr-2">
             {isMobile ? (
                 <Swiper
                     spaceBetween={20}
@@ -77,7 +85,7 @@ const CilebHighlights = () => {
                     {slides.map((slide, index) => (
                         <div
                             key={index}
-                            className={`relative group ${index === activeIndex ? "min-w-[76%]" : "min-w-[8%]"} bg-white rounded-3xl shadow-md overflow-hidden cursor-pointer transition-all duration-300 ease-in-out`}
+                            className={`relative group ${index === activeIndex ? "min-w-[69%]" : "min-w-[6%]"} bg-white rounded-3xl shadow-md overflow-hidden cursor-pointer transition-all duration-300 ease-in-out`}
                             onClick={() => handleClick(index)}
                         >
                             <div
