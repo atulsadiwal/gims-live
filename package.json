@@ -1,5 +1,6 @@
 {
   "name": "gims-live",
+  "homepage": "https://www.gims.net.in/apply-now",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
