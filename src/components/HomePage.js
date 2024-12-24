@@ -33,7 +33,7 @@ const HomePage = () => {
     <section className='relative h-screen w-full'>
       <div className='absolute inset-0 bg-black bg-blend-multiply bg-opacity-70'></div>
       <video className="h-full w-full object-cover" autoPlay loop muted>
-        <source src="/video/GIMS_Video.mp4" type="video/mp4" />
+        <source src="/apply-now/video/GIMS_Video.mp4" type="video/mp4" />
       </video>
       <div className='absolute z-10 inset-0'>
         <div className='flex flex-col justify-between h-full'>

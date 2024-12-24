@@ -3,43 +3,43 @@ import React, { useState, useEffect } from 'react';
 
 const features = [
     {
-        imgSrc: "/image/corporate/priti-goel.webp",
+        imgSrc: "/apply-now/image/corporate/priti-goel.webp",
         name: "Ms. Priti Goel",
         designation: "Founder, CEO and MD",
         description: "Priti Goel, CEO of Prisha Wealth, brings 23+ years of global banking and entrepreneurship experience as a Corporate Mentor, guiding GNIOT students with expertise, support, and insights for success."
     },
     {
-        imgSrc: "/image/corporate/nitin-kalra.webp",
+        imgSrc: "/apply-now/image/corporate/nitin-kalra.webp",
         name: "Mr. Nitin Kalra",
         designation: "AGM-HR, North Zone",
         description: "Nitin Kalra, an HR leader with 18+ years of expertise, inspires GIMS students to embrace lifelong learning, build skills, and strive for excellence, shaping their path to future success."
     },
     {
-        imgSrc: "/image/corporate/shivani-sharma-singh.jpg",
+        imgSrc: "/apply-now/image/corporate/shivani-sharma-singh.jpg",
         name: "Ms. Shivani Sharma Singh",
         designation: "Head Government Project",
         description: "A GIMS mentor emphasizes communication, analytics, creativity, customer focus, resilience, tech skills, negotiation, and time management as key Sales & Marketing skills, urging students to pursue excellence."
     },
     {
-        imgSrc: "/image/corporate/rishika.webp",
+        imgSrc: "/apply-now/image/corporate/rishika.webp",
         name: "Mrs. Rishika Verma Vohra",
         designation: "Career Campus & Lateral Recruitment",
         description: "A GIMS mentor with 12+ years in Talent Acquisition highlights student potential, offering expertise in recruiting, HR policies, DEI, and employee engagement to guide them toward successful careers."
     },
     {
-        imgSrc: "/image/corporate/sandeep-kumar-rastogi.webp",
+        imgSrc: "/apply-now/image/corporate/sandeep-kumar-rastogi.webp",
         name: "Mr. Sandeep Kumar Rastogi",
         designation: "Senior Vice President- Growth Financing",
         description: "A GIMS mentor advises PGDM students to embrace learning, set clear goals, build networks, gain practical experience, and develop soft skills to excel as future business leaders."
     },
     {
-        imgSrc: "/image/corporate/harsh-raghuvanshi.jpg",
+        imgSrc: "/apply-now/image/corporate/harsh-raghuvanshi.jpg",
         name: "Mr. Harsh Raghuvanshi",
         designation: "Assistant Manager, Aditya Birla Group",
         description: "A corporate HR mentor advises PGDM students to excel in analytics, leadership, communication, adaptability, ethics, technical skills, time management, networking, creativity, and continuous learning for successful corporate careers."
     },
     {
-        imgSrc: "/image/corporate/harsh-raj-jain.jpg",
+        imgSrc: "/apply-now/image/corporate/harsh-raj-jain.jpg",
         name: "Mr. Harsh Raj Jain",
         designation: "Talent Acquisition Head",
         description: "A corporate HR mentor advises students to focus on professionalism, work ethic, team collaboration, technological proficiency, integrity, and self-motivation to successfully transition into the corporate world."

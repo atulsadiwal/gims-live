@@ -4,27 +4,27 @@ import 'swiper/css';
 
 const slides = [
     {
-        imageUrl: "/image/celebrities/ashneer.jpg",
+        imageUrl: "/apply-now/image/celebrities/ashneer.jpg",
         name: 'Ashneer Grover'
     },
     {
-        imageUrl: "/image/celebrities/sanjay.jpg",
+        imageUrl: "/apply-now/image/celebrities/sanjay.jpg",
         name: 'Sanjay Mishra'
     },
     {
-        imageUrl: "/image/celebrities/panther.jpg",
+        imageUrl: "/apply-now/image/celebrities/panther.jpg",
         name: 'Panther'
     },
     {
-        imageUrl: "/image/celebrities/jaya.webp",
+        imageUrl: "/apply-now/image/celebrities/jaya.webp",
         name: 'Ms. Jaya Kishori'
     },
     {
-        imageUrl: "/image/celebrities/manoj-muntashir.jpg",
+        imageUrl: "/apply-now/image/celebrities/manoj-muntashir.jpg",
         name: 'Manoj Muntashir'
     },
     {
-        imageUrl: "/image/celebrities/guru-randhawa.jpg",
+        imageUrl: "/apply-now/image/celebrities/guru-randhawa.jpg",
         name: 'Guru Randhawa'
     },
 ];

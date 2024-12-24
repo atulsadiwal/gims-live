@@ -2,18 +2,18 @@ import React, { useEffect, useRef, useState } from "react";
 
 const Collaborations = () => {
     const logos = [
-        "/image/affiliations-accreditations-and-collaborations​/logo1.png",
-        "/image/affiliations-accreditations-and-collaborations​/logo2.png",
-        "/image/affiliations-accreditations-and-collaborations​/logo3.png",
-        "/image/affiliations-accreditations-and-collaborations​/logo4.png",
-        "/image/affiliations-accreditations-and-collaborations​/logo5.png",
-        "/image/affiliations-accreditations-and-collaborations​/logo6.png",
-        "/image/affiliations-accreditations-and-collaborations​/logo7.png",
-        "/image/affiliations-accreditations-and-collaborations​/logo8.png",
-        "/image/affiliations-accreditations-and-collaborations​/logo9.png",
-        "/image/affiliations-accreditations-and-collaborations​/logo10.png",
-        "/image/affiliations-accreditations-and-collaborations​/logo11.png",
-        "/image/affiliations-accreditations-and-collaborations​/logo12.png",
+        "/apply-now/image/affiliations-accreditations-and-collaborations​/logo1.png",
+        "/apply-now/image/affiliations-accreditations-and-collaborations​/logo2.png",
+        "/apply-now/image/affiliations-accreditations-and-collaborations​/logo3.png",
+        "/apply-now/image/affiliations-accreditations-and-collaborations​/logo4.png",
+        "/apply-now/image/affiliations-accreditations-and-collaborations​/logo5.png",
+        "/apply-now/image/affiliations-accreditations-and-collaborations​/logo6.png",
+        "/apply-now/image/affiliations-accreditations-and-collaborations​/logo7.png",
+        "/apply-now/image/affiliations-accreditations-and-collaborations​/logo8.png",
+        "/apply-now/image/affiliations-accreditations-and-collaborations​/logo9.png",
+        "/apply-now/image/affiliations-accreditations-and-collaborations​/logo10.png",
+        "/apply-now/image/affiliations-accreditations-and-collaborations​/logo11.png",
+        "/apply-now/image/affiliations-accreditations-and-collaborations​/logo12.png",
     ];
 
     const sliderRef = useRef(null);
@@ -40,7 +40,7 @@ const Collaborations = () => {
 
     return (
         <div className="w-full overflow-hidden py-10 bg-gray-50">
-            <h3 className="text-center text-2xl md:text-3xl lg:text-4xl font-semibold text-black mb-8">
+            <h3 className="text-center text-2xl md:text-3xl lg:text-4xl font-FONT2 text-black mb-8">
                 Affiliations, Accreditations & Collaborations
             </h3>
             <div

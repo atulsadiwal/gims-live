@@ -88,13 +88,13 @@ const AwardsAndRecognition = () => {
                                 <div key={index} className="relative group">
                                     <h2 className="max-w-52 mx-auto text-center text-white font-novaSemi mt-4 group-hover:opacity-0 transition-opacity duration-300 flex items-center justify-center relative">
                                         <img
-                                            src="/image/left.png"
+                                            src="/apply-now/image/left.png"
                                             alt="award"
                                             className="w-6 h-16 md:w-8 md:h-20"
                                         />
                                         <span className="z-10 text-sm md:text-base">{bullet.heading}</span>
                                         <img
-                                            src="/image/right.png"
+                                            src="/apply-now/image/right.png"
                                             alt="award"
                                             className="w-6 h-16 md:w-8 md:h-20"
                                         />
@@ -120,7 +120,7 @@ const AwardsAndRecognition = () => {
                                 <div className="bg-white text-black p-3 h-full rounded-lg shadow-2xl transition-transform duration-300 hover:scale-105 transform hover:bg-indigo-100">
                                     <h3 className="text-lg md:text-xl font-novaBold mb-3 text-indigo-600 flex items-center">
                                         <img
-                                            src="/image/placement-recruiter/logo10.png"
+                                            src="/apply-now/image/placement-recruiter/logo10.png"
                                             alt="CourseEra Logo"
                                             className="w-28 h-10 mr-2"
                                         />

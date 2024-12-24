@@ -51,13 +51,13 @@ const Affiliated = () => {
                                     <div className="bg-black bg-opacity-60 text-white p-6 rounded-lg flex flex-col items-center justify-center shadow-md transition-shadow h-[300px] w-full">
                                         <h2 className="text-center text-white font-novaSemi mt-4 flex items-center justify-center">
                                             <img
-                                                src="/image/left-white.png"
+                                                src="/apply-now/image/left-white.png"
                                                 alt="leaf left"
                                                 className="w-8 h-20"
                                             />
                                             <span className="z-10 font-FONT1 max-sm:text-sm">{point}</span>
                                             <img
-                                                src="/image/right-white.png"
+                                                src="/apply-now/image/right-white.png"
                                                 alt="leaf right"
                                                 className="w-8 h-20"
                                             />
@@ -81,13 +81,13 @@ const Affiliated = () => {
                                 >
                                     <h2 className="max-w-52 text-center text-white font-novaSemi mt-4 flex items-center justify-center">
                                         <img
-                                            src="/image/left-white.png"
+                                            src="/apply-now/image/left-white.png"
                                             alt="leaf left"
                                             className="w-8 h-20"
                                         />
                                         <span className="z-10 font-FONT1 text-sm">{point}</span>
                                         <img
-                                            src="/image/right-white.png"
+                                            src="/apply-now/image/right-white.png"
                                             alt="leaf right"
                                             className="w-8 h-20"
                                         />
