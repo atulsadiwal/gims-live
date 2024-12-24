@@ -3,8 +3,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
 const videos = [
-    { id: 'mPnsuSYSkPc' },
-    { id: 'R3spn6b0GQk' },
+    { id: 'hw3-oTqT42w' },
+    { id: 'VwHJdatzODA' },
     { id: '3ciUNVaJHSc' },
     { id: 'kMMWujcG8rA' },
     { id: 'k0ZTyDDKAE8' },

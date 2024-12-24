@@ -7,11 +7,11 @@ export default function VideoShowcase() {
     const closeModal = () => setIsOpen(false);
 
     return (
-        <div className="max-w-5xl mx-auto py-10 max-lg:py-8 max-md:py-6 max-sm:py-4 max-sm:px-4">
+        <div className="max-w-5xl mx-auto py-16 max-lg:py-12 max-md:py-10 max-sm:py-8 max-sm:px-4">
             <div className="relative rounded-lg max-sm:mb-8 max-md:mb-12 mb-16">
                 <div className="cursor-pointer" onClick={openModal}>
                     <img
-                        src="/image/maxresdefault.webp"
+                        src="https://img.youtube.com/vi/mPnsuSYSkPc/maxresdefault.jpg"
                         alt="Video Thumbnail"
                         className="w-full aspect-video object-cover rounded-3xl max-sm:rounded-xl max-md:rounded-2xl"
                     />
@@ -27,7 +27,7 @@ export default function VideoShowcase() {
                 <div className="grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-8 max-lg:gap-6 max-md:gap-4 max-sm:gap-3 ">
                     <div className="space-y-2">
                         <div className="text-red-600 text-5xl font-FONT2 max-lg:text-3xl max-md:text-2xl max-sm:text-xl">25+</div>
-                        <div className="text-lg font-FONT1 max-md:text-base max-sm:text-sm">Collaborations</div>
+                        <div className="text-lg font-FONT1 max-md:text-base max-sm:text-sm">Collaborations</div> 
                         <div className="text-sm font-novaReg max-sm:text-xs">
                             with Top Ranked Foreign Universities in 15+ countries
                         </div>
@@ -36,12 +36,12 @@ export default function VideoShowcase() {
                         <div className="text-red-600 text-5xl font-FONT2 max-lg:text-3xl max-md:text-2xl max-sm:text-xl">500+</div>
                         <div className="text-lg font-FONT1 max-md:text-base max-sm:text-sm">Students</div>
                         <div className="text-sm font-novaReg max-sm:text-xs">
-                            Travelled abroad for Student Exchange programme
+                            Traveled Abroad for Semester, Summer & Cultural Exchange Programs
                         </div>
                     </div>
                     <div className="space-y-2 sm:col-span-2 md:col-span-1">
-                        <div className="text-red-600 text-5xl font-FONT2 max-lg:text-3xl max-md:text-2xl max-sm:text-xl">525+</div>
-                        <div className="text-lg font-FONT1 max-md:text-base max-sm:text-sm">International certifications</div>
+                        <div className="text-red-600 text-5xl font-FONT2 max-lg:text-3xl max-md:text-2xl max-sm:text-xl">370+</div>
+                        <div className="text-lg font-FONT1 max-md:text-base max-sm:text-sm">Internships</div>
                         <div className="text-sm font-novaReg max-sm:text-xs">
                             in Walt Disney, USA (Highest in the Region)
                         </div>
@@ -66,7 +66,7 @@ export default function VideoShowcase() {
                         </button>
                         <iframe
                             className="w-full h-full rounded-lg"
-                            src="https://www.youtube.com/embed/R3spn6b0GQk"
+                            src="https://www.youtube.com/embed/mPnsuSYSkPc"
                             title="YouTube video player"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
@@ -77,4 +77,3 @@ export default function VideoShowcase() {
         </div>
     )
 }
-
