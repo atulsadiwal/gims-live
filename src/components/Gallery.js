@@ -86,6 +86,7 @@ const Gallery = () => {
                                 <img
                                     src={item.url}
                                     alt={`Gallery image ${index + 1}`}
+                                    loading="eager"
                                     className="object-cover w-full h-[50vh] max-sm:h-[30vh] brightness-75 group-hover:brightness-90 transition-all"
                                 />
                                 <div
@@ -119,6 +120,7 @@ const Gallery = () => {
                             <img
                                 src={item.url}
                                 alt={`Gallery image ${index + 1}`}
+                                loading="eager"
                                 className="object-cover w-full h-[400px] max-sm:h-[30vh] brightness-75 group-hover:brightness-90 transition-all"
                             />
                             <div
@@ -149,6 +151,7 @@ const Gallery = () => {
                         <img
                             src={selectedImage}
                             alt="Selected"
+                            loading="eager"
                             className="object-contain w-full h-[80vh] max-sm:h-[60vh] rounded-lg"
                         />
                         <button

@@ -116,6 +116,7 @@ const TestimonialSlider = () => {
                                         <img
                                             src={studentReviews[currentTopSlide].image}
                                             alt="Student"
+                                            loading="eager"
                                             className="w-full h-full object-cover object-top max-sm:object-cover max-sm:object-top"
                                         />
                                     </div>
@@ -151,6 +152,7 @@ const TestimonialSlider = () => {
                             src="/apply-now/image/maxresdefault.webp"
                             alt="Video Thumbnail"
                             className="w-full h-full rounded-2xl object-cover"
+                            loading="eager"
                         />
                         <div className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-40 rounded-2xl h-full">
                             <Play className="w-12 h-12 text-white max-md:w-10 max-md:h-10 max-sm:w-8 max-sm:h-8" />

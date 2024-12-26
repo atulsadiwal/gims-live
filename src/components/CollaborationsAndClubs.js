@@ -70,6 +70,7 @@ const CollaborationsAndClubs = () => {
                                             src={collab.logo}
                                             alt={collab.name}
                                             className="w-[119px] h-[55px] object-contain"
+                                            loading="eager"
                                         />
                                     </div>
                                 ))}
@@ -103,6 +104,7 @@ const CollaborationsAndClubs = () => {
                                         <img
                                             src={club.logo}
                                             alt={club.name}
+                                            loading="eager"
                                             className="w-[119px] h-[55px] object-contain"
                                         />
                                     </div>

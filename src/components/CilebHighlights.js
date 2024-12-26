@@ -72,6 +72,7 @@ const CilebHighlights = () => {
                                 <img
                                     src={slide.imageUrl}
                                     alt={slide.name}
+                                    loading="eager"
                                     className="w-full h-[500px] object-cover rounded-3xl border border-transparent group-hover:border-gray-400 transition-all duration-500"
                                 />
                                 <div className="absolute inset-0 rounded-3xl border border-gray-400 opacity-0 group-hover:opacity-100 group-hover:animate-border"></div>
@@ -96,6 +97,7 @@ const CilebHighlights = () => {
                             <img
                                 src={slide.imageUrl}
                                 alt={slide.name}
+                                loading="eager"
                                 className="w-full h-[500px] object-cover rounded-3xl border border-transparent group-hover:border-gray-400 transition-all duration-500"
                             />
                             <div className="absolute inset-0 rounded-3xl border border-gray-400 opacity-0 group-hover:opacity-100 group-hover:animate-border"></div>

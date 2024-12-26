@@ -62,6 +62,7 @@ const CorporateMentor = () => {
                                         src={mentor.img || "https://via.placeholder.com/150"}
                                         alt={mentor.name}
                                         className="w-full h-36 rounded-t-3xl mb-4 object-contain bg-gray-200"
+                                        loading="eager"
                                     />
                                     <h3 className="text-base font-semibold mb-2">{mentor.name}</h3>
                                     <p className="text-gray-700 text-sm">{mentor.position}</p>
@@ -79,6 +80,7 @@ const CorporateMentor = () => {
                         <img
                             src={mentor.img || "https://via.placeholder.com/150"}
                             alt={mentor.name}
+                            loading="eager"
                             className="w-full h-36 rounded-t-3xl mb-4 object-contain bg-gray-200"
                         />
                         <h3 className="text-base font-semibold mb-2">{mentor.name}</h3>

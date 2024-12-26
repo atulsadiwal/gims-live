@@ -63,6 +63,7 @@ const VideoClips = () => {
                                         src={`https://img.youtube.com/vi/${video.id}/hqdefault.jpg`}
                                         alt="Video thumbnail"
                                         className="w-full h-64 md:h-80 object-cover"
+                                        loading="eager"
                                     />
                                 )}
                             </div>
@@ -95,6 +96,7 @@ const VideoClips = () => {
                                     <img
                                         src={`https://img.youtube.com/vi/${video.id}/hqdefault.jpg`}
                                         alt="Video thumbnail"
+                                        loading="eager"
                                         className="w-full h-64 md:h-80 object-cover"
                                     />
                                 )}
@@ -128,6 +130,7 @@ const VideoClips = () => {
                                     <img
                                         src={`https://img.youtube.com/vi/${video.id}/hqdefault.jpg`}
                                         alt="Video thumbnail"
+                                        loading="eager"
                                         className="w-full h-64 md:h-80 object-cover"
                                     />
                                 )}

@@ -91,12 +91,14 @@ const AwardsAndRecognition = () => {
                                             src="/apply-now/image/left.webp"
                                             alt="award"
                                             className="w-6 h-16 md:w-8 md:h-20"
+                                            loading="eager"
                                         />
                                         <span className="z-10 text-sm md:text-base">{bullet.heading}</span>
                                         <img
                                             src="/apply-now/image/right.webp"
                                             alt="award"
                                             className="w-6 h-16 md:w-8 md:h-20"
+                                            loading="eager"
                                         />
                                     </h2>
                                     <div
@@ -123,6 +125,7 @@ const AwardsAndRecognition = () => {
                                             src="/apply-now/image/placement-recruiter/logo10.webp"
                                             alt="CourseEra Logo"
                                             className="w-28 h-10 mr-2"
+                                            loading="eager"
                                         />
                                         Certifications
                                     </h3>

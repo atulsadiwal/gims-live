@@ -58,6 +58,7 @@ const Collaborations = () => {
                         <img
                             src={logo}
                             alt={`Logo ${index + 1}`}
+                            loading="eager"
                             className="w-full h-full object-contain transform transition-transform duration-300 group-hover:scale-110"
                         />
                         {/* Glow and shadow effects */}

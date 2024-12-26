@@ -54,12 +54,14 @@ const Affiliated = () => {
                                                 src="/apply-now/image/left-white.webp"
                                                 alt="leaf left"
                                                 className="w-8 h-20"
+                                                loading="eager"
                                             />
                                             <span className="z-10 font-FONT1 max-sm:text-sm">{point}</span>
                                             <img
                                                 src="/apply-now/image/right-white.webp"
                                                 alt="leaf right"
                                                 className="w-8 h-20"
+                                                loading="eager"
                                             />
                                         </h2>
                                     </div>
@@ -84,12 +86,14 @@ const Affiliated = () => {
                                             src="/apply-now/image/left-white.webp"
                                             alt="leaf left"
                                             className="w-8 h-20"
+                                            loading="eager"
                                         />
                                         <span className="z-10 font-FONT1 text-sm">{point}</span>
                                         <img
                                             src="/apply-now/image/right-white.webp"
                                             alt="leaf right"
                                             className="w-8 h-20"
+                                            loading="eager"
                                         />
                                     </h2>
                                 </div>

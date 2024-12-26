@@ -54,6 +54,7 @@ export default function FloatingAvatar({ imageSrc, title, delay }) {
             src={imageSrc}
             alt="User avatar"
             className="w-12 h-12 rounded-full border-2 border-white shadow-lg"
+            loading="eager"
           />
           <motion.div
             initial={{ opacity: 0, y: 10 }}

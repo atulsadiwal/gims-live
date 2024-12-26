@@ -36,6 +36,7 @@ export default function LogoSlider({ logos, title, speed }) {
                                             alt={image.alt}
                                             src={image.src}
                                             className="p-2 h-full w-full object-contain"
+                                            loading="eager"
                                         />
                                     </div>
                                 </SwiperSlide>

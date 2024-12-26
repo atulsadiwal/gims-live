@@ -25,6 +25,7 @@ const FormSection = () => {
                   src="/apply-now/image/gims-logobg.webp"
                   alt="logo"
                   className="max-md: max-sm:w-28"
+                  loading="eager"
                 />
               </div>
               <p className="text-lg mb-6 text-gray-500 max-sm:text-sm max-sm:mb-3 font-novaReg">

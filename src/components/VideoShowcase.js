@@ -13,10 +13,11 @@ export default function VideoShowcase() {
                     <img
                         src="https://img.youtube.com/vi/mPnsuSYSkPc/maxresdefault.jpg"
                         alt="Video Thumbnail"
+                        loading="eager"
                         className="w-full aspect-video object-cover rounded-3xl max-sm:rounded-xl max-md:rounded-2xl"
                     />
                     <div className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-40 max-sm:rounded-xl max-md:rounded-2xl rounded-3xl">
-                        <img src="/apply-now/image/play.gif" alt="play" className='rounded-full max-sm:w-10 max-md:w-12 w-14' />
+                        <img src="/apply-now/image/play.gif" alt="play" loading="eager" className='rounded-full max-sm:w-10 max-md:w-12 w-14' />
                     </div>
                 </div>
             </div>

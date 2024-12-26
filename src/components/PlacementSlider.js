@@ -21,6 +21,7 @@ const PlacementSlider = ({ placement, delay }) => {
                 className="max-xl:h-full"
                 src={item}
                 alt="placement"
+                loading="eager"
               />
             </article>
           </SwiperSlide>

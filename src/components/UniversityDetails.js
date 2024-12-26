@@ -48,6 +48,7 @@ const UniversityDetails = () => {
           src="/apply-now/image/building.webp"
           alt="University"
           className="w-full h-full object-cover"
+          loading="eager"
         />
 
         <div className="box absolute bottom-0 left-0 bg-yellow-300 max-sm:bg-yellow-300/70 text-black p-6 lg:p-8 w-[50%] max-xl:w-full max-lg:w-full max-md:w-full flex flex-col">

@@ -62,7 +62,7 @@ const GimsiansSpeak = () => {
             <div className="w-full flex flex-wrap justify-center gap-4 relative">
                 {/* Chevron Buttons */}
                 <div
-                    className="absolute left-0 top-1/2 p-3 bg-white rounded-full transform -translate-y-1/2 cursor-pointer z-10"
+                    className="absolute left-0 top-1/2 p-2 bg-white rounded-full transform -translate-y-1/2 cursor-pointer z-10"
                     onClick={handlePrev}
                 >
                     <ChevronLeft size={30} />
@@ -109,6 +109,7 @@ const GimsiansSpeak = () => {
                                             src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
                                             alt={`Video thumbnail`}
                                             className="w-full h-auto rounded-md"
+                                            loading="eager"
                                         />
                                     )}
                                 </div>
@@ -119,9 +120,8 @@ const GimsiansSpeak = () => {
 
                 {/* Chevron Buttons */}
                 <div
-                    className="absolute right-0 top-1/2 p-3 bg-white rounded-full transform -translate-y-1/2 cursor-pointer z-10"
-                    onClick={handleNext}
-                >
+                    className="absolute right-0 top-1/2 p-2 bg-white rounded-full transform -translate-y-1/2 cursor-pointer z-10"
+                    onClick={handleNext}>
                     <ChevronRight size={30} />
                 </div>
             </div>

@@ -105,6 +105,7 @@ const PlacementRecruiters = () => {
                                         alt={logo.alt}
                                         src={logo.src}
                                         className="p-2 h-full w-full object-contain"
+                                        loading="eager"
                                     />
                                 </div>
                             </SwiperSlide>
@@ -127,6 +128,7 @@ const PlacementRecruiters = () => {
                                         alt={logo.alt}
                                         src={logo.src}
                                         className="p-2 h-full w-full object-contain"
+                                        loading="eager"
                                     />
                                 </div>
                             </SwiperSlide>
@@ -149,6 +151,7 @@ const PlacementRecruiters = () => {
                                         alt={logo.alt}
                                         src={logo.src}
                                         className="p-2 h-full w-full object-contain"
+                                        loading="eager"
                                     />
                                 </div>
                             </SwiperSlide>

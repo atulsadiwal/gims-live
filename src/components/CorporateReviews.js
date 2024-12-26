@@ -91,7 +91,7 @@ const CorporateReviews = () => {
                         {currentFeatures.map((feature, index) => (
                             <div key={index} className="bg-gray-900/50 border-gray-800 p-6 rounded-lg max-lg:p-5 max-sm:text-center max-md:p-4 max-sm:p-3">
                                 <div className="rounded-full flex max-sm:justify-center w-full mb-4">
-                                    <img src={feature.imgSrc} alt={feature.name} className="h-16 w-16 rounded-full object-cover"/>
+                                    <img src={feature.imgSrc} alt={feature.name} className="h-16 w-16 rounded-full object-cover" loading="eager"/>
                                 </div>
                                 <div className="mb-3">
                                     <h4 className="text-lg font-novaSemi max-sm:text-center max-sm:text-sm">{feature.name}</h4>
