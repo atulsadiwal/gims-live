@@ -2,18 +2,18 @@ import React, { useEffect, useRef, useState } from "react";
 
 const Collaborations = () => {
     const logos = [
-        "/apply-now/image/affiliations-accreditations-and-collaborations/logo1.webp",
-        "/apply-now/image/affiliations-accreditations-and-collaborations/logo2.webp",
-        "/apply-now/image/affiliations-accreditations-and-collaborations/logo3.webp",
-        "/apply-now/image/affiliations-accreditations-and-collaborations/logo4.webp",
-        "/apply-now/image/affiliations-accreditations-and-collaborations/logo5.webp",
-        "/apply-now/image/affiliations-accreditations-and-collaborations/logo6.webp",
-        "/apply-now/image/affiliations-accreditations-and-collaborations/logo7.webp",
-        "/apply-now/image/affiliations-accreditations-and-collaborations/logo8.webp",
-        "/apply-now/image/affiliations-accreditations-and-collaborations/logo9.webp",
-        "/apply-now/image/affiliations-accreditations-and-collaborations/logo10.webp",
-        "/apply-now/image/affiliations-accreditations-and-collaborations/logo11.webp",
-        "/apply-now/image/affiliations-accreditations-and-collaborations/logo12.webp",
+        "./image/affiliations-accreditations-and-collaborations/logo1.webp",
+        "./image/affiliations-accreditations-and-collaborations/logo2.webp",
+        "./image/affiliations-accreditations-and-collaborations/logo3.webp",
+        "./image/affiliations-accreditations-and-collaborations/logo4.webp",
+        "./image/affiliations-accreditations-and-collaborations/logo5.webp",
+        "./image/affiliations-accreditations-and-collaborations/logo6.webp",
+        "./image/affiliations-accreditations-and-collaborations/logo7.webp",
+        "./image/affiliations-accreditations-and-collaborations/logo8.webp",
+        "./image/affiliations-accreditations-and-collaborations/logo9.webp",
+        "./image/affiliations-accreditations-and-collaborations/logo10.webp",
+        "./image/affiliations-accreditations-and-collaborations/logo11.webp",
+        "./image/affiliations-accreditations-and-collaborations/logo12.webp",
     ];
 
     const sliderRef = useRef(null);

@@ -11,7 +11,7 @@ const Navbar = () => {
             <div className='pt-10 px-20 max-md:px-10 max-md:pt-6 max-sm:pt-4 max-sm:px-5'>
                 <div className='flex items-center justify-between h-16'>
                     <div className='flex-shrink-0'>
-                        <img src="/apply-now/image/gims-logo.webp" alt="logo" className='max-md: max-sm:w-28' loading="eager"/>
+                        <img src="./image/gims-logo.webp" alt="logo" className='max-md: max-sm:w-28' loading="eager"/>
                     </div>
                     <div className='hidden md:flex items-center space-x-4'>
                         <span className='flex items-center gap-2 font-FONT1 text-sm'>

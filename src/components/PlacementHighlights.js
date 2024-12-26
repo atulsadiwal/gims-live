@@ -1,20 +1,20 @@
 import PlacementSlider from "./PlacementSlider";
 
 const placement1 = [
-    "/apply-now/image/student/abhay-kumar.webp",
-    "/apply-now/image/student/ankur-kumar-mishra.webp",
+    "./image/student/abhay-kumar.webp",
+    "./image/student/ankur-kumar-mishra.webp",
 ]
 const placement2 = [
-    "/apply-now/image/student/dilpreet-singh.webp",
-    "/apply-now/image/student/hanshika-bhushan.webp",
+    "./image/student/dilpreet-singh.webp",
+    "./image/student/hanshika-bhushan.webp",
 ]
 const placement3 = [
-    "/apply-now/image/student/raksha-shreya.webp",
-    "/apply-now/image/student/ritika-saxena.webp",
+    "./image/student/raksha-shreya.webp",
+    "./image/student/ritika-saxena.webp",
 ]
 const placement4 = [
-    "/apply-now/image/student/sunaina-thakur.webp",
-    "/apply-now/image/student/vivek-yadav.webp",
+    "./image/student/sunaina-thakur.webp",
+    "./image/student/vivek-yadav.webp",
 ]
 
 export default function PlacementHighlights() {
