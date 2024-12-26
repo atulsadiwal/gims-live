@@ -3,70 +3,70 @@ import { Star } from 'lucide-react';
 
 const bulletData = [
     {
-        image: "path/to/image1.jpg",
+        image: "path/to/image1.webp",
         heading: "D30 Youth Icon",
         description:
             "Awarded D30 International Excellence and Youth Icon at De-addiction and Disability Awareness Summit in 30 Countries by Kashiyana Foundation.",
     },
     {
-        image: "path/to/image2.jpg",
+        image: "path/to/image2.webp",
         heading: "Promising B-School",
         description:
             "Awarded Promising B School for Strong Industry Connect by Indian Institutional Ranking Framework (IIRF).",
     },
     {
-        image: "path/to/image3.jpg",
+        image: "path/to/image3.webp",
         heading: "Top 20 B-School",
         description:
             "Ranked among Top 20 B-schools in Outlook ICARE- India's Best School 2025 ranking.",
     },
     {
-        image: "path/to/image4.jpg",
+        image: "path/to/image4.webp",
         heading: "Best Management College",
         description:
             "Awarded Best Management College in North India by Intiexcellent Chamber of Commerce & Industry.",
     },
     {
-        image: "path/to/image5.jpg",
+        image: "path/to/image5.webp",
         heading: "Corporate Interface Excellence",
         description:
             "Excellence in Corporate Interface award by Bharat Expo & Awards 2024.",
     },
     {
-        image: "path/to/image6.jpg",
+        image: "path/to/image6.webp",
         heading: "Top 23 B-School North Zone",
         description:
             "Ranked 23rd among Top B Schools in North Zone by BUSINESS WORLD.",
     },
     {
-        image: "path/to/image7.jpg",
+        image: "path/to/image7.webp",
         heading: "Top 20 Private B-School NCR",
         description:
             "Ranked 20th among Top Private B Schools in Delhi/NCR by THE WEEK.",
     },
     {
-        image: "path/to/image8.jpg",
+        image: "path/to/image8.webp",
         heading: "Top 19 Private B-School North Zone",
         description:
             "Ranked 19th among Top Private B Schools in North Zone by Outlook.",
     },
     {
-        image: "path/to/image9.jpg",
+        image: "path/to/image9.webp",
         heading: "North Zone Top Private",
         description: "Top Private Institute in North India by JAGRAN JOSH.",
     },
     {
-        image: "path/to/image10.jpg",
+        image: "path/to/image10.webp",
         heading: "A+ Category",
         description: "A+ category & Ranked 36th in the B-School Survey.",
     },
     {
-        image: "path/to/image11.jpg",
+        image: "path/to/image11.webp",
         heading: "Top Emerging B-School",
         description: "Ranked in Top Emerging B Schools by Times of India.",
     },
     {
-        image: "path/to/image12.jpg",
+        image: "path/to/image12.webp",
         heading: "AA+ Top Management College",
         description:
             "Ranked AA+ among top management colleges in Delhi/NCR by Career360.",
@@ -88,13 +88,13 @@ const AwardsAndRecognition = () => {
                                 <div key={index} className="relative group">
                                     <h2 className="max-w-52 mx-auto text-center text-white font-novaSemi mt-4 group-hover:opacity-0 transition-opacity duration-300 flex items-center justify-center relative">
                                         <img
-                                            src="/apply-now/image/left.png"
+                                            src="/apply-now/image/left.webp"
                                             alt="award"
                                             className="w-6 h-16 md:w-8 md:h-20"
                                         />
                                         <span className="z-10 text-sm md:text-base">{bullet.heading}</span>
                                         <img
-                                            src="/apply-now/image/right.png"
+                                            src="/apply-now/image/right.webp"
                                             alt="award"
                                             className="w-6 h-16 md:w-8 md:h-20"
                                         />
@@ -120,7 +120,7 @@ const AwardsAndRecognition = () => {
                                 <div className="bg-white text-black p-3 h-full rounded-lg shadow-2xl transition-transform duration-300 hover:scale-105 transform hover:bg-indigo-100">
                                     <h3 className="text-lg md:text-xl font-novaBold mb-3 text-indigo-600 flex items-center">
                                         <img
-                                            src="/apply-now/image/placement-recruiter/logo10.png"
+                                            src="/apply-now/image/placement-recruiter/logo10.webp"
                                             alt="CourseEra Logo"
                                             className="w-28 h-10 mr-2"
                                         />

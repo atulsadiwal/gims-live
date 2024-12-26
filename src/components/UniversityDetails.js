@@ -45,7 +45,7 @@ const UniversityDetails = () => {
     <div className="flex w-full max-sm:flex-col max-sm:mt-20">
       <div className="flex flex-1 relative">
         <img
-          src="/apply-now/image/building.png"
+          src="/apply-now/image/building.webp"
           alt="University"
           className="w-full h-full object-cover"
         />

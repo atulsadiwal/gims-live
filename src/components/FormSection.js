@@ -22,7 +22,7 @@ const FormSection = () => {
             <div className="flex flex-col justify-center h-full">
               <div className="flex-shrink-0">
                 <img
-                  src="/apply-now/image/gims-logobg.png"
+                  src="/apply-now/image/gims-logobg.webp"
                   alt="logo"
                   className="max-md: max-sm:w-28"
                 />

@@ -15,7 +15,7 @@ const features = [
         description: "Nitin Kalra, an HR leader with 18+ years of expertise, inspires GIMS students to embrace lifelong learning, build skills, and strive for excellence, shaping their path to future success."
     },
     {
-        imgSrc: "/apply-now/image/corporate/shivani-sharma-singh.jpg",
+        imgSrc: "/apply-now/image/corporate/shivani-sharma-singh.webp",
         name: "Ms. Shivani Sharma Singh",
         designation: "Head Government Project",
         description: "A GIMS mentor emphasizes communication, analytics, creativity, customer focus, resilience, tech skills, negotiation, and time management as key Sales & Marketing skills, urging students to pursue excellence."
@@ -33,13 +33,13 @@ const features = [
         description: "A GIMS mentor advises PGDM students to embrace learning, set clear goals, build networks, gain practical experience, and develop soft skills to excel as future business leaders."
     },
     {
-        imgSrc: "/apply-now/image/corporate/harsh-raghuvanshi.jpg",
+        imgSrc: "/apply-now/image/corporate/harsh-raghuvanshi.webp",
         name: "Mr. Harsh Raghuvanshi",
         designation: "Assistant Manager, Aditya Birla Group",
         description: "A corporate HR mentor advises PGDM students to excel in analytics, leadership, communication, adaptability, ethics, technical skills, time management, networking, creativity, and continuous learning for successful corporate careers."
     },
     {
-        imgSrc: "/apply-now/image/corporate/harsh-raj-jain.jpg",
+        imgSrc: "/apply-now/image/corporate/harsh-raj-jain.webp",
         name: "Mr. Harsh Raj Jain",
         designation: "Talent Acquisition Head",
         description: "A corporate HR mentor advises students to focus on professionalism, work ethic, team collaboration, technological proficiency, integrity, and self-motivation to successfully transition into the corporate world."

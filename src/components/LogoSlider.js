@@ -13,6 +13,9 @@ export default function LogoSlider({ logos, title, speed }) {
         1280: { slidesPerView: 9 }
     };
 
+    console.log(logos);
+    
+
     return (
         <>
             <section className="py-10">

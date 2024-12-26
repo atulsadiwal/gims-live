@@ -8,6 +8,7 @@ export default {
       animation: {
         spin: 'spin 2s linear infinite',
         marquee: 'marquee 25s linear infinite',
+        spinreverse: 'spin 1s linear infinite reverse',
       },
       keyframes: {
         marquee: {
@@ -17,12 +18,12 @@ export default {
       },
       backgroundImage: { 
         'btn-gradient': 'linear-gradient(to right, #1163fb, #9c3aed)',
-        'BG1': "url('/public/image/three-students.jpg')",
-        'BG2': "url('/public/image/incredible-bg-new.jpg')",
+        'BG1': "url('/public/image/three-students.webp')",
+        'BG2': "url('/public/image/incredible-bg-new.webp')",
         'BG3': "url('/public/image/one-exam-bg-new.webp')",
         'BG4': "url('/public/image/building-gims.webp')",
-        'BG5': "url('/public/image/awards.png')",
-        'BG6': "url('/public/image/pgdmBG.jpg')",
+        'BG5': "url('/public/image/awards.webp')",
+        'BG6': "url('/public/image/pgdmBG.webp')",
       },
       colors: {
         'home': '#3E0066',

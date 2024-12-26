@@ -7,27 +7,27 @@ import "swiper/css";
 
 const memories = [
     {
-        url: "/apply-now/image/gallery/gallery-4.jpg",
+        url: "/apply-now/image/gallery/gallery-4.webp",
         icon: "Plus",
     },
     {
-        url: "/apply-now/image/gallery/gallery-5.jpg",
+        url: "/apply-now/image/gallery/gallery-5.webp",
         icon: "Plus",
     },
     {
-        url: "/apply-now/image/gallery/gallery-6.jpg",
+        url: "/apply-now/image/gallery/gallery-6.webp",
         icon: "Plus",
     },
     {
-        url: "/apply-now/image/gallery/gallery-3.jpg",
+        url: "/apply-now/image/gallery/gallery-3.webp",
         icon: "Plus",
     },
     {
-        url: "/apply-now/image/gallery/gallery.jpg",
+        url: "/apply-now/image/gallery/gallery.webp",
         icon: "Plus",
     },
     {
-        url: "/apply-now/image/gallery/gallery-2.jpg",
+        url: "/apply-now/image/gallery/gallery-2.webp",
         icon: "Plus",
     },
 ];
