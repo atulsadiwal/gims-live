@@ -4,27 +4,27 @@ import 'swiper/css';
 
 const slides = [
     {
-        imageUrl: "./image/celebrities/ashneer.webp",
+        imageUrl: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/ashneer.webp",
         name: 'Ashneer Grover'
     },
     {
-        imageUrl: "./image/celebrities/sanjay.webp",
+        imageUrl: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/sanjay.webp",
         name: 'Sanjay Mishra'
     },
     {
-        imageUrl: "./image/celebrities/panther.webp",
+        imageUrl: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/panther.webp",
         name: 'Panther'
     },
     {
-        imageUrl: "./image/celebrities/jaya.webp",
+        imageUrl: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/jaya.webp",
         name: 'Ms. Jaya Kishori'
     },
     {
-        imageUrl: "./image/celebrities/manoj-muntashir.webp",
+        imageUrl: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/manoj-muntashir.webp",
         name: 'Manoj Muntashir'
     },
     {
-        imageUrl: "./image/celebrities/guru-randhawa.webp",
+        imageUrl: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/guru-randhawa.webp",
         name: 'Guru Randhawa'
     },
 ];

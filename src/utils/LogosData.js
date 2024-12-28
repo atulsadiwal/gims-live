@@ -77,14 +77,14 @@ export const collaborationsLogo = [
 ];
 
 export const clubsLogo = [
-    { alt: "AIT", src: "./image/icons/logo1.webp" },
-    { alt: "LSUS", src: "./image/icons/logo2.webp" },
-    { alt: "BFSI", src: "./image/icons/logo3.webp" },
-    { alt: "Kathmandu", src: "./image/icons/logo4.webp" },
-    { alt: "University of Dubai ", src: "./image/icons/logo5.webp" },
-    { alt: "MAHSA", src: "./image/icons/logo6.webp" },
-    { alt: "DE MONTFORT", src: "./image/icons/logo7.webp" },
-    { alt: "POLITEKNIK", src: "./image/icons/logo8.webp" },
-    { alt: "POLITEKNIK", src: "./image/icons/logo9.webp" },
-    { alt: "POLITEKNIK", src: "./image/icons/logo10.webp" },
+    { alt: "AIT", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo1.webp" },
+    { alt: "LSUS", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo2.webp" },
+    { alt: "BFSI", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo3.webp" },
+    { alt: "Kathmandu", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo4.webp" },
+    { alt: "University of Dubai ", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo5.webp" },
+    { alt: "MAHSA", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo6.webp" },
+    { alt: "DE MONTFORT", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo7.webp" },
+    { alt: "POLITEKNIK", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo8.webp" },
+    { alt: "POLITEKNIK", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo9.webp" },
+    { alt: "POLITEKNIK", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo10.webp" },
 ];  

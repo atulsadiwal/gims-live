@@ -61,25 +61,25 @@ const CardsContainer = () => {
                         >
                             <SwiperSlide>
                                 <div className="flex justify-center">
-                                    <Card imageUrl="./image/gims4.webp" />
+                                    <Card imageUrl="https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/gims4.webp" />
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className="flex justify-center">
-                                    <Card imageUrl="./image/gims5.webp" />
+                                    <Card imageUrl="https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/gims5.webp" />
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className="flex justify-center">
-                                    <Card imageUrl="./image/gims6.webp" />
+                                    <Card imageUrl="https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/gims6.webp" />
                                 </div>
                             </SwiperSlide>
                         </Swiper>
                     ) : (
                         <div className="flex gap-6 justify-center p-2 max-xl:gap-2 max-xl:p-0">
-                            <Card imageUrl="./image/gims4.webp" />
-                            <Card imageUrl="./image/gims5.webp" />
-                            <Card imageUrl="./image/gims6.webp" />
+                            <Card imageUrl="https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/gims4.webp" />
+                            <Card imageUrl="https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/gims5.webp" />
+                            <Card imageUrl="https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/gims6.webp" />
                         </div>
                     )}
                 </div>

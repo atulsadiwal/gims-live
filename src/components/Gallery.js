@@ -7,27 +7,27 @@ import "swiper/css";
 
 const memories = [
     {
-        url: "./image/gallery/gallery-4.webp",
+        url: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/gallery-4.webp",
         icon: "Plus",
     },
     {
-        url: "./image/gallery/gallery-5.webp",
+        url: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/gallery-5.webp",
         icon: "Plus",
     },
     {
-        url: "./image/gallery/gallery-6.webp",
+        url: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/gallery-6.webp",
         icon: "Plus",
     },
     {
-        url: "./image/gallery/gallery-3.webp",
+        url: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/gallery-3.webp",
         icon: "Plus",
     },
     {
-        url: "./image/gallery/gallery.webp",
+        url: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/gallery.webp",
         icon: "Plus",
     },
     {
-        url: "./image/gallery/gallery-2.webp",
+        url: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/gallery-2.webp",
         icon: "Plus",
     },
 ];

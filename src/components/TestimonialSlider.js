@@ -9,7 +9,7 @@ const studentReviews = [
         company: "InfoEdge India",
         heading: "Countless Opportunities at One Place",
         description: "A big thank you to my support system GIMS for their unwavering belief in me which resulted into getting me a job in INFOEDGE. I am extremely grateful to the college for playing a significant role in helping me secure my dream job.​",
-        image: "./image/student/1.webp"
+        image: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/testimonial-1.webp"
     },
     {
         id: 2,
@@ -17,7 +17,7 @@ const studentReviews = [
         company: "Deloitte",
         heading: "Countless Opportunities at One Place",
         description: "Sky is the limit' is what is taught in GIMS. Delighted to announce my placement at Deloitte. Thanks for the guidance and opportunities my college provided.​",
-        image: "./image/student/2.webp"
+        image: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/testimonial-2.webp"
     },
     {
         id: 3,
@@ -25,7 +25,7 @@ const studentReviews = [
         company: "Decathlon",
         heading: "Countless Opportunities at One Place",
         description: "I am thrilled to have secured a position at DECATHALON. And I credit much of my success to my college GIMS to provide me such an amazing Opportunity.​",
-        image: "./image/student/3.webp"
+        image: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/testimonial-3.webp"
     },
     {
         id: 4,
@@ -33,7 +33,7 @@ const studentReviews = [
         company: "Sonalika International",
         heading: "Countless Opportunities at One Place",
         description: "A huge thank you to GIMS for their unwavering support. The guidance and career services provided by the college helped me secure my dream job at Accenture. I am excited to start this new journey.",
-        image: "./image/student/mansi.webp"
+        image: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/testimonial-4.webp"
     },
     // {
     //     id: 5,
@@ -149,7 +149,7 @@ const TestimonialSlider = () => {
                         onClick={openModal}
                     >
                         <img
-                            src="./image/maxresdefault.webp"
+                            src="https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/maxresdefault.webp"
                             alt="Video Thumbnail"
                             className="w-full h-full rounded-2xl object-cover"
                             loading="eager"

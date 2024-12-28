@@ -18,12 +18,12 @@ export default {
       },
       backgroundImage: { 
         'btn-gradient': 'linear-gradient(to right, #1163fb, #9c3aed)',
-        'BG1': "url('/public/image/three-students.webp')",
-        'BG2': "url('/public/image/incredible-bg-new.webp')",
-        'BG3': "url('/public/image/one-exam-bg-new.webp')",
-        'BG4': "url('/public/image/building-gims.webp')",
-        'BG5': "url('/public/image/awards.webp')",
-        'BG6': "url('/public/image/pgdmBG.webp')",
+        'BG1': "url('https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/three-students.webp')",
+        'BG2': "url('https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/incredible-bg-new.webp')",
+        'BG3': "url('https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/one-exam-bg-new.webp')",
+        'BG4': "url('https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/building-gims.webp')",
+        'BG5': "url('https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/awards.webp')",
+        'BG6': "url('https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/pgdmBG.webp')",
       },
       colors: {
         'home': '#3E0066',

@@ -2,18 +2,18 @@ import React, { useEffect, useRef, useState } from "react";
 
 const Collaborations = () => {
     const logos = [
-        "./image/affiliations-accreditations-and-collaborations/logo1.webp",
-        "./image/affiliations-accreditations-and-collaborations/logo2.webp",
-        "./image/affiliations-accreditations-and-collaborations/logo3.webp",
-        "./image/affiliations-accreditations-and-collaborations/logo4.webp",
-        "./image/affiliations-accreditations-and-collaborations/logo5.webp",
-        "./image/affiliations-accreditations-and-collaborations/logo6.webp",
-        "./image/affiliations-accreditations-and-collaborations/logo7.webp",
-        "./image/affiliations-accreditations-and-collaborations/logo8.webp",
-        "./image/affiliations-accreditations-and-collaborations/logo9.webp",
-        "./image/affiliations-accreditations-and-collaborations/logo10.webp",
-        "./image/affiliations-accreditations-and-collaborations/logo11.webp",
-        "./image/affiliations-accreditations-and-collaborations/logo12.webp",
+        "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/affiliations-logo1.webp",
+        "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/affiliations-logo2.webp",
+        "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/affiliations-logo3.webp",
+        "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/affiliations-logo4.webp",
+        "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/affiliations-logo5.webp",
+        "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/affiliations-logo6.webp",
+        "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/affiliations-logo7.webp",
+        "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/affiliations-logo8.webp",
+        "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/affiliations-logo9.webp",
+        "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/affiliations-logo10.webp",
+        "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/affiliations-logo11.webp",
+        "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/affiliations-logo12.webp",
     ];
 
     const sliderRef = useRef(null);

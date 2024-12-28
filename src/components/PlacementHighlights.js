@@ -1,20 +1,20 @@
 import PlacementSlider from "./PlacementSlider";
 
 const placement1 = [
-    "./image/student/abhay-kumar.webp",
-    "./image/student/ankur-kumar-mishra.webp",
+    "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/abhay-kumar.webp",
+    "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/ankur-kumar-mishra.webp",
 ]
 const placement2 = [
-    "./image/student/dilpreet-singh.webp",
-    "./image/student/hanshika-bhushan.webp",
+    "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/dilpreet-singh.webp",
+    "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/hanshika-bhushan.webp",
 ]
 const placement3 = [
-    "./image/student/raksha-shreya.webp",
-    "./image/student/ritika-saxena.webp",
+    "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/raksha-shreya.webp",
+    "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/ritika-saxena.webp",
 ]
 const placement4 = [
-    "./image/student/sunaina-thakur.webp",
-    "./image/student/vivek-yadav.webp",
+    "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/sunaina-thakur.webp",
+    "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/vivek-yadav.webp",
 ]
 
 export default function PlacementHighlights() {
